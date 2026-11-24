@@ -1,0 +1,59 @@
+{
+  "asOf": "2026-11-25",
+  "pdfs": [
+    {
+      "id": "pct",
+      "title": "特許協力条約（PCT）",
+      "file": "pct.pdf",
+      "sourceUrl": "https://www.wipo.int/documents/d/pct-system/docs-ja-texts-pct.pdf",
+      "editionNote": "2001年変更・2002年4月1日発効のWIPO掲載日本語仮訳。PDFの注意書きに従い、原文と相違する場合は原文が優先。",
+      "bytes": 722292,
+      "sha256": "7b794637873d3e5632330bef22f30aa97d891176da0727e4e4b16153b44d0754"
+    },
+    {
+      "id": "pct-regulations",
+      "title": "PCT規則（2026年1月1日施行）",
+      "file": "pct-regulations.pdf",
+      "sourceUrl": "https://www.wipo.int/documents/d/pct-system/docs-ja-texts-pct-regs.pdf",
+      "editionNote": "WIPO掲載2026年1月1日発効版。日本語版は外務省告示に基づいて編集されたもの。",
+      "bytes": 1111909,
+      "sha256": "1d48590db87ed7e29f392e1a4aa805114234590f3c084ccccb78012226329aeb"
+    },
+    {
+      "id": "madrid-current-en",
+      "title": "マドリッド議定書・規則等（現行英語原本）",
+      "file": "madrid-current-en.pdf",
+      "sourceUrl": "https://www.wipo.int/edocs/pubdocs/en/wipo-pub-207-2026-en-protocol-relating-to-the-madrid-agreement-concerning-the-international-registration-of-marks-regulations-administrative-instructions-schedule-of-fees.pdf",
+      "editionNote": "WIPO 2026年版。議定書2007年11月12日修正、規則2026年11月1日施行、実施細則・料金表2023年2月1日施行。英語原本。",
+      "bytes": 1133210,
+      "sha256": "59317985e71d59e93e4338401675f84148ca0fc4f8dc5e7716878e5db07b3c09"
+    },
+    {
+      "id": "berne-en",
+      "title": "ベルヌ条約（1979年修正・英語原本）",
+      "file": "berne-en.pdf",
+      "sourceUrl": "https://www.wipo.int/edocs/pubdocs/en/wipo_pub_287-accessible1.pdf",
+      "editionNote": "1971年パリ改正・1979年9月28日修正を反映したWIPO掲載英語版。附属書を含む。",
+      "bytes": 3634768,
+      "sha256": "4a49ed825f03d45853c05560055fb0a6fc5d52fd746730b6e9a3af5604f3a9b9"
+    },
+    {
+      "id": "plt-en",
+      "title": "特許法条約・規則等（PLT・英語原本）",
+      "file": "plt-en.pdf",
+      "sourceUrl": "https://www.wipo.int/edocs/pubdocs/en/wipo_pub_258.pdf",
+      "editionNote": "WIPO掲載2006年版。2000年特許法条約、2006年1月1日施行の規則及び説明注を含む。説明注は条約本文と区別して参照。英語原本。",
+      "bytes": 1241142,
+      "sha256": "12035102b533e3e3c6d08a954151b15096d80f04996fe55baf0b841929de3905"
+    },
+    {
+      "id": "hague-current-en",
+      "title": "ハーグ・ジュネーブ改正協定・規則等（現行英語原本）",
+      "file": "hague-current-en.pdf",
+      "sourceUrl": "https://www.wipo.int/edocs/pubdocs/en/wipo-pub-269-2026-en-hague-agreement-concerning-the-international-registration-of-industrial-designs.pdf",
+      "editionNote": "WIPO 2026年版。1999年ジュネーブ改正協定、2026年7月1日施行の規則、2025年7月17日施行の実施細則。英語原本。",
+      "bytes": 1931269,
+      "sha256": "2319e075795b585ae9daead7443dd1b607058bbae50fd1116c35e315fc7cf023"
+    }
+  ]
+}

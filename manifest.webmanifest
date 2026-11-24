@@ -1,0 +1,26 @@
+{
+  "id": "./",
+  "name": "弁理士合格ラボ",
+  "short_name": "弁理士ラボ",
+  "description": "法律・条文、読み上げ、短答・論文・口述。オフラインでも使える学習室。",
+  "lang": "ja",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f7f7",
+  "theme_color": "#123b3d",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+# Only the treaty PDF rebuild needs this package. Other scripts use stdlib.
+pypdf==6.21.4

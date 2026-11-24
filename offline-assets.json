@@ -1,0 +1,612 @@
+{
+  "version": "2026.11.25.1",
+  "asOf": "2026-11-25",
+  "files": [
+    {
+      "path": "annotation.js",
+      "bytes": 30815,
+      "sha256": "6dd96759e13ac98f9e05f21a35d26866e8752051a25a17f6d70297f6c0201072"
+    },
+    {
+      "path": "app.js",
+      "bytes": 75604,
+      "sha256": "03f300cd6eff8c14d757c72371d09576fe80edc64b3444c71b3f9a030f1b8e54"
+    },
+    {
+      "path": "apple-touch-icon.png",
+      "bytes": 4508,
+      "sha256": "62a614e19d0e9566968653885082d76205caccda483d3940cc450d9f7ecb62cb"
+    },
+    {
+      "path": "cache-codec.js",
+      "bytes": 2508,
+      "sha256": "d6ab894981e340e7a068db8c8c7e5701a6e0ea45eb968e197488d93e0e608035"
+    },
+    {
+      "path": "favicon.ico",
+      "bytes": 7135,
+      "sha256": "ffe4129d7600270a2bec705ce9c7af3889b87618d83bc74a3db37a470d8a845c"
+    },
+    {
+      "path": "glossary-data.json",
+      "bytes": 4342506,
+      "sha256": "5fa7b3e74dab0414113aee14bbe4f22c23851f708ca22fbe9d1533db3e636cc5"
+    },
+    {
+      "path": "glossary-data.json.gz",
+      "bytes": 562302,
+      "sha256": "27f1e86024b2b98d323ae1d9f6db4f0d0cf37d7c12fa84916086b369e11a842a"
+    },
+    {
+      "path": "glossary-study.js",
+      "bytes": 77181,
+      "sha256": "c696d182861db0f9da4965fcb41efb85a2783d4044b617406f8537c4c6fd97ed"
+    },
+    {
+      "path": "glossary.js",
+      "bytes": 12041,
+      "sha256": "4a1e468d2ef95f58c97ece3ed30fb42482abc7d0da93b1891e7a304a9b84149b"
+    },
+    {
+      "path": "icon-192.png",
+      "bytes": 4998,
+      "sha256": "5891930dd6c024eb956c7f8585f30b517c13a7f3738423d3412c0ec79c2faa00"
+    },
+    {
+      "path": "icon-32.png",
+      "bytes": 774,
+      "sha256": "91f79368c2a9b4612b797951db3575643e515eaa1b0cd31caaa2ec8f8f05376e"
+    },
+    {
+      "path": "icon-512.png",
+      "bytes": 17478,
+      "sha256": "725f9d9a82e2b68af752450e17e2158598e83a2859c17b9e4870b539b1969044"
+    },
+    {
+      "path": "icon-64.png",
+      "bytes": 1540,
+      "sha256": "889076ca7aeaf34c96b4e056d11be860b7bbd43be64c6a3d73bce6cb74a025e7"
+    },
+    {
+      "path": "icon.svg",
+      "bytes": 494,
+      "sha256": "f751e9270d399c934c29dec4ca8520031708d8c3baca765604a4d4bbd9cbab43"
+    },
+    {
+      "path": "index.html",
+      "bytes": 3598,
+      "sha256": "2954b9a8ad3144412ea5a71a7cf58faa6e300252143de8fcdb0f30bb7eac53f8"
+    },
+    {
+      "path": "interaction-guard.js",
+      "bytes": 842,
+      "sha256": "3f2307488703bcad78a5e0b7f3554214d3dd68d71956a8f6fed05abf6cc12898"
+    },
+    {
+      "path": "law-library.js",
+      "bytes": 29893,
+      "sha256": "731f8794ec15361430054ef163b0be949d43d26667d63840c0ad15b1538071ea"
+    },
+    {
+      "path": "legal-guides.js",
+      "bytes": 85420,
+      "sha256": "39fdf062f74f3201a83c62cbeebb6e78dc49dc0c7959f37f5bdaf314b387b25d"
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 617,
+      "sha256": "b375beaf8e00fc157819a750ad43b9bb0060b4b86564c7af6ab71bbd8e69c02a"
+    },
+    {
+      "path": "offline.js",
+      "bytes": 19645,
+      "sha256": "ef7af1f54e6d2009be19c4196280b09c711ae6b155fcc444e4b1c3a8db541e32"
+    },
+    {
+      "path": "og-cover.png",
+      "bytes": 2363861,
+      "sha256": "08ff07409b94d5667ce0312921dcea894f7e0b82df07de0617fb1bd8a98eb713"
+    },
+    {
+      "path": "question-bank.js",
+      "bytes": 81177,
+      "sha256": "321380b9bbc275f7b1857e26ce2a67ba876503f4be384183a0d3ca62e5479fca"
+    },
+    {
+      "path": "speech-engine.js",
+      "bytes": 19192,
+      "sha256": "b83d63d62c6c9e7fb113f1b8eb7b92b5668d5a20b9e926a3de14f1b99d30b154"
+    },
+    {
+      "path": "style.css",
+      "bytes": 37331,
+      "sha256": "1ced9b6320104dfd0c4b23dcc44370b0259856c92773ae7e76861f85b74c1392"
+    },
+    {
+      "path": "written-oral.js",
+      "bytes": 23613,
+      "sha256": "2be51561180c810c672050fe11ceb692231d1bfafedcc1debcc5e9ef537edee8"
+    },
+    {
+      "path": "law-corpus/manifest.json",
+      "bytes": 162472,
+      "sha256": "98c0f746e2f6113ae43d030f4a9415b0766b76f2b351e16b44f6b04d3f102cdb"
+    },
+    {
+      "path": "law-corpus/334AC0000000121.json",
+      "bytes": 1094065,
+      "sha256": "ae7169c91930a058e13331d3b9426418256704ec0d518ed91b08539419971d59"
+    },
+    {
+      "path": "law-corpus/335CO0000000016.json",
+      "bytes": 144285,
+      "sha256": "fd122b847a9b4f6f9a65796d9496d92d76ec8c762a3d1bcd96da60097c388701"
+    },
+    {
+      "path": "law-corpus/335M50000400010.json",
+      "bytes": 904199,
+      "sha256": "5b60b4e5abb58749b0e0bf523e234641f2647e154ac8045cde49bea8a4afbb06"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part001.bin",
+      "bytes": 2097152,
+      "sha256": "79244861e54765a0af4db323fe75eda5de4f17f865c061d39f925f1f0654f247"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part002.bin",
+      "bytes": 2097152,
+      "sha256": "f817a7a079a4b5e7174a92bf158d13c817dd2c004815c2186890b3ef65192b8a"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part003.bin",
+      "bytes": 2097152,
+      "sha256": "838d7004c089da03a293c274207d8240457390d38b6dabd42c612b6fc7bf9a46"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part004.bin",
+      "bytes": 2097152,
+      "sha256": "96bf261faa2b2da19b30e49e61773d4c3e93610c9e5a0e8738da315b37156a8e"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part005.bin",
+      "bytes": 2097152,
+      "sha256": "ddebfb527df652179e01268e41af39856f207b467392a50afc7fd12656925d06"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part006.bin",
+      "bytes": 2097152,
+      "sha256": "e67668c79093ca02b396733c9f62d78951f8b2d59684f9ccbd88e24309291512"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part007.bin",
+      "bytes": 2097152,
+      "sha256": "a2f54b7cec06b4e33804414b8aa970c4a6f7d52f67ce62ae4b18472b22d494a5"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part008.bin",
+      "bytes": 2097152,
+      "sha256": "d60b8806c27dd93fab8d4c1933e9385a910e57e8bbbdc57892aafcc74767a78e"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400010.zip.part009.bin",
+      "bytes": 646456,
+      "sha256": "10b8c74e69bf86915211517214a6d28ae94839927f7fd42db45fceaa2971334f"
+    },
+    {
+      "path": "law-corpus/335CO0000000039.json",
+      "bytes": 145823,
+      "sha256": "f712b85f7b2abc620e6a163ac954ec4b23658b59cf91f3b085786ef35f3b7db6"
+    },
+    {
+      "path": "law-corpus/335M50000400033.json",
+      "bytes": 212235,
+      "sha256": "73e33a41737fd5e8d30e3a4872ff48c45d9ab8c160fc21a8e16a6cb4731ee157"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400033.zip",
+      "bytes": 1037235,
+      "sha256": "d5bf8529cc912098800704f3dedd84c874f8c7af9680328ba2fb9701e1b1f5c4"
+    },
+    {
+      "path": "law-corpus/334AC0000000123.json",
+      "bytes": 552207,
+      "sha256": "1e56b5c385cd69a937bd81be9011fc1e3644ee8428e917475853413865e8c606"
+    },
+    {
+      "path": "law-corpus/335CO0000000017.json",
+      "bytes": 31369,
+      "sha256": "fe1e74bd69de5c9a57277adadb33f7196fa835577ee965d4e4672724501ab483"
+    },
+    {
+      "path": "law-corpus/335M50000400011.json",
+      "bytes": 200769,
+      "sha256": "028e9244efb725f509fb5ed7c9f4786162ada2ac2171f2ed41de4896999e6a06"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400011.zip.part001.bin",
+      "bytes": 2097152,
+      "sha256": "5630a4acbb613519b9777fe54fe64bd5ab0f985ade22eaf1e5b69c8d9432e5d0"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400011.zip.part002.bin",
+      "bytes": 1341944,
+      "sha256": "e2c38a6d289d830207f4f5879e9ab299471959d968a19fdd4c4951ec5cf3ca55"
+    },
+    {
+      "path": "law-corpus/335CO0000000040.json",
+      "bytes": 52193,
+      "sha256": "e1eadb750dcc65817a4e1de2a9af0030e078f21c891d6789c1742414be735c76"
+    },
+    {
+      "path": "law-corpus/335M50000400034.json",
+      "bytes": 52287,
+      "sha256": "2536a0f8915bf38e48cd1c27626419b1b06ea9e2741da41f309d1492d03d0e70"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400034.zip",
+      "bytes": 200541,
+      "sha256": "7ec17aa750624875c87afb724083cf981be484655c48f733d2ce357a18b1a761"
+    },
+    {
+      "path": "law-corpus/334AC0000000125.json",
+      "bytes": 457788,
+      "sha256": "998863b405bbcf57cc95bcbc1ab289aa44cc74fe833e70ca26aca64b49811bf8"
+    },
+    {
+      "path": "law-corpus/335CO0000000018.json",
+      "bytes": 9789,
+      "sha256": "97f208d05c341c5aee9547952b299f0fb858851b0d6f496f7b2d0a9e95d23886"
+    },
+    {
+      "path": "law-corpus/335M50000400012.json",
+      "bytes": 224769,
+      "sha256": "9b224186a15575fd639e31c3082ce7320787770b167ff9f86af30136111a8431"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400012.zip.part001.bin",
+      "bytes": 2097152,
+      "sha256": "09de9a5e95b4d1b81e1d93577df7a55c39d849b31ad8e7ca03c870a72690b6e4"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400012.zip.part002.bin",
+      "bytes": 1059025,
+      "sha256": "a4a4a5c645b24a7b8bc892c05c6d9ba24c73ed224a4e40a4bb2b81d2467d1024"
+    },
+    {
+      "path": "law-corpus/335CO0000000041.json",
+      "bytes": 60316,
+      "sha256": "336a443ca43b5840b433eb8c41d2ebef959a37e0f259e817e6be15e5bb960f24"
+    },
+    {
+      "path": "law-corpus/335M50000400035.json",
+      "bytes": 62110,
+      "sha256": "68c640dfbc5222b5a41eeb569789322b3e75567b0df62b0d659781df98c8ffef"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400035.zip",
+      "bytes": 285445,
+      "sha256": "d3a9403ce0e16a48b16513b984594c4254f3739f5238135c94f8eef1a2343fdc"
+    },
+    {
+      "path": "law-corpus/334AC0000000127.json",
+      "bytes": 788014,
+      "sha256": "a2528430d7ba72c3d3934d93037e872ad7a49ced6440737d0ff58d518e0f7acf"
+    },
+    {
+      "path": "law-corpus/335CO0000000019.json",
+      "bytes": 39649,
+      "sha256": "6cd257de377265df8acb82d6387ea5770ac2e7c09c501a4f6caf9b5ff2d96e97"
+    },
+    {
+      "path": "law-corpus/335M50000400013.json",
+      "bytes": 585798,
+      "sha256": "e23163c6ec12e1daf9ff511724eef61ed0b5a738446798ab39b19d91834d2452"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400013.zip.part001.bin",
+      "bytes": 2097152,
+      "sha256": "e9c53bb7c3352982c8a547ecced2220b13f1bf662270401bf60ba3ecafdde2cc"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400013.zip.part002.bin",
+      "bytes": 2097152,
+      "sha256": "59e8c20c8152313fc37fb2c6f81255087fb2cb2ec17b7df7b07a9636f40c4c33"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400013.zip.part003.bin",
+      "bytes": 1565217,
+      "sha256": "4198c7fba24c73ce93c13c09c656593bc5b46ee963fd1470b1a8c73ecd1c50a9"
+    },
+    {
+      "path": "law-corpus/335CO0000000042.json",
+      "bytes": 60745,
+      "sha256": "916631d283cb2ed0770695ef48da5fa5a602d3978355bf2e23ddf9cd95b86e40"
+    },
+    {
+      "path": "law-corpus/335M50000400036.json",
+      "bytes": 131244,
+      "sha256": "acc7f784e8272a23ef8d691eccc29c1f6094b7019db483b8ea2efef8ed7d0962"
+    },
+    {
+      "path": "law-corpus/figures-335M50000400036.zip",
+      "bytes": 502422,
+      "sha256": "fa5583bc5c9e231e890c4150f2425a4fbbc274516b353c4960d6688948967892"
+    },
+    {
+      "path": "law-corpus/402AC0000000030.json",
+      "bytes": 232391,
+      "sha256": "cc74fd4d5a4068b6cface69537177b86fe2ec924f95fa30c91d471341766d89e"
+    },
+    {
+      "path": "law-corpus/402CO0000000258.json",
+      "bytes": 42095,
+      "sha256": "76bcbcd629b4ce4259d2c3db4b66659fe3065ba3a00f41470b550a36fe051720"
+    },
+    {
+      "path": "law-corpus/402M50000400041.json",
+      "bytes": 746882,
+      "sha256": "619daa6d4172c6ab0fa051270edb9397c8f120e661e75221f8304f82c1279880"
+    },
+    {
+      "path": "law-corpus/figures-402M50000400041.zip.part001.bin",
+      "bytes": 2097152,
+      "sha256": "39785430ab04fdee0c48ff8f78822636cd8148e7bffd49b12f0a67d80ed81675"
+    },
+    {
+      "path": "law-corpus/figures-402M50000400041.zip.part002.bin",
+      "bytes": 1327797,
+      "sha256": "82617b252a7bbce292f33defa38e2df05d8c845c587b41dd52372b01152f06ee"
+    },
+    {
+      "path": "law-corpus/335CO0000000020.json",
+      "bytes": 153467,
+      "sha256": "7df8874c8f6711ad3e9831a2992e228b714179d25ae5de978340622bdfcd49ca"
+    },
+    {
+      "path": "law-corpus/353AC0000000030.json",
+      "bytes": 93969,
+      "sha256": "e7b2bca5d22cd943cabd49f3ca0579e0cd51f1c6eb48f14e66b6ae6e863daea7"
+    },
+    {
+      "path": "law-corpus/353CO0000000291.json",
+      "bytes": 44042,
+      "sha256": "1bfb6ae5e20165f9a9a8422816b2a496908eb54444feedbe483db1325122241d"
+    },
+    {
+      "path": "law-corpus/353M50000400034.json",
+      "bytes": 489302,
+      "sha256": "1d5d8d1cdacbe00286f0c738eaa2ab2b54f09296de63a6c302a6463404671115"
+    },
+    {
+      "path": "law-corpus/figures-353M50000400034.zip.part001.bin",
+      "bytes": 2097152,
+      "sha256": "f80eda3c869941f48de25b0e71e0fa129cf667223f7478111d53524542b180e4"
+    },
+    {
+      "path": "law-corpus/figures-353M50000400034.zip.part002.bin",
+      "bytes": 2097152,
+      "sha256": "271a46ab89d86ece1cb1224b7b3b776cfa353925a1eccdd5ac656e49c9748230"
+    },
+    {
+      "path": "law-corpus/figures-353M50000400034.zip.part003.bin",
+      "bytes": 2097152,
+      "sha256": "20c50b6f553753070b2286fd996b397fb1a830b3c5fe85a3ef4a91b62e395e7d"
+    },
+    {
+      "path": "law-corpus/figures-353M50000400034.zip.part004.bin",
+      "bytes": 10756,
+      "sha256": "af64f429f44cbb6aea7e6e1695ee01fac92990d9c365bf1c704a9ddcae0dff97"
+    },
+    {
+      "path": "law-corpus/345AC0000000048.json",
+      "bytes": 1004153,
+      "sha256": "df4d6fb578eacad603778640af4fce0de682d74161cfaab9e6a4df1ca0c267ad"
+    },
+    {
+      "path": "law-corpus/345CO0000000335.json",
+      "bytes": 317753,
+      "sha256": "a23a15efac954a770ff6a6da35cb3de4af5ae95934f4a5fb6f51a74eac4930ca"
+    },
+    {
+      "path": "law-corpus/345M50000080026.json",
+      "bytes": 227252,
+      "sha256": "f681bb6391d38f48432fb35e6ea994e93729a33a8a07f8e13a0fbe742f82bf30"
+    },
+    {
+      "path": "law-corpus/figures-345M50000080026.zip",
+      "bytes": 1230379,
+      "sha256": "a380ec2d87731e741c5280c5b67ffe5e7d21df2579113efc1a1d4513311d3b1a"
+    },
+    {
+      "path": "law-corpus/405AC0000000047.json",
+      "bytes": 290297,
+      "sha256": "9c0645af29a3def2aa6f4976c159e19ded1a8ea67aaac6cb31f0dda94fbc01c5"
+    },
+    {
+      "path": "law-corpus/413CO0000000388.json",
+      "bytes": 10860,
+      "sha256": "46fbd8e4d15dcd6871c8d5ce144bcc21998934f5e45c7bf8ae8d17f6403d28c0"
+    },
+    {
+      "path": "law-corpus/412AC0000000049.json",
+      "bytes": 303315,
+      "sha256": "a1a1f01dfc37198c41f7d3f1eb02e0ee1437735f57d04d695dddb8ee23db03da"
+    },
+    {
+      "path": "law-corpus/412CO0000000384.json",
+      "bytes": 36988,
+      "sha256": "79debe5e15c24b027d519f94b54e85306c01dcf922a3c7c3801f22ef0856c058"
+    },
+    {
+      "path": "law-corpus/412M50000400411.json",
+      "bytes": 160255,
+      "sha256": "9cdb6aa33fd009321a881575818b8a6217683d3353b883ffd82865a25e08e9ea"
+    },
+    {
+      "path": "law-corpus/figures-412M50000400411.zip",
+      "bytes": 749515,
+      "sha256": "9e68cdc98e4d7f332671f270d7929b09837f8d81945c02b75e672445e01f177a"
+    },
+    {
+      "path": "law-corpus/129AC0000000089.json",
+      "bytes": 1705104,
+      "sha256": "f158c1493969326440e594a82724e44dc8cdb7ed33f9923f66d9c745b42813ac"
+    },
+    {
+      "path": "law-corpus/408AC0000000109.json",
+      "bytes": 922738,
+      "sha256": "3c13bfbee5152ca973700b4d94b4e9db4d4104b492ef424baf41d9ffec59bae4"
+    },
+    {
+      "path": "law-corpus/426AC0000000068.json",
+      "bytes": 224438,
+      "sha256": "745ca49bdf6b41c81b5350f27943558adb42bfdc582ce72af452c14ecce7bd99"
+    },
+    {
+      "path": "law-corpus/337AC0000000139.json",
+      "bytes": 192375,
+      "sha256": "c70b491cbf822d1e82743dde073a8d1b3d3ab29ba8ac428a08933ca0de0b3911"
+    },
+    {
+      "path": "law-corpus/405AC0000000088.json",
+      "bytes": 152114,
+      "sha256": "e56b6a11e6dfb9d7bff8fc5108a1d3902fc80577a9b851f22a66a45779eacd6c"
+    },
+    {
+      "path": "law-corpus/354AC0000000004.json",
+      "bytes": 734973,
+      "sha256": "a4069d719567f6760dadbed7ef03d9435e6931500a7444a36ce61b5e5fa88b9f"
+    },
+    {
+      "path": "law-corpus/401AC0000000091.json",
+      "bytes": 158556,
+      "sha256": "a609b7a48e42bc23198f8b94bce466d7ae9e55eaee7e0c727d8fbaeb3ad4c9b1"
+    },
+    {
+      "path": "treaty-corpus/manifest.json",
+      "bytes": 14735,
+      "sha256": "89bf031118b30facc0931d031363eda4758d447a00d4b703f2fad725ac791e79"
+    },
+    {
+      "path": "treaty-corpus/pct.pdf",
+      "bytes": 722292,
+      "sha256": "7b794637873d3e5632330bef22f30aa97d891176da0727e4e4b16153b44d0754"
+    },
+    {
+      "path": "treaty-corpus/pct.json",
+      "bytes": 251916,
+      "sha256": "0361b953e77b268a6f564900c5948f54360a772428325079c58e07ba23e77cf7"
+    },
+    {
+      "path": "treaty-corpus/pct-regulations.pdf",
+      "bytes": 1111909,
+      "sha256": "1d48590db87ed7e29f392e1a4aa805114234590f3c084ccccb78012226329aeb"
+    },
+    {
+      "path": "treaty-corpus/pct-regulations.json",
+      "bytes": 1058659,
+      "sha256": "745901b06d1704d475491fea84523d7f7d499247811490bc50fcf4315bf104a8"
+    },
+    {
+      "path": "treaty-corpus/madrid-current-en.pdf",
+      "bytes": 1133210,
+      "sha256": "59317985e71d59e93e4338401675f84148ca0fc4f8dc5e7716878e5db07b3c09"
+    },
+    {
+      "path": "treaty-corpus/madrid-current-en.json",
+      "bytes": 604049,
+      "sha256": "53b479ec2a38781eeb5b519e8082a0bf63a8ad1a01fb508a52364c8b0d7d102e"
+    },
+    {
+      "path": "treaty-corpus/berne-en.pdf",
+      "bytes": 3634768,
+      "sha256": "4a49ed825f03d45853c05560055fb0a6fc5d52fd746730b6e9a3af5604f3a9b9"
+    },
+    {
+      "path": "treaty-corpus/berne-en.json",
+      "bytes": 257033,
+      "sha256": "6557a8f0c331d0af6fba4a948da6f727a3b84e4de273db32e9f73905f12a1c65"
+    },
+    {
+      "path": "treaty-corpus/plt-en.pdf",
+      "bytes": 1241142,
+      "sha256": "12035102b533e3e3c6d08a954151b15096d80f04996fe55baf0b841929de3905"
+    },
+    {
+      "path": "treaty-corpus/plt-en.json",
+      "bytes": 744492,
+      "sha256": "86c143a18ccb8637921a407e03bb3b84771a0870e0b80481b0747e7d24545100"
+    },
+    {
+      "path": "treaty-corpus/hague-current-en.pdf",
+      "bytes": 1931269,
+      "sha256": "2319e075795b585ae9daead7443dd1b607058bbae50fd1116c35e315fc7cf023"
+    },
+    {
+      "path": "treaty-corpus/hague-current-en.json",
+      "bytes": 456300,
+      "sha256": "e18603dc9957fe4e1728ef9fde7f712ad920270e7fc7c7098dfafdcb7aee84e5"
+    },
+    {
+      "path": "treaty-corpus/paris-source-text.html",
+      "bytes": 140213,
+      "sha256": "009b8f9c969031e9c7d1fa08433fa81a6b87ec5d121e281c3620b8dca8cb3257"
+    },
+    {
+      "path": "treaty-corpus/paris.json",
+      "bytes": 145634,
+      "sha256": "b59f1fe66fb95c8326b788fc8e1c117dfc48fce97cf33b542acbd18b7a7d56d4"
+    },
+    {
+      "path": "treaty-corpus/trips-source-text.html",
+      "bytes": 105208,
+      "sha256": "dda31b432528c5e791f9bf4ea88c0306f13152d4e966e0e7731740c0a0a0f625"
+    },
+    {
+      "path": "treaty-corpus/trips.json",
+      "bytes": 203371,
+      "sha256": "2e1e1ca446641ef61127f752511af0be55cf8a890601c6fcd63e538d5ffa1be1"
+    },
+    {
+      "path": "treaty-corpus/tlt-source-text.html",
+      "bytes": 136825,
+      "sha256": "3df75e9a57a4903aaf00ce816527d870c9c3c23542141aea5f9a6b172ef78e1d"
+    },
+    {
+      "path": "treaty-corpus/tlt.json",
+      "bytes": 146671,
+      "sha256": "1c661b80cff28cf6f8988ff2e4d60627f2f265981443f4dadf4267b1ce4b7472"
+    },
+    {
+      "path": "treaty-corpus/wct-source-text.html",
+      "bytes": 31055,
+      "sha256": "469a6289c733b87e13ed9863bea0c3e53e941f54b3406845cfb12fd3a97542b2"
+    },
+    {
+      "path": "treaty-corpus/wct.json",
+      "bytes": 32478,
+      "sha256": "1286fd7a0a4a93619e25b696f6e05f23ec8dfe96ccdbe7d8f88d07dd934cb508"
+    },
+    {
+      "path": "treaty-corpus/wppt-source-text.html",
+      "bytes": 46863,
+      "sha256": "de1508ba8ee98892cb5a4051ae2fc1fbc560ee196fc56f0cc7fb8318faa86c44"
+    },
+    {
+      "path": "treaty-corpus/wppt.json",
+      "bytes": 48996,
+      "sha256": "8dd152ac7762ec6fe75253b6fb5e2013b72d8565fdee98a1ed78e0492569bbde"
+    },
+    {
+      "path": "treaty-corpus/madrid-source-text.html",
+      "bytes": 85546,
+      "sha256": "4093e97de772792b6ec3d70fc995d03a9c6e8c0e5542000d7ef5797760a00085"
+    },
+    {
+      "path": "treaty-corpus/madrid.json",
+      "bytes": 87341,
+      "sha256": "f6b0b0ff101ad1aae76520dcd89d7b74d76f20388567f9f4c58cd64597ae1b95"
+    }
+  ],
+  "totalBytes": 79903657
+}

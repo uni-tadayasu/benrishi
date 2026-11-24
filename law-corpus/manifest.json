@@ -1,0 +1,4142 @@
+{
+  "asOf": "2026-11-25",
+  "verifiedAt": "2026-11-24T22:53:02.310049+00:00",
+  "source": "e-Gov 法令API Version2",
+  "sourceUrl": "https://laws.e-gov.go.jp/api/2/swagger-ui/index.html",
+  "scopeNote": "弁理士試験の主要知財法令、施行令・規則・登録令等と民事・行政の関連法令を対象とする有限収録リスト。日本の全関連法令や将来改正を網羅する保証ではない。",
+  "attachmentNote": "図・画像様式は無圧縮ZIPに収録した405点のPDF。表示時は端末内でPDFのデータを取り出します。",
+  "lawCount": 42,
+  "requestedLawCount": 42,
+  "articleCount": 6639,
+  "mainArticleCount": 4544,
+  "supplementaryArticleCount": 2095,
+  "appendixCount": 2260,
+  "figureCount": 405,
+  "totalBytes": 57564137,
+  "laws": [
+    {
+      "id": "334AC0000000121",
+      "title": "特許法",
+      "lawNum": "昭和三十四年法律第百二十一号",
+      "category": "特許",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=334AC0000000121_20260624_508AC0000000046",
+      "verifiedAt": "2026-11-24T22:52:59.992778+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "334AC0000000121_20260624_508AC0000000046",
+      "titleReading": "とっきょほう",
+      "sourceArticleCount": 464,
+      "articleCount": 464,
+      "mainArticleCount": 302,
+      "supplementaryArticleCount": 162,
+      "sourceTextLeafCount": 3925,
+      "missingTextLeafCount": 0,
+      "appendixCount": 74,
+      "figureCount": 0,
+      "rawSha256": "de7a31f639811725fccfcc8fac853e44feeec3bc0722f975e81a42e4ebf8a457",
+      "rawBytes": 941523,
+      "file": "334AC0000000121.json",
+      "bytes": 1094065,
+      "figureNote": false
+    },
+    {
+      "id": "335CO0000000016",
+      "title": "特許法施行令",
+      "lawNum": "昭和三十五年政令第十六号",
+      "category": "特許",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000016_20260501_507CO0000000362",
+      "verifiedAt": "2026-11-24T22:52:59.664982+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000016_20260501_507CO0000000362",
+      "titleReading": "とっきょほうしこうれい",
+      "sourceArticleCount": 48,
+      "articleCount": 48,
+      "mainArticleCount": 14,
+      "supplementaryArticleCount": 34,
+      "sourceTextLeafCount": 608,
+      "missingTextLeafCount": 0,
+      "appendixCount": 56,
+      "figureCount": 0,
+      "rawSha256": "c8820c2a333fbc50dbacc2e44391007cff677c385accbee7fef717c92ed56238",
+      "rawBytes": 140116,
+      "file": "335CO0000000016.json",
+      "bytes": 144285,
+      "figureNote": false
+    },
+    {
+      "id": "335M50000400010",
+      "title": "特許法施行規則",
+      "lawNum": "昭和三十五年通商産業省令第十号",
+      "category": "特許",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335M50000400010_20260521_508M60000400043",
+      "verifiedAt": "2026-11-24T22:52:59.947845+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335M50000400010_20260521_508M60000400043",
+      "titleReading": "とっきょほうしこうきそく",
+      "sourceArticleCount": 319,
+      "articleCount": 319,
+      "mainArticleCount": 243,
+      "supplementaryArticleCount": 76,
+      "sourceTextLeafCount": 2851,
+      "missingTextLeafCount": 0,
+      "appendixCount": 276,
+      "figureCount": 135,
+      "rawSha256": "1518f3cfabe0969b11f49e4787716f9bce9ab2c7a0412bee17b61187e45be5bd",
+      "rawBytes": 653749,
+      "file": "335M50000400010.json",
+      "bytes": 904199,
+      "figureNote": true,
+      "offlineFigureFiles": 135,
+      "offlineFigureBytes": 17400700,
+      "figureArchive": {
+        "file": "figures-335M50000400010.zip",
+        "bytes": 17423672,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 135,
+        "entries": [
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049555.pdf",
+            "mimeType": "application/pdf",
+            "size": 327461,
+            "sha256": "b6b3380f7d7ef84f81c655d88a614ef1e0e2d0dddf206246d6015fad7e69331c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049556.pdf",
+            "mimeType": "application/pdf",
+            "size": 173667,
+            "sha256": "c1e41f0e7581d10e0d9e6a4e8d93654ff61d811fbcafbe4f1df6511a3e5eb99d"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049557.pdf",
+            "mimeType": "application/pdf",
+            "size": 306377,
+            "sha256": "440cbc95e2d2d56336c614bf76c28848fc842ad7866552c820b2bf24be8a41e2"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065429.pdf",
+            "mimeType": "application/pdf",
+            "size": 170496,
+            "sha256": "a5401625be9cb2bd80b598de71f7c3f5b14319ff5cf3ae6760176de97a0ab533"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000070950.pdf",
+            "mimeType": "application/pdf",
+            "size": 93702,
+            "sha256": "d5867234888d9d4d0f0d111b3e425337debb0f864f9911a5176b249a03f4dc39"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049425.pdf",
+            "mimeType": "application/pdf",
+            "size": 131039,
+            "sha256": "8627e8dfac6dc6047bbed2d86128d0aa59856f9dcf606acc4a03ccbd05846bfa"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049426.pdf",
+            "mimeType": "application/pdf",
+            "size": 109481,
+            "sha256": "819f2ab022ceb0365a0ce25e512c79453d50b4e103d58138faedbd148febc072"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049427.pdf",
+            "mimeType": "application/pdf",
+            "size": 137433,
+            "sha256": "bdc4c5eebb196fefa412dee533259203781a6747a715d9640ca8422cef7faa39"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065405.pdf",
+            "mimeType": "application/pdf",
+            "size": 101324,
+            "sha256": "68ca98d8d51aadbc162f5c72d87320cda5af72a33b26565c3a886c41ba4faf75"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049429.pdf",
+            "mimeType": "application/pdf",
+            "size": 167751,
+            "sha256": "cec944cbed345bbe5f02394c804a08b0fa134cba90ba9a1ab2164f866d3032ec"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049430.pdf",
+            "mimeType": "application/pdf",
+            "size": 150335,
+            "sha256": "2fb41c14d6c7d2472d564860eb9ebceee5b162d2a72ce799e0358d601b2aae7a"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065088.pdf",
+            "mimeType": "application/pdf",
+            "size": 50203,
+            "sha256": "f7e825473b89b44670391d2492f65c09b34035e54bc434a999196541406c284a"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065089.pdf",
+            "mimeType": "application/pdf",
+            "size": 40278,
+            "sha256": "fa42042679a3aaaa21bcd0bda004ec898f07bff05702063965604d5e691b1f9f"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000075273.pdf",
+            "mimeType": "application/pdf",
+            "size": 311466,
+            "sha256": "7d27b365fc12434157a7dbcac5a8ad29fe8ccdd70e39019ef0148ac434558dd2"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268164.pdf",
+            "mimeType": "application/pdf",
+            "size": 196969,
+            "sha256": "14ccb044a16d790346272949b747610cba4c1e2949bcc7b5919316d223a06b97"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000070952.pdf",
+            "mimeType": "application/pdf",
+            "size": 48678,
+            "sha256": "b736655b12c51ab499d3ef5530268bdace66bfc801b5e427e4e800d2214d50a5"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000075274.pdf",
+            "mimeType": "application/pdf",
+            "size": 191549,
+            "sha256": "08d7a42b94ed05a489e904ab56f37a3e259c0816faac88657a2531ffd926079a"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000075275.pdf",
+            "mimeType": "application/pdf",
+            "size": 28735,
+            "sha256": "af337d1098ae281dc79bd179010e4b651ca55033c1ce4cc0d599199e2fac9d12"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065093.pdf",
+            "mimeType": "application/pdf",
+            "size": 24225,
+            "sha256": "3b193099e527eaecbcd3da2384e611f9d0ee56a62dff47c862ad02eb17d950eb"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049440.pdf",
+            "mimeType": "application/pdf",
+            "size": 101141,
+            "sha256": "c67fb6222a3380f80805cc56c12330b1af94dff0610027acd0f9054b56e3a1c5"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049441.pdf",
+            "mimeType": "application/pdf",
+            "size": 91195,
+            "sha256": "1a621b5d9cf66b88da6fac4dd1ffbd71c427f850d1d2bf4522ed16c6b4f811ee"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268165.pdf",
+            "mimeType": "application/pdf",
+            "size": 205183,
+            "sha256": "42115e66549ac0ec7c93e8c1aaf463677bc0b513f0c0ef38559f4543bd0e3247"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000075276.pdf",
+            "mimeType": "application/pdf",
+            "size": 51657,
+            "sha256": "a16007cbd95db1a8ab0768503f11dc385968991335783e7f0ba9928231af7f7a"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000070953.pdf",
+            "mimeType": "application/pdf",
+            "size": 70133,
+            "sha256": "2655c27bb6bc6656e7af44970af2f6d9ccf95c2a2303206f1b1754ce395d457c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049445.pdf",
+            "mimeType": "application/pdf",
+            "size": 92240,
+            "sha256": "db9819f114ff3349e4e8a90e7a7c3c22f1bcbd5ccc0e404097bf1702c1f93952"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000071738.pdf",
+            "mimeType": "application/pdf",
+            "size": 369102,
+            "sha256": "e321155b716f3e9ea83156e0ab4f3e1dd086cc833d123b08ef01e307320cf6d9"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049447.pdf",
+            "mimeType": "application/pdf",
+            "size": 77398,
+            "sha256": "6660f5a91f4c51cb6eae403b897594f630266b0ac5fa73208a03891fc0280939"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049448.pdf",
+            "mimeType": "application/pdf",
+            "size": 99785,
+            "sha256": "c9f8ed6a0979bb4cf144854d33d3820cbb46e11bfbade8addb9b40bced5500d1"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000075281.pdf",
+            "mimeType": "application/pdf",
+            "size": 71342,
+            "sha256": "45cd9654df02d43bad32bcdf4d997186c85ebdd1608bc81cfee989508328622c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000075282.pdf",
+            "mimeType": "application/pdf",
+            "size": 39620,
+            "sha256": "69746b3c3e40481b6e9d0454a1220e780b63f717851bae7992f7fff585be796b"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065102.pdf",
+            "mimeType": "application/pdf",
+            "size": 196976,
+            "sha256": "f756d213af272b8128fab0e15f79281aa40dec03283723fba80d2fac9dbf77aa"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049452.pdf",
+            "mimeType": "application/pdf",
+            "size": 192276,
+            "sha256": "c78f50d0773f63bb00fcfe4f2317fabaceb388b3480cf4817224611bf29cb3fe"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049453.pdf",
+            "mimeType": "application/pdf",
+            "size": 148435,
+            "sha256": "8ee4bac9586e305fd47aca115af64c0ba9b70bee66570ec183cc43e1c3d4d221"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049454.pdf",
+            "mimeType": "application/pdf",
+            "size": 149393,
+            "sha256": "5ea1ae662cf403e0b38d64bebd7d711e19ffcf900b6b9eb90766a088532894fc"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049455.pdf",
+            "mimeType": "application/pdf",
+            "size": 46401,
+            "sha256": "86067e5fae224b7789d6891a61a245522a250118ae789df46b7ee97461a524bc"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049456.pdf",
+            "mimeType": "application/pdf",
+            "size": 46830,
+            "sha256": "47e20f7138a263b8851bbc86bee7942f8be4c9fe2bb767cb73619a50e3091147"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049457.pdf",
+            "mimeType": "application/pdf",
+            "size": 36090,
+            "sha256": "0b8e96b0b809a102590541c4cea7f9604c30de5b52ce27cce55c0bd7e433a6b9"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049458.pdf",
+            "mimeType": "application/pdf",
+            "size": 54614,
+            "sha256": "5234cd4921f3a86d4df2a34b15aec3a94bf5c9d5b6b0e509814a7981be3bbe62"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065103.pdf",
+            "mimeType": "application/pdf",
+            "size": 45179,
+            "sha256": "a75be59356b36503b095e14e26b21d11defecea99a3ad2082079a84cc6af540d"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065104.pdf",
+            "mimeType": "application/pdf",
+            "size": 19611,
+            "sha256": "ce33350ef53e00ef31fe73cb301ec27e9a78c053be9c83f4c564605a39f7a278"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049461.pdf",
+            "mimeType": "application/pdf",
+            "size": 34267,
+            "sha256": "bfa5f1a8db0a7b8f2284aaea3ad369c6b6d96fbee7f3efcf24b1421b897e7fc2"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049462.pdf",
+            "mimeType": "application/pdf",
+            "size": 30286,
+            "sha256": "7187eb86540324939384762e4e90ac1953b06a90fd4b45730a6df62528aa6fea"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049463.pdf",
+            "mimeType": "application/pdf",
+            "size": 46616,
+            "sha256": "f398270a32f3c33a7226553e6fc7e07c5e9868eb98946259466743162b1a15b1"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000066380.pdf",
+            "mimeType": "application/pdf",
+            "size": 58995,
+            "sha256": "3634ad7c6be0fb3a0e3b02b538bece5cb0ddad5b9cb113dab9cd46810b3ffc53"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268166.pdf",
+            "mimeType": "application/pdf",
+            "size": 193321,
+            "sha256": "4d2c304acab324da6e35474491d291f6ec40c5d04901ddc55e5519611ee67e3d"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049466.pdf",
+            "mimeType": "application/pdf",
+            "size": 91725,
+            "sha256": "463a42ce54131de401ae70dac214aba99c98546a2a37c1715a901ca3192c94af"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049467.pdf",
+            "mimeType": "application/pdf",
+            "size": 76284,
+            "sha256": "9ceeb56acdb844356e8abbe8e82d225928f573ac2920c430f02e6b267e14e5af"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049468.pdf",
+            "mimeType": "application/pdf",
+            "size": 102712,
+            "sha256": "8434da4a690f424c408ad1b45f444a2070a5ef0218796d91453a45894af37bdc"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000070955.pdf",
+            "mimeType": "application/pdf",
+            "size": 43043,
+            "sha256": "7976f79df17d9840450fcbdf378aab66efcdb44c0d74216fab70fe1b57a59ef9"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000070956.pdf",
+            "mimeType": "application/pdf",
+            "size": 80280,
+            "sha256": "eb5e7e68300b1054f7ccc5736a2ccc9d3eea4ad2da9072da00651adb5f73a402"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268167.pdf",
+            "mimeType": "application/pdf",
+            "size": 193032,
+            "sha256": "2ad5c525bf3be56a0df10170521c6788991af948eb3282a6fd7397b543de0b03"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065105.pdf",
+            "mimeType": "application/pdf",
+            "size": 49247,
+            "sha256": "30c7eab54695d906c716409f9313502aa905e21b3df0f21a8a0b1c111a7aa9ca"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000070957.pdf",
+            "mimeType": "application/pdf",
+            "size": 50231,
+            "sha256": "deb4c70d4d49b2487ff33f9fb784caee5cc47bc708c8a787ef7c945d3b6bae54"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065107.pdf",
+            "mimeType": "application/pdf",
+            "size": 67021,
+            "sha256": "e52bb81619916f932511b3bb539762a15763fc9f9b2d23d0cb9b99b0d4557c02"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049475.pdf",
+            "mimeType": "application/pdf",
+            "size": 60271,
+            "sha256": "656445f349bbe1a309b68f71786a04e68f791c07f132e214dfddd1ee24b2175a"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049476.pdf",
+            "mimeType": "application/pdf",
+            "size": 71934,
+            "sha256": "21ba890c1696b43fb6bc6353ebbfd6d1eacae5fde9f0f4df7f5810ca42ac81ef"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049477.pdf",
+            "mimeType": "application/pdf",
+            "size": 94964,
+            "sha256": "49601ce427596141dfc41d4fc5661a4327f680920e8be124714dc7124b5e7246"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049478.pdf",
+            "mimeType": "application/pdf",
+            "size": 69009,
+            "sha256": "e477c721cd8b1ab0426a848ff9f9d61e0cc203910db608238141aca821de4156"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049479.pdf",
+            "mimeType": "application/pdf",
+            "size": 95159,
+            "sha256": "ed2ae2329076dac778a4619430477773745f94b9564803bd14d84ad64506df8f"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000055357.pdf",
+            "mimeType": "application/pdf",
+            "size": 178148,
+            "sha256": "e7c638cf157e2703f3cdc1d067128cfd6f10da5337be4ec3e645e660f270e325"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049481.pdf",
+            "mimeType": "application/pdf",
+            "size": 128951,
+            "sha256": "4daa97aae91de70313ec6410c3da6d8534bf5081db217f9719d3a8bb0b0d5f10"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000075278.pdf",
+            "mimeType": "application/pdf",
+            "size": 30399,
+            "sha256": "f3c109fe980a1e37c0a3dbe612cefa702599a49992519488afa5df68557eebf6"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049483.pdf",
+            "mimeType": "application/pdf",
+            "size": 63233,
+            "sha256": "c864132d38b20d930228587640c34534839c59ebeb4cb1f66ab27bb4afbf343c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049484.pdf",
+            "mimeType": "application/pdf",
+            "size": 127587,
+            "sha256": "e7f3367d4975a325cea3a702fe52b11192b1ee72edc564c15682daf079f84a13"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065108.pdf",
+            "mimeType": "application/pdf",
+            "size": 48671,
+            "sha256": "22b40ea73e942610be8013b97bc02dcab72384fe9f61377180f177411751db6d"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049486.pdf",
+            "mimeType": "application/pdf",
+            "size": 63029,
+            "sha256": "146e266504be4bf2609b749ad9ddfca0e3990254e44be40008ab213af06d23d7"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049487.pdf",
+            "mimeType": "application/pdf",
+            "size": 59701,
+            "sha256": "7dac4c74bafe0b3338d86b1a523614e2aa603c5455b4c97de11981095aefd407"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049488.pdf",
+            "mimeType": "application/pdf",
+            "size": 56604,
+            "sha256": "a4dbfa615d6d0cb5d1e42eb7b828734212cbcb6b8ddfffda2932ba11d30097ef"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049489.pdf",
+            "mimeType": "application/pdf",
+            "size": 114843,
+            "sha256": "6350b8ef447d9b6d9a2a37ba35061bbb23c24ea463ad40314e7bdede35588723"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049490.pdf",
+            "mimeType": "application/pdf",
+            "size": 63127,
+            "sha256": "7e0e2ef59eb17091ba5e4c413391797922972e06a7b63cfef486e0ffc761cb03"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049491.pdf",
+            "mimeType": "application/pdf",
+            "size": 67098,
+            "sha256": "a59779829e212f79120475b5d46b0666b5ae6ab12501b8e54ba1437948194952"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065109.pdf",
+            "mimeType": "application/pdf",
+            "size": 34399,
+            "sha256": "a6d9e0cb250721878b81a123f3a448d32baba84876f390a1690e5f29be9d536c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049493.pdf",
+            "mimeType": "application/pdf",
+            "size": 194022,
+            "sha256": "b6f914ca45e82aab7af22821bbbaef8b191adb7447b0904d2bc364330dda3b8d"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049494.pdf",
+            "mimeType": "application/pdf",
+            "size": 85930,
+            "sha256": "cea9ce469df7eb69ec7bf40028ba5c697ec33f777570e5ff31d9f5d3493b5e29"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065110.pdf",
+            "mimeType": "application/pdf",
+            "size": 76099,
+            "sha256": "85196e6fc8f6b49cd976175b7f90e2508eab33617107805f0706504dec8f7dd3"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268168.pdf",
+            "mimeType": "application/pdf",
+            "size": 194975,
+            "sha256": "47e25b55f8c79072bf99329b2307bc4299979c95f2b61f063af49419b88d481c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268169.pdf",
+            "mimeType": "application/pdf",
+            "size": 193653,
+            "sha256": "a215cd008af994084c2251825571e62247d61b14c90dfd7371358fb3419bdfe4"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049498.pdf",
+            "mimeType": "application/pdf",
+            "size": 81750,
+            "sha256": "7595bfa3ce4acd2cdcfcc890960b3a85fd4c4c9f823e5d04f14eff78596c55ff"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268170.pdf",
+            "mimeType": "application/pdf",
+            "size": 193990,
+            "sha256": "78eaf20733c0a6a74a9f0cd575dcf5355c2de22105039cc91a498973c2384a8f"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268171.pdf",
+            "mimeType": "application/pdf",
+            "size": 193850,
+            "sha256": "1e4e55d2a1b876a08b5155f3021b1d6a981185c69d55900513a32f53090fd2a7"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268172.pdf",
+            "mimeType": "application/pdf",
+            "size": 192768,
+            "sha256": "8067c3d9d88fd4991da462d0309842a1ce2cd31b96b9a278770a2d4639475a3a"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268173.pdf",
+            "mimeType": "application/pdf",
+            "size": 193055,
+            "sha256": "69f812724a3234529b7ae35be68acfda53b10d7c8e38c53c7985c0302b8f9ed3"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268174.pdf",
+            "mimeType": "application/pdf",
+            "size": 196944,
+            "sha256": "7e9095d6d0b2ed7c0df7117d1f14370e6021caf8d113dee49c6038f5678bd85b"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268175.pdf",
+            "mimeType": "application/pdf",
+            "size": 191483,
+            "sha256": "2b6f4823682dc967d48cb39996cf349ac23fed86a1ba56fab02410b5f4dbcb2b"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268176.pdf",
+            "mimeType": "application/pdf",
+            "size": 195163,
+            "sha256": "13673c66aeed35c116e45f4d986a5834a5a0f7ab4804d920563379fac9b82c0b"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268177.pdf",
+            "mimeType": "application/pdf",
+            "size": 192029,
+            "sha256": "185dc9fdd69d5b6ad0124f2f095ee9418f092e6eabdec8329e69faaba33df6ed"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268178.pdf",
+            "mimeType": "application/pdf",
+            "size": 195074,
+            "sha256": "fcbba22a8610e1c159f2cdd005a4e7790458b0726c25944509771205ece2ed71"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268179.pdf",
+            "mimeType": "application/pdf",
+            "size": 191383,
+            "sha256": "0d1cf706d7a89630a6ddb1a24998d7e832fb6a48122524e488eb527eb01e175f"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268180.pdf",
+            "mimeType": "application/pdf",
+            "size": 195303,
+            "sha256": "271b906f42edb9c7d49eb8aca6ca1b60bbe2693ef45c55274e298572d0156edc"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268181.pdf",
+            "mimeType": "application/pdf",
+            "size": 195570,
+            "sha256": "eaf9fdcabca57f6cbddcfb425a45eadac8d763026acd29458e6305e7a0d820f5"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268182.pdf",
+            "mimeType": "application/pdf",
+            "size": 191606,
+            "sha256": "2129a0842fc980a1c0b2dbc97a60bf357d3d14a9426fad36eda9d5ef2945baa4"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268183.pdf",
+            "mimeType": "application/pdf",
+            "size": 194186,
+            "sha256": "428b4dc980307cfe235eda565d9299cd4bafb8710c1e07b3c1f1448ee30ebf56"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268184.pdf",
+            "mimeType": "application/pdf",
+            "size": 191371,
+            "sha256": "4d3714f69e4ccd0c18d9b9db2880f562004cff0c61b40681ab52b46520f67712"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268185.pdf",
+            "mimeType": "application/pdf",
+            "size": 191401,
+            "sha256": "7b7f04060d059640aa23d4fb25298357a11587948e09752849e8c5f658bb861f"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268186.pdf",
+            "mimeType": "application/pdf",
+            "size": 190939,
+            "sha256": "984f56da7f7db151c980b97246136c21e08b91277574c9dc1620bd4d1f6ed743"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268187.pdf",
+            "mimeType": "application/pdf",
+            "size": 191184,
+            "sha256": "87a7283b9d5e29054943a46aa121b1fef269ddd583204323718396198071dece"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268188.pdf",
+            "mimeType": "application/pdf",
+            "size": 191610,
+            "sha256": "a88d32c403e60c3f1d66fe6146c8c8f88b2f36693b678ba98516ab7bef167942"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268189.pdf",
+            "mimeType": "application/pdf",
+            "size": 190624,
+            "sha256": "c23a2a6ddde410d0e55851af1b5e75124b777b8a1a4ea9b4687ab74ac484f921"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049518.pdf",
+            "mimeType": "application/pdf",
+            "size": 84363,
+            "sha256": "bf87771c96bc1e231814a548983c942861a237a15f4298697578fe329da4f1fd"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268190.pdf",
+            "mimeType": "application/pdf",
+            "size": 193397,
+            "sha256": "dff306c04c3c42beed59b026fc0faa11f7ddbdfaea45583bf889847b59c748c5"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268191.pdf",
+            "mimeType": "application/pdf",
+            "size": 190902,
+            "sha256": "0b2322cf6fc61eef84758fa56ea8b4492f8c5cb3a4d43e025c14b5c7c6fb9605"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268192.pdf",
+            "mimeType": "application/pdf",
+            "size": 191214,
+            "sha256": "9610e7e6da650cf3db28f9f84a96a12e615b7ce01f47aec15ae55888365337b6"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268193.pdf",
+            "mimeType": "application/pdf",
+            "size": 190462,
+            "sha256": "093c72f56f66199868210715905f6185cf71ad7c27e44b761412a4c9f03825c3"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268194.pdf",
+            "mimeType": "application/pdf",
+            "size": 190608,
+            "sha256": "74de57a6a1262caa671f0841a52a3757e8b8d21ea94cf315ed7722883af554aa"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268195.pdf",
+            "mimeType": "application/pdf",
+            "size": 190658,
+            "sha256": "6f59587bd5108c342d053356e65d573543abbea50db114e6628f33bbcff1b580"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049525.pdf",
+            "mimeType": "application/pdf",
+            "size": 79592,
+            "sha256": "8bde29a9170802b940e762854004f358b1331edd70e7a573531b1734d2979b78"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268196.pdf",
+            "mimeType": "application/pdf",
+            "size": 190646,
+            "sha256": "09ada24ad12ed4338969ea97e3e574435784e8fa16a48c5c73097c06d6075273"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268197.pdf",
+            "mimeType": "application/pdf",
+            "size": 190506,
+            "sha256": "1c960261d3cdfc476328d62ea3bd59bb2eb7934a2d66c0e6489cbb817704d269"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049528.pdf",
+            "mimeType": "application/pdf",
+            "size": 73544,
+            "sha256": "426360bebd6c1d0db1009c0a857662b5a4c7979b5f84e7063aa0611805f09ed8"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268198.pdf",
+            "mimeType": "application/pdf",
+            "size": 190438,
+            "sha256": "565ce77efbc58786eb8d78750ce8c28b246e56c20c738ecd21d4aacc5b172176"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268199.pdf",
+            "mimeType": "application/pdf",
+            "size": 190428,
+            "sha256": "a1139a92a5103abfe0b77c40a53a77485bd4dac8a2f098333c63eee191f4899c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268200.pdf",
+            "mimeType": "application/pdf",
+            "size": 190838,
+            "sha256": "87ce605c89827fe1cb03978e7385d8a759968dbbe65c888c68ac0d45c52a987b"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049532.pdf",
+            "mimeType": "application/pdf",
+            "size": 80904,
+            "sha256": "1bd7339edec3c69bb895b913adff1097dba54c071fe7ace6d3740de267ecef1f"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268201.pdf",
+            "mimeType": "application/pdf",
+            "size": 190592,
+            "sha256": "182ed7c615acd3b2f08dbf74a46dda29b6afa1fa8cdb5c04ce74f179b17ddffa"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049534.pdf",
+            "mimeType": "application/pdf",
+            "size": 73064,
+            "sha256": "6de94c1b1d959a49eb3859250a1988aacf50991ab4c05c477b254a776a256720"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268202.pdf",
+            "mimeType": "application/pdf",
+            "size": 190648,
+            "sha256": "f4352a94085a3a1c5d81f89a39bc4bc6cca8017d21c008b894b4cb7a3bf63ba8"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049536.pdf",
+            "mimeType": "application/pdf",
+            "size": 74455,
+            "sha256": "0525e366f01de38f40e2b7a782fff7bd25d68cb2fdf0d27faaee41b1367ae296"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268203.pdf",
+            "mimeType": "application/pdf",
+            "size": 190533,
+            "sha256": "a28d69ce4e963321274facb46ffceba26e4f63a679da42daa95c7415a82f6a4c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049538.pdf",
+            "mimeType": "application/pdf",
+            "size": 72584,
+            "sha256": "f894cb9324e36c4f6342a04b43404f42589d721745a62c40cc070c476e0fd527"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268204.pdf",
+            "mimeType": "application/pdf",
+            "size": 190683,
+            "sha256": "07fde36dc1b77cc0ed52fd59877c612acf66e51f0293dde12891d49e09b60913"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049540.pdf",
+            "mimeType": "application/pdf",
+            "size": 73123,
+            "sha256": "ea732f86f50e73311ff09cbe65505cbc9deb499a1ef4ad4537891cdd719aca41"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268205.pdf",
+            "mimeType": "application/pdf",
+            "size": 190712,
+            "sha256": "5dcf5225dbb3342b4e692b305076e4d48a246e38f40dddfed1b72e4db5b42856"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049542.pdf",
+            "mimeType": "application/pdf",
+            "size": 74323,
+            "sha256": "189fbf246bc6cda5a6c33c18f17724fb01eb07772b895465a92523216a9ead5f"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268206.pdf",
+            "mimeType": "application/pdf",
+            "size": 190501,
+            "sha256": "5c9148395adf3c8756828ae05f2abd4d33935d0243b309080c889b1a5bdd2620"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049544.pdf",
+            "mimeType": "application/pdf",
+            "size": 80591,
+            "sha256": "d363986aea3867ad5bb7798aea3ebf5e22c1308a3f277292bb2c0c088d6b5e0d"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268207.pdf",
+            "mimeType": "application/pdf",
+            "size": 190668,
+            "sha256": "a65f727cfdfe9cf28f7e827c316281aeab19cc281ec0304c47163e7670142976"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268208.pdf",
+            "mimeType": "application/pdf",
+            "size": 191750,
+            "sha256": "95d00231c18a482887a9cf7a161ccbd182c5d5962e9a9ea128c8b2f1cbc7de4c"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000064529.pdf",
+            "mimeType": "application/pdf",
+            "size": 147054,
+            "sha256": "152c4811146b0f582eb5db5e7063f168d3aac6d9d699a58b04efe131a0db35a0"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2JH00000268209.pdf",
+            "mimeType": "application/pdf",
+            "size": 193646,
+            "sha256": "6a7f47d40649de43b5734214d703a8cd91d3b81fa4aa079e3c6c021d59929ee8"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000070969.pdf",
+            "mimeType": "application/pdf",
+            "size": 78870,
+            "sha256": "e2b715de3f0445504db70f59e1ce0a930f90c63b601ba4bc24e62428724bd9ec"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000065097.pdf",
+            "mimeType": "application/pdf",
+            "size": 40420,
+            "sha256": "c1d7200b78aec393bb00408991b2e9bce3be9177e362dc8fa7b2073fa60a2788"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000049551.pdf",
+            "mimeType": "application/pdf",
+            "size": 86443,
+            "sha256": "c5c75f92d53c21d13637d7d0ae3770e12febbe76fb545497aebd0b6272267998"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000071544.pdf",
+            "mimeType": "application/pdf",
+            "size": 105589,
+            "sha256": "a571054e3ef6d83ca2281103a36ce58d5ee266013063deefac543bbc49167dca"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000071545.pdf",
+            "mimeType": "application/pdf",
+            "size": 84254,
+            "sha256": "6ed945f0083bff28a43e9aa7ce2110462620dc813f96eb52b9f272565e55a047"
+          },
+          {
+            "path": "figures/335M50000400010/pict/2FH00000071547.pdf",
+            "mimeType": "application/pdf",
+            "size": 75778,
+            "sha256": "1eb4446a0f28e33e25ba113d848d3280daaeb311d78da44a5bf540e409d72269"
+          }
+        ]
+      }
+    },
+    {
+      "id": "335CO0000000039",
+      "title": "特許登録令",
+      "lawNum": "昭和三十五年政令第三十九号",
+      "category": "特許",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000039_20260521_508CO0000000038",
+      "verifiedAt": "2026-11-24T22:52:59.793422+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000039_20260521_508CO0000000038",
+      "titleReading": "とっきょとうろくれい",
+      "sourceArticleCount": 95,
+      "articleCount": 95,
+      "mainArticleCount": 73,
+      "supplementaryArticleCount": 22,
+      "sourceTextLeafCount": 659,
+      "missingTextLeafCount": 0,
+      "appendixCount": 41,
+      "figureCount": 0,
+      "rawSha256": "a0ca1587dc09509e8bf04132d3b2fa91edaedeb2acdaa016cd1f2873863c933d",
+      "rawBytes": 140998,
+      "file": "335CO0000000039.json",
+      "bytes": 145823,
+      "figureNote": false
+    },
+    {
+      "id": "335M50000400033",
+      "title": "特許登録令施行規則",
+      "lawNum": "昭和三十五年通商産業省令第三十三号",
+      "category": "特許",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335M50000400033_20260521_508M60000400043",
+      "verifiedAt": "2026-11-24T22:52:59.957148+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335M50000400033_20260521_508M60000400043",
+      "titleReading": "とっきょとうろくれいしこうきそく",
+      "sourceArticleCount": 98,
+      "articleCount": 98,
+      "mainArticleCount": 79,
+      "supplementaryArticleCount": 19,
+      "sourceTextLeafCount": 717,
+      "missingTextLeafCount": 0,
+      "appendixCount": 70,
+      "figureCount": 18,
+      "rawSha256": "a0baecbccf8c5d56faf7a0ad79951cbd00854a4ae6d950bd783ce270e64a9bb9",
+      "rawBytes": 168683,
+      "file": "335M50000400033.json",
+      "bytes": 212235,
+      "figureNote": true,
+      "offlineFigureFiles": 18,
+      "offlineFigureBytes": 1034153,
+      "figureArchive": {
+        "file": "figures-335M50000400033.zip",
+        "bytes": 1037235,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 18,
+        "entries": [
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058556.pdf",
+            "mimeType": "application/pdf",
+            "size": 54841,
+            "sha256": "a32503035688b92ea7a0d7fbedc1a785530cbba20ccaeef5aefccf1bdda063fa"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058557.pdf",
+            "mimeType": "application/pdf",
+            "size": 38784,
+            "sha256": "c503c8367c927a1f9d6c7187f31327cc8013d96c9f8aa0a6badb6c66df5e7bb5"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058558.pdf",
+            "mimeType": "application/pdf",
+            "size": 30706,
+            "sha256": "4760e5ed8b7e78c0941ffc4a1f6c288d1803b6931e90ae242192096407246275"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058559.pdf",
+            "mimeType": "application/pdf",
+            "size": 38326,
+            "sha256": "1d00a4f884bd88ed7abf4186dc5afc5d57af427f2ab580d563116fdbd61f310f"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058560.pdf",
+            "mimeType": "application/pdf",
+            "size": 31167,
+            "sha256": "d1a6bb938f1e9d17f088a021aa24789fdc30b03eb74826414e0af1857433c1ac"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058561.pdf",
+            "mimeType": "application/pdf",
+            "size": 28589,
+            "sha256": "bd31412839ff43dcb3dfdeb39a9a62289a3fc39090d59c464d035db7108dc07e"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000071724.pdf",
+            "mimeType": "application/pdf",
+            "size": 100183,
+            "sha256": "d2dc1c986c7517417ca05c2657b39de0df993ecf11019e2175522c8a1fe2d005"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000071725.pdf",
+            "mimeType": "application/pdf",
+            "size": 31999,
+            "sha256": "972be61168d745cadc039ad401b62ec3f13bb28267e944070025648db011732c"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2JH00000268215.pdf",
+            "mimeType": "application/pdf",
+            "size": 98442,
+            "sha256": "b689e261a2aaf55e4520294af4f798bd3e25d12d46a079461cd7420f937ec019"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000071727.pdf",
+            "mimeType": "application/pdf",
+            "size": 89533,
+            "sha256": "e340ee9a70fbc93146d757407ff8b4b132da5c7d0a76ceaea7387d83119cb645"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000071728.pdf",
+            "mimeType": "application/pdf",
+            "size": 45513,
+            "sha256": "71f19802eeba1d7eb907a6652511336bc039cc2777804504fb7d9fc2e8b50159"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000071729.pdf",
+            "mimeType": "application/pdf",
+            "size": 65877,
+            "sha256": "e367e7206eb602e6a31c9d8bbc0b184fff67e6bfe7d0d87e59796bda83c486c1"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000071730.pdf",
+            "mimeType": "application/pdf",
+            "size": 67293,
+            "sha256": "95033710ee10402d39e1360989be1ae5a9325e073aa6be50c502672f76ab0ca0"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058569.pdf",
+            "mimeType": "application/pdf",
+            "size": 69730,
+            "sha256": "56a031cbbdd659f8e07e18757e4bd790872343199023f2927b26b9d921f7c800"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058570.pdf",
+            "mimeType": "application/pdf",
+            "size": 65523,
+            "sha256": "d022f4d5d62e40f2f0fdf939991ede721a5eba4bb1e6d054b08d8ef1e7d6290f"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058571.pdf",
+            "mimeType": "application/pdf",
+            "size": 63317,
+            "sha256": "24a704d2f0a655fdf8a8f6891409d64097142fecb87d90d3e0b484e674ea4686"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058572.pdf",
+            "mimeType": "application/pdf",
+            "size": 53320,
+            "sha256": "df94123577aec9cbc7974145c8d97e1d1571b783bbee40de6120ebdffd83225c"
+          },
+          {
+            "path": "figures/335M50000400033/pict/2FH00000058573.pdf",
+            "mimeType": "application/pdf",
+            "size": 61010,
+            "sha256": "f95c2fcb3eb847494099919e3f84433a42b80097c0bbd1482fd0844514e768ae"
+          }
+        ]
+      }
+    },
+    {
+      "id": "334AC0000000123",
+      "title": "実用新案法",
+      "lawNum": "昭和三十四年法律第百二十三号",
+      "category": "実用新案",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=334AC0000000123_20260521_504AC0000000048",
+      "verifiedAt": "2026-11-24T22:53:00.109710+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "334AC0000000123_20260521_504AC0000000048",
+      "titleReading": "じつようしんあんほう",
+      "sourceArticleCount": 211,
+      "articleCount": 211,
+      "mainArticleCount": 100,
+      "supplementaryArticleCount": 111,
+      "sourceTextLeafCount": 1877,
+      "missingTextLeafCount": 0,
+      "appendixCount": 48,
+      "figureCount": 0,
+      "rawSha256": "7a435d08e4cbb8f9d7a56f13333da6b55e55d3a3995a265186c9283951ebc647",
+      "rawBytes": 467356,
+      "file": "334AC0000000123.json",
+      "bytes": 552207,
+      "figureNote": false
+    },
+    {
+      "id": "335CO0000000017",
+      "title": "実用新案法施行令",
+      "lawNum": "昭和三十五年政令第十七号",
+      "category": "実用新案",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000017_20220401_503CO0000000344",
+      "verifiedAt": "2026-11-24T22:52:59.997041+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000017_20220401_503CO0000000344",
+      "titleReading": "じつようしんあんほうせこうれい",
+      "sourceArticleCount": 14,
+      "articleCount": 14,
+      "mainArticleCount": 4,
+      "supplementaryArticleCount": 10,
+      "sourceTextLeafCount": 150,
+      "missingTextLeafCount": 0,
+      "appendixCount": 14,
+      "figureCount": 0,
+      "rawSha256": "5457b9d66767f50151fa22fa2bb42a5499616ca17e385f8c5682eef0001ff72d",
+      "rawBytes": 37534,
+      "file": "335CO0000000017.json",
+      "bytes": 31369,
+      "figureNote": false
+    },
+    {
+      "id": "335M50000400011",
+      "title": "実用新案法施行規則",
+      "lawNum": "昭和三十五年通商産業省令第十一号",
+      "category": "実用新案",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335M50000400011_20260401_506M60000400081",
+      "verifiedAt": "2026-11-24T22:53:00.039746+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335M50000400011_20260401_506M60000400081",
+      "titleReading": "じつようしんあんほうしこうきそく",
+      "sourceArticleCount": 83,
+      "articleCount": 83,
+      "mainArticleCount": 34,
+      "supplementaryArticleCount": 49,
+      "sourceTextLeafCount": 605,
+      "missingTextLeafCount": 0,
+      "appendixCount": 90,
+      "figureCount": 22,
+      "rawSha256": "8a689f159f2e6a159f922a41fd1e977e565c3c1756c8c57291de5af97ca8cbcb",
+      "rawBytes": 145805,
+      "file": "335M50000400011.json",
+      "bytes": 200769,
+      "figureNote": true,
+      "offlineFigureFiles": 22,
+      "offlineFigureBytes": 3435334,
+      "figureArchive": {
+        "file": "figures-335M50000400011.zip",
+        "bytes": 3439096,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 22,
+        "entries": [
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051163.pdf",
+            "mimeType": "application/pdf",
+            "size": 431392,
+            "sha256": "1b73d8eec1a4cd850e0e4d89e70abbf60002c1f4b5cfeed4a99bcfb955ef27cb"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051164.pdf",
+            "mimeType": "application/pdf",
+            "size": 277452,
+            "sha256": "135526aac7c84303369b1512d2659454da6baa339ec1d4fc1efffc16cf49f2ca"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051165.pdf",
+            "mimeType": "application/pdf",
+            "size": 397198,
+            "sha256": "6f9be3d23223673e579aa7a077257406b0a8594ed0d52b8d64f7ed7e2b1e3137"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051166.pdf",
+            "mimeType": "application/pdf",
+            "size": 249501,
+            "sha256": "75f39ad02e02e05c2940b2af1f0d24a5cadbc035beef7901e99323c6b320b8da"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000070945.pdf",
+            "mimeType": "application/pdf",
+            "size": 357394,
+            "sha256": "6ab6779b51cd86afdb474dd6b63cfe82132adbe2d9c738d245475fcacedb4007"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000075299.pdf",
+            "mimeType": "application/pdf",
+            "size": 87770,
+            "sha256": "ccec2869fc12f2dca5dd10c5b8a1789ae7ea809a429fe6f7584a397a41b392e2"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000065084.pdf",
+            "mimeType": "application/pdf",
+            "size": 163517,
+            "sha256": "f9df88f53411c6483194b77ee01cd1133a8223be173f826fffeeafe9fc998290"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051148.pdf",
+            "mimeType": "application/pdf",
+            "size": 169531,
+            "sha256": "0b131aa41a500e26e9019a6c7b567bfda4686b348f088d502fc309ef59ba1cfa"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051149.pdf",
+            "mimeType": "application/pdf",
+            "size": 134381,
+            "sha256": "fb9321610d98be79722802c645e648a06f981ffce77ffdaf664bd2294a0d61d6"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051150.pdf",
+            "mimeType": "application/pdf",
+            "size": 147653,
+            "sha256": "3ac3303c1ebd88d346aa109fdcabc902fd55932177deca9f5f9551c825c22ba2"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000064572.pdf",
+            "mimeType": "application/pdf",
+            "size": 112476,
+            "sha256": "dd64af76b2d06a1af62eb7e76c8db61ecbfc20a1b653bb1027eb6b50bab8656b"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000070946.pdf",
+            "mimeType": "application/pdf",
+            "size": 118397,
+            "sha256": "01155b1dce83e0b931ce8d6ff9568cc7d05b6ebec91a6fc47cf338def36a7bf7"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000070947.pdf",
+            "mimeType": "application/pdf",
+            "size": 30543,
+            "sha256": "b70b35e66d8114d418461dacccafeb9bad8d6595801b2d14a86a13165bd5722a"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051154.pdf",
+            "mimeType": "application/pdf",
+            "size": 93427,
+            "sha256": "3b0a7e07f31abf48b3bf490ee1fbfb6e03e460bd16c7fc4ff845ebe385c36f86"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000065085.pdf",
+            "mimeType": "application/pdf",
+            "size": 43872,
+            "sha256": "822c461db0291e580279d67d99a1757e6c89f02bb25b9a53907d368bfc2334fa"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051156.pdf",
+            "mimeType": "application/pdf",
+            "size": 71329,
+            "sha256": "c300ff35ebc6637358977c37be9ba0d18721a5046872e88590b57884d1dba26f"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000070948.pdf",
+            "mimeType": "application/pdf",
+            "size": 94244,
+            "sha256": "b65401090f955190e26303167e7949f7e73fcca5bc601ffd3541b38c42f98e70"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000066386.pdf",
+            "mimeType": "application/pdf",
+            "size": 63404,
+            "sha256": "0b5c4bee8fb3da13c8bf1d2c42058da0ba8dc689aaf4d33b4ef16735396076ad"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000065080.pdf",
+            "mimeType": "application/pdf",
+            "size": 88067,
+            "sha256": "fd78b0215240bdf6e309d7ed895414ef609c99bebbf4f6e46a79169ca32c5afe"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000065081.pdf",
+            "mimeType": "application/pdf",
+            "size": 77136,
+            "sha256": "296c6a77032d76c7fd5cdb45778473167dcc3fb25f6a73632ea6771308440d51"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000070949.pdf",
+            "mimeType": "application/pdf",
+            "size": 81432,
+            "sha256": "7e04cf577bc16236c5e3ee63c73e18e3d022981491e98c692f4d7e83babe9255"
+          },
+          {
+            "path": "figures/335M50000400011/pict/2FH00000051162.pdf",
+            "mimeType": "application/pdf",
+            "size": 145218,
+            "sha256": "48a7a835f8478963cb3a6de2c9e722a0eec0b2b80f0a71fcd101150b398e4712"
+          }
+        ]
+      }
+    },
+    {
+      "id": "335CO0000000040",
+      "title": "実用新案登録令",
+      "lawNum": "昭和三十五年政令第四十号",
+      "category": "実用新案",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000040_20260521_508CO0000000038",
+      "verifiedAt": "2026-11-24T22:53:00.057984+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000040_20260521_508CO0000000038",
+      "titleReading": "じつようしんあんとうろくれい",
+      "sourceArticleCount": 29,
+      "articleCount": 29,
+      "mainArticleCount": 15,
+      "supplementaryArticleCount": 14,
+      "sourceTextLeafCount": 220,
+      "missingTextLeafCount": 0,
+      "appendixCount": 27,
+      "figureCount": 0,
+      "rawSha256": "219498072d3931383d96e91c1b24fd6f4cc713b665ba7c3a6400b03420625c62",
+      "rawBytes": 47618,
+      "file": "335CO0000000040.json",
+      "bytes": 52193,
+      "figureNote": false
+    },
+    {
+      "id": "335M50000400034",
+      "title": "実用新案登録令施行規則",
+      "lawNum": "昭和三十五年通商産業省令第三十四号",
+      "category": "実用新案",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335M50000400034_20240401_506M60000400010",
+      "verifiedAt": "2026-11-24T22:53:00.084336+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335M50000400034_20240401_506M60000400010",
+      "titleReading": "じつようしんあんとうろくれいしこうきそく",
+      "sourceArticleCount": 20,
+      "articleCount": 20,
+      "mainArticleCount": 9,
+      "supplementaryArticleCount": 11,
+      "sourceTextLeafCount": 190,
+      "missingTextLeafCount": 0,
+      "appendixCount": 32,
+      "figureCount": 5,
+      "rawSha256": "71463f6a5446c557a1f64875ad85448e6c05aed4419aad4bfa7ef4d0ad4b1811",
+      "rawBytes": 45315,
+      "file": "335M50000400034.json",
+      "bytes": 52287,
+      "figureNote": true,
+      "offlineFigureFiles": 5,
+      "offlineFigureBytes": 199669,
+      "figureArchive": {
+        "file": "figures-335M50000400034.zip",
+        "bytes": 200541,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 5,
+        "entries": [
+          {
+            "path": "figures/335M50000400034/pict/2FH00000057598.pdf",
+            "mimeType": "application/pdf",
+            "size": 51939,
+            "sha256": "5f670a4cddd18a50058018c4260e8ae2b2b0ec07629b76397b8fe788e7f26a9e"
+          },
+          {
+            "path": "figures/335M50000400034/pict/2FH00000057599.pdf",
+            "mimeType": "application/pdf",
+            "size": 28809,
+            "sha256": "80cf89bcdd56f2dd1f5bac081c88f7c1f44a44a860eb03773ca0d6efe40b6bb3"
+          },
+          {
+            "path": "figures/335M50000400034/pict/2FH00000057600.pdf",
+            "mimeType": "application/pdf",
+            "size": 31440,
+            "sha256": "4aee0b2ba0f836b1e41b47398c3b6aed0784a812a1670e5d014e1ebfd503f6cb"
+          },
+          {
+            "path": "figures/335M50000400034/pict/2FH00000057601.pdf",
+            "mimeType": "application/pdf",
+            "size": 21397,
+            "sha256": "33fbb30cec12e6709271c703d70d6e430ee21603b5da9d679dc4c02f6293a6ed"
+          },
+          {
+            "path": "figures/335M50000400034/pict/2FH00000071737.pdf",
+            "mimeType": "application/pdf",
+            "size": 66084,
+            "sha256": "157f74cae70692beffa8e96e267a1d40d0483f65f18c34bd722dfcf78753137c"
+          }
+        ]
+      }
+    },
+    {
+      "id": "334AC0000000125",
+      "title": "意匠法",
+      "lawNum": "昭和三十四年法律第百二十五号",
+      "category": "意匠",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=334AC0000000125_20260521_504AC0000000048",
+      "verifiedAt": "2026-11-24T22:53:00.197227+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "334AC0000000125_20260521_504AC0000000048",
+      "titleReading": "いしょうほう",
+      "sourceArticleCount": 225,
+      "articleCount": 225,
+      "mainArticleCount": 118,
+      "supplementaryArticleCount": 107,
+      "sourceTextLeafCount": 1708,
+      "missingTextLeafCount": 0,
+      "appendixCount": 50,
+      "figureCount": 0,
+      "rawSha256": "67491e68bb6740c4c9ff763e403f3cc0c34ac7963b9afb04ae5311546ed6cd99",
+      "rawBytes": 398870,
+      "file": "334AC0000000125.json",
+      "bytes": 457788,
+      "figureNote": false
+    },
+    {
+      "id": "335CO0000000018",
+      "title": "意匠法施行令",
+      "lawNum": "昭和三十五年政令第十八号",
+      "category": "意匠",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000018_20220401_503CO0000000344",
+      "verifiedAt": "2026-11-24T22:53:00.135521+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000018_20220401_503CO0000000344",
+      "titleReading": "いしょうほうしこうれい",
+      "sourceArticleCount": 7,
+      "articleCount": 7,
+      "mainArticleCount": 2,
+      "supplementaryArticleCount": 5,
+      "sourceTextLeafCount": 51,
+      "missingTextLeafCount": 0,
+      "appendixCount": 9,
+      "figureCount": 0,
+      "rawSha256": "6643e8746a2b65efeee108cd18f62c3b5cdac8ed6c2da327e62894f06e0ce8ef",
+      "rawBytes": 9970,
+      "file": "335CO0000000018.json",
+      "bytes": 9789,
+      "figureNote": false
+    },
+    {
+      "id": "335M50000400012",
+      "title": "意匠法施行規則",
+      "lawNum": "昭和三十五年通商産業省令第十二号",
+      "category": "意匠",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335M50000400012_20260521_508M60000400043",
+      "verifiedAt": "2026-11-24T22:53:00.223951+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335M50000400012_20260521_508M60000400043",
+      "titleReading": "いしょうほうしこうきそく",
+      "sourceArticleCount": 69,
+      "articleCount": 69,
+      "mainArticleCount": 35,
+      "supplementaryArticleCount": 34,
+      "sourceTextLeafCount": 692,
+      "missingTextLeafCount": 0,
+      "appendixCount": 94,
+      "figureCount": 26,
+      "rawSha256": "17293385af0761af4058067b9a4cc24e08d8347de0d561750c28910c83948759",
+      "rawBytes": 173416,
+      "file": "335M50000400012.json",
+      "bytes": 224769,
+      "figureNote": true,
+      "offlineFigureFiles": 26,
+      "offlineFigureBytes": 3151735,
+      "figureArchive": {
+        "file": "figures-335M50000400012.zip",
+        "bytes": 3156177,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 26,
+        "entries": [
+          {
+            "path": "figures/335M50000400012/pict/2FH00000064987.pdf",
+            "mimeType": "application/pdf",
+            "size": 121693,
+            "sha256": "b38986d132f60f59f5707f1b40486c0575faca301409c6f0712ad10b872382e6"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000064256.pdf",
+            "mimeType": "application/pdf",
+            "size": 71900,
+            "sha256": "ab7f2429ce91820707700da672f5f74ae32ea8f7379f51b0a09610e13f1093f7"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000070921.pdf",
+            "mimeType": "application/pdf",
+            "size": 392853,
+            "sha256": "329291d9dae6faa1b9a6ff5182a2f500fd2263564ffef40d0255ae9c78403973"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000064257.pdf",
+            "mimeType": "application/pdf",
+            "size": 229428,
+            "sha256": "2bd022bba6c2345f19d4f671df29903af5fc1ae49b43d360ba4f0333cb6c92e7"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000049780.pdf",
+            "mimeType": "application/pdf",
+            "size": 118159,
+            "sha256": "25d9194cc8c86e39e54872e73692092e1d2ae4f620cd724e6a8ee08b8c9fb595"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000049781.pdf",
+            "mimeType": "application/pdf",
+            "size": 104106,
+            "sha256": "b3ad4f852f6667cb37d4896aae6b326ccf86c2ae2ae0d2cd651c41e536a23bb7"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000075235.pdf",
+            "mimeType": "application/pdf",
+            "size": 27923,
+            "sha256": "ebc08107b9ee2be70adf9b5e472c513804e264650de21964259b9fee0e8a85fa"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000055367.pdf",
+            "mimeType": "application/pdf",
+            "size": 205510,
+            "sha256": "0bd5f44de81b1e1da952e7efbcafafc87ab64a16ba40fa1a06b6b153c88d99a4"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000049783.pdf",
+            "mimeType": "application/pdf",
+            "size": 58675,
+            "sha256": "ff6eda6d15d273f2d2c2967f63127263f4b9b94e2ffdb162117533729479df0c"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000049784.pdf",
+            "mimeType": "application/pdf",
+            "size": 95254,
+            "sha256": "003c922497ada1897266050067a0a39a4cd5297e70c6ab50fb899d2f331c1dde"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000049785.pdf",
+            "mimeType": "application/pdf",
+            "size": 131443,
+            "sha256": "a4626935e6924fc19c09cc6f5a6c859c35cc7f7baa62bfdd8a9c022bdc6aa557"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000049786.pdf",
+            "mimeType": "application/pdf",
+            "size": 106761,
+            "sha256": "adc4fd053fe26158403bcb4db89304627a2ba57f149cb873050ac05a10f58084"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000064259.pdf",
+            "mimeType": "application/pdf",
+            "size": 65055,
+            "sha256": "1217160b9bcdfc8b2e4a955ebed8a14512de045df7ea4be93b8b7581c9ada0e5"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2JH00000268218.pdf",
+            "mimeType": "application/pdf",
+            "size": 120610,
+            "sha256": "518a31d3b7d5b5d5cf1985a8c5aeda148f887a9b6095325cf27ebdc9dffec121"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2JH00000268219.pdf",
+            "mimeType": "application/pdf",
+            "size": 122664,
+            "sha256": "0be1b160f7b5ade7f7ee1fa8afec1ef9bcee192e7fc0a140c93e187eae75e792"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000075232.pdf",
+            "mimeType": "application/pdf",
+            "size": 257962,
+            "sha256": "db5196f2eab07691d940b658d73c897a1433d4428edc08b740ce97b8df4ebfd0"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000075233.pdf",
+            "mimeType": "application/pdf",
+            "size": 227432,
+            "sha256": "0bddd30cd2e19481e5152c2d1b2ccc97a02b0781d9d7089abc64591860f9e570"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000065019.pdf",
+            "mimeType": "application/pdf",
+            "size": 51227,
+            "sha256": "c1f3816769f88f2d1be6056275fa736720bb9d1931885a1112817a1317a73880"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000070924.pdf",
+            "mimeType": "application/pdf",
+            "size": 50624,
+            "sha256": "7e778649ed8ba208fc7f3b771e315451bd875af8e94d89a6a99eac6f86d69386"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000064260.pdf",
+            "mimeType": "application/pdf",
+            "size": 122754,
+            "sha256": "1e0880713fe30499fd25538def77a2e728692fee285ea9a62e58b17dde3ecb4d"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000066400.pdf",
+            "mimeType": "application/pdf",
+            "size": 58267,
+            "sha256": "53b5d4b44224d7d53609df157b17aa4d8f903290c5c8acc04f18d08b75e06d17"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000070925.pdf",
+            "mimeType": "application/pdf",
+            "size": 84146,
+            "sha256": "a95be8b13a8b0d1bd3878badfe5e820a122ad80bb4e0b84c27ceead045dabf16"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000065022.pdf",
+            "mimeType": "application/pdf",
+            "size": 84590,
+            "sha256": "9c4fe9a76e829e3ac6b0944e50a6dd6b1556cd9074627cb802a061c484b9ba3a"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000049796.pdf",
+            "mimeType": "application/pdf",
+            "size": 101688,
+            "sha256": "347f6992c4b0b527251e98afd8ebd406851f8e25187824287e1fad7aaf02afd5"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000065023.pdf",
+            "mimeType": "application/pdf",
+            "size": 79827,
+            "sha256": "e4603296b9ff6234f736077f942d72f829192fc1d779d3b12d7c9b25867e35be"
+          },
+          {
+            "path": "figures/335M50000400012/pict/2FH00000065024.pdf",
+            "mimeType": "application/pdf",
+            "size": 61184,
+            "sha256": "ecc31bf4da5b1197d48f52d7664aabd66e51191b23c9cd83ce452e408946385b"
+          }
+        ]
+      }
+    },
+    {
+      "id": "335CO0000000041",
+      "title": "意匠登録令",
+      "lawNum": "昭和三十五年政令第四十一号",
+      "category": "意匠",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000041_20260521_508CO0000000038",
+      "verifiedAt": "2026-11-24T22:53:00.171450+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000041_20260521_508CO0000000038",
+      "titleReading": "いしょうとうろくれい",
+      "sourceArticleCount": 35,
+      "articleCount": 35,
+      "mainArticleCount": 21,
+      "supplementaryArticleCount": 14,
+      "sourceTextLeafCount": 251,
+      "missingTextLeafCount": 0,
+      "appendixCount": 26,
+      "figureCount": 0,
+      "rawSha256": "1713587f06b7e8746bd55b7485565ffb2b41ebd54e1197bdb595846d2550fb7d",
+      "rawBytes": 54628,
+      "file": "335CO0000000041.json",
+      "bytes": 60316,
+      "figureNote": false
+    },
+    {
+      "id": "335M50000400035",
+      "title": "意匠登録令施行規則",
+      "lawNum": "昭和三十五年通商産業省令第三十五号",
+      "category": "意匠",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335M50000400035_20200401_502M60000400022",
+      "verifiedAt": "2026-11-24T22:53:00.210906+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335M50000400035_20200401_502M60000400022",
+      "titleReading": "いしょうとうろくれいせこうきそく",
+      "sourceArticleCount": 20,
+      "articleCount": 20,
+      "mainArticleCount": 12,
+      "supplementaryArticleCount": 8,
+      "sourceTextLeafCount": 204,
+      "missingTextLeafCount": 0,
+      "appendixCount": 28,
+      "figureCount": 6,
+      "rawSha256": "6cbf6cf18b674664782dd77e1d49228192f9fd86a9c4c932ddd436757c1b8441",
+      "rawBytes": 50688,
+      "file": "335M50000400035.json",
+      "bytes": 62110,
+      "figureNote": true,
+      "offlineFigureFiles": 6,
+      "offlineFigureBytes": 284203,
+      "figureArchive": {
+        "file": "figures-335M50000400035.zip",
+        "bytes": 285445,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 6,
+        "entries": [
+          {
+            "path": "figures/335M50000400035/pict/335M50000400035_202109302309_001.pdf",
+            "mimeType": "application/pdf",
+            "size": 94827,
+            "sha256": "d27b67539db3c698a2ff8190e048c157bad29e4490c7938cf32ebc78df16c379"
+          },
+          {
+            "path": "figures/335M50000400035/pict/335M50000400035_202109302309_002.pdf",
+            "mimeType": "application/pdf",
+            "size": 95543,
+            "sha256": "63c51e84633462f2ba9b9aadd406f2945b039962044602a519ac4c60dffb936f"
+          },
+          {
+            "path": "figures/335M50000400035/pict/S35F03801000035_1906201706_003.pdf",
+            "mimeType": "application/pdf",
+            "size": 22907,
+            "sha256": "d038afce9c122d2911615d6936266cb18fbcaf860ddef66aea159c564f8df6ea"
+          },
+          {
+            "path": "figures/335M50000400035/pict/S35F03801000035_1906201706_004.pdf",
+            "mimeType": "application/pdf",
+            "size": 23445,
+            "sha256": "f5f66acc4cff53a01751bb6a8c25b85ab28d3b4923bc13203bc85aa278edec23"
+          },
+          {
+            "path": "figures/335M50000400035/pict/S35F03801000035_1906201706_005.pdf",
+            "mimeType": "application/pdf",
+            "size": 24753,
+            "sha256": "6967dfd09e64fb0977c4c850877809ad07b901e643dab103fdb07ed86c45cf64"
+          },
+          {
+            "path": "figures/335M50000400035/pict/S35F03801000035_1906201706_006.pdf",
+            "mimeType": "application/pdf",
+            "size": 22728,
+            "sha256": "97c7c3ea270f3f2aa8813364ede560b77a319f94dad64c2240aaefe3adda2148"
+          }
+        ]
+      }
+    },
+    {
+      "id": "334AC0000000127",
+      "title": "商標法",
+      "lawNum": "昭和三十四年法律第百二十七号",
+      "category": "商標",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=334AC0000000127_20260521_504AC0000000048",
+      "verifiedAt": "2026-11-24T22:53:00.445697+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "334AC0000000127_20260521_504AC0000000048",
+      "titleReading": "しょうひょうほう",
+      "sourceArticleCount": 373,
+      "articleCount": 373,
+      "mainArticleCount": 185,
+      "supplementaryArticleCount": 188,
+      "sourceTextLeafCount": 2803,
+      "missingTextLeafCount": 0,
+      "appendixCount": 62,
+      "figureCount": 0,
+      "rawSha256": "a51f8998b92e1b31a5987cc6db110c9d5d90de655371954a4d3a57b289735f25",
+      "rawBytes": 665914,
+      "file": "334AC0000000127.json",
+      "bytes": 788014,
+      "figureNote": false
+    },
+    {
+      "id": "335CO0000000019",
+      "title": "商標法施行令",
+      "lawNum": "昭和三十五年政令第十九号",
+      "category": "商標",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000019_20240401_505CO0000000338",
+      "verifiedAt": "2026-11-24T22:53:00.237097+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000019_20240401_505CO0000000338",
+      "titleReading": "しょうひょうほうしこうれい",
+      "sourceArticleCount": 23,
+      "articleCount": 23,
+      "mainArticleCount": 9,
+      "supplementaryArticleCount": 14,
+      "sourceTextLeafCount": 242,
+      "missingTextLeafCount": 0,
+      "appendixCount": 25,
+      "figureCount": 0,
+      "rawSha256": "5b68e568aa49101f2a88fd76aa69a2973398b64eeb72cc216f9d774582f2cbeb",
+      "rawBytes": 56330,
+      "file": "335CO0000000019.json",
+      "bytes": 39649,
+      "figureNote": false
+    },
+    {
+      "id": "335M50000400013",
+      "title": "商標法施行規則",
+      "lawNum": "昭和三十五年通商産業省令第十三号",
+      "category": "商標",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335M50000400013_20260521_508M60000400043",
+      "verifiedAt": "2026-11-24T22:53:00.778863+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335M50000400013_20260521_508M60000400043",
+      "titleReading": "しょうひょうほうしこうきそく",
+      "sourceArticleCount": 100,
+      "articleCount": 100,
+      "mainArticleCount": 51,
+      "supplementaryArticleCount": 49,
+      "sourceTextLeafCount": 2425,
+      "missingTextLeafCount": 0,
+      "appendixCount": 123,
+      "figureCount": 39,
+      "rawSha256": "56253382bb5eeb64e310a99d59398a7d99afc85953bce076c94358f26eb390a3",
+      "rawBytes": 1024675,
+      "file": "335M50000400013.json",
+      "bytes": 585798,
+      "figureNote": true,
+      "offlineFigureFiles": 39,
+      "offlineFigureBytes": 5752869,
+      "figureArchive": {
+        "file": "figures-335M50000400013.zip",
+        "bytes": 5759521,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 39,
+        "entries": [
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049829.pdf",
+            "mimeType": "application/pdf",
+            "size": 219065,
+            "sha256": "991f230ed5120b69b27a50df6127d5fbeef72fe600887217996167df9fc34ce9"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049830.pdf",
+            "mimeType": "application/pdf",
+            "size": 55682,
+            "sha256": "3edf5d0d787783bfb6d39e5ae0da5e9fea0d2fe65a7030d2cbc2560eae583bb7"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049831.pdf",
+            "mimeType": "application/pdf",
+            "size": 251608,
+            "sha256": "35f52591435d435bc96d43247a531314b099eaf4e76b381246760154ce125a93"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049832.pdf",
+            "mimeType": "application/pdf",
+            "size": 167457,
+            "sha256": "dd98b1a5a10dbe4bfd6860e3d91f6546dd72360639907dcb710eb36db0734725"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049833.pdf",
+            "mimeType": "application/pdf",
+            "size": 86789,
+            "sha256": "1b4ce4a7b12a0e56cc2ff50fbb8c92170ea33ac0ded7e77c47627abb692d764b"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049834.pdf",
+            "mimeType": "application/pdf",
+            "size": 165357,
+            "sha256": "ce8e54907ded8d24af9b3ecbb03b1a72226a02a041afbccb206d3ee95e2e1da5"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049835.pdf",
+            "mimeType": "application/pdf",
+            "size": 157117,
+            "sha256": "7f41da780edb55989b7528e97b04a20b4e862f575d0aa1cde13f214b78d3f3c2"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049836.pdf",
+            "mimeType": "application/pdf",
+            "size": 188772,
+            "sha256": "b83a2d5d7929f604c8ae383680468af41747c80feb10d4d4755590a41440d62d"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049837.pdf",
+            "mimeType": "application/pdf",
+            "size": 138168,
+            "sha256": "890ba93e1e3aa941cf16110c2795c1a7308094f2e5679ec46f63d2fcb2f1c9ec"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049799.pdf",
+            "mimeType": "application/pdf",
+            "size": 145986,
+            "sha256": "6a344206845a57f7b2f06b42f58e19f9e83213a04a027aeba43dbf9ffc38f8ae"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000065407.pdf",
+            "mimeType": "application/pdf",
+            "size": 459349,
+            "sha256": "36c6a3bd42c941ede5cb72ca565ec126de52f82f2444af833756aaec60a931e8"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049801.pdf",
+            "mimeType": "application/pdf",
+            "size": 77696,
+            "sha256": "90f9b86dbc50f2289c231a5ca88ea270a3b4e3830d88208d98961b0d2e77d4cf"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049802.pdf",
+            "mimeType": "application/pdf",
+            "size": 167214,
+            "sha256": "8a7a449a9d9de9469aeabaa9f7c38ef492ef83314b2f15b9aa03318aaf4720f2"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049803.pdf",
+            "mimeType": "application/pdf",
+            "size": 125145,
+            "sha256": "050e71f201ce2b93a7f2950fc633fee0be6dfce6364945a6425789a1172931bf"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000075247.pdf",
+            "mimeType": "application/pdf",
+            "size": 55309,
+            "sha256": "665d526d48ccde4a3220bdf59bb26298aebae8ed559aa21f5b37c79f9ce32f9b"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049805.pdf",
+            "mimeType": "application/pdf",
+            "size": 124012,
+            "sha256": "8bfc2b4d4e53864923ff98d2c984aa3a271186d563426617212bf0ea04cd7fe8"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049806.pdf",
+            "mimeType": "application/pdf",
+            "size": 95414,
+            "sha256": "02d7261af5f719c478b816f83355be21f39a7942821573b8ff0712cc7b79b67f"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049807.pdf",
+            "mimeType": "application/pdf",
+            "size": 92001,
+            "sha256": "aeb8fbc7d7770d82535faa694191faeafcb5ed3df3d20fdec8ebc4bf710f7ede"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268230.pdf",
+            "mimeType": "application/pdf",
+            "size": 178912,
+            "sha256": "606ca1338c16f36e420f1a2e2ca6266e0e2743582451758d5388bc42beeff9aa"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049809.pdf",
+            "mimeType": "application/pdf",
+            "size": 150986,
+            "sha256": "6931c98a21638cc25994de3fbe7a939118e1accbc8ce2476a309d96a08ae7ecd"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049810.pdf",
+            "mimeType": "application/pdf",
+            "size": 93039,
+            "sha256": "dbb1a5efc0096f03894db01800111d347e62790ced95232a029a61ea1cd7266b"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049811.pdf",
+            "mimeType": "application/pdf",
+            "size": 124768,
+            "sha256": "46369e9291b5810e5805e5cdfe8c10624ff14755108f4c5f954a81a474e597b0"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049812.pdf",
+            "mimeType": "application/pdf",
+            "size": 78503,
+            "sha256": "3bcd5ce5fc2d465f00a8b69943054cbe05c0a058c74baf5c82b9e334bb876cdc"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268222.pdf",
+            "mimeType": "application/pdf",
+            "size": 186939,
+            "sha256": "5ae2b76213f9c4c0f2e965f43c4a3eb0be1c1fd8d00302f26e3f29204d1c6206"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049814.pdf",
+            "mimeType": "application/pdf",
+            "size": 107215,
+            "sha256": "0362011d6313f7a39171c63f8df65f6298860c2226a5a20ad0a9305d3dffbbc2"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268223.pdf",
+            "mimeType": "application/pdf",
+            "size": 180932,
+            "sha256": "abca60b6f9d40b91483c3e5c72fb0714dce79ab0a7aa1d24ad2590c79dc2ba4b"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268224.pdf",
+            "mimeType": "application/pdf",
+            "size": 179022,
+            "sha256": "2f9dc0986c5857a81ba7d74f7b125c430871ecf406ff4a2f07c568ef06d7c9e3"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268225.pdf",
+            "mimeType": "application/pdf",
+            "size": 172637,
+            "sha256": "5ae375f09a17d732541db784f5992a6016dfec000d8ec084b786511a6ecaee07"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268226.pdf",
+            "mimeType": "application/pdf",
+            "size": 177361,
+            "sha256": "d857e870d560c405e3f1cf5bc958630cb9df4c6645e3afe64f13cdea45c9a431"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268227.pdf",
+            "mimeType": "application/pdf",
+            "size": 176167,
+            "sha256": "2a445fdc1660a5277a56bf4497ec5e964948e008603dccc128be6c789faeca64"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000075236.pdf",
+            "mimeType": "application/pdf",
+            "size": 293371,
+            "sha256": "b968a098752f6801ef7542f23823d71508b08a27ff6af3ef3a89a6f9e21a3279"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268228.pdf",
+            "mimeType": "application/pdf",
+            "size": 174935,
+            "sha256": "1adfe257aed851f5250f19aba879f010d17b07a168a8448b2306474a2e2ff49b"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049822.pdf",
+            "mimeType": "application/pdf",
+            "size": 159460,
+            "sha256": "26687632206bb6cd0591430e709d3426123fd0efb8cee23645d36ac516b2ad43"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2JH00000268229.pdf",
+            "mimeType": "application/pdf",
+            "size": 173336,
+            "sha256": "1965ddea0dfc5aae5b04e6c1a1104e6e4d7afb4069b30a1528d1c2c1b297303d"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000064230.pdf",
+            "mimeType": "application/pdf",
+            "size": 68665,
+            "sha256": "22679b9bff6df33f715384f20df663e65600d24bc640144a360886b76d17e4e5"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000065155.pdf",
+            "mimeType": "application/pdf",
+            "size": 40873,
+            "sha256": "9656bd376751893f7c4bd986c8b477c16e7a17db843d8569e52582b4f570d529"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000049826.pdf",
+            "mimeType": "application/pdf",
+            "size": 131688,
+            "sha256": "752301000194109720d0b32fcfbfe614d73d6f661b46f5be8c0422bf2151210c"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000065156.pdf",
+            "mimeType": "application/pdf",
+            "size": 82695,
+            "sha256": "8c2b6dd6c90e1135b83af8b3b5b6a75be33c914960ebd99df93cd978b79b11ce"
+          },
+          {
+            "path": "figures/335M50000400013/pict/2FH00000065157.pdf",
+            "mimeType": "application/pdf",
+            "size": 49224,
+            "sha256": "0d9b09b7dc238ccbab2fe086a8a4f482ed9c7e12cf28850853b3ca909ad72292"
+          }
+        ]
+      }
+    },
+    {
+      "id": "335CO0000000042",
+      "title": "商標登録令",
+      "lawNum": "昭和三十五年政令第四十二号",
+      "category": "商標",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000042_20260521_508CO0000000038",
+      "verifiedAt": "2026-11-24T22:53:00.330845+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000042_20260521_508CO0000000038",
+      "titleReading": "しょうひょうとうろくれい",
+      "sourceArticleCount": 28,
+      "articleCount": 28,
+      "mainArticleCount": 16,
+      "supplementaryArticleCount": 12,
+      "sourceTextLeafCount": 222,
+      "missingTextLeafCount": 0,
+      "appendixCount": 27,
+      "figureCount": 0,
+      "rawSha256": "deddccba09fbc62e446b6e907add81439c6c8abd5163c3cf2085aaebf8370525",
+      "rawBytes": 53386,
+      "file": "335CO0000000042.json",
+      "bytes": 60745,
+      "figureNote": false
+    },
+    {
+      "id": "335M50000400036",
+      "title": "商標登録令施行規則",
+      "lawNum": "昭和三十五年通商産業省令第三十六号",
+      "category": "商標",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335M50000400036_20260521_508M60000400043",
+      "verifiedAt": "2026-11-24T22:53:00.433704+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335M50000400036_20260521_508M60000400043",
+      "titleReading": "しょうひょうとうろくれいしこうきそく",
+      "sourceArticleCount": 51,
+      "articleCount": 51,
+      "mainArticleCount": 30,
+      "supplementaryArticleCount": 21,
+      "sourceTextLeafCount": 407,
+      "missingTextLeafCount": 0,
+      "appendixCount": 47,
+      "figureCount": 9,
+      "rawSha256": "1abdaefda3cfcfa62ef92a95eda40a4e38121eb6ea85cc89cc4fadae9d35efe1",
+      "rawBytes": 103196,
+      "file": "335M50000400036.json",
+      "bytes": 131244,
+      "figureNote": true,
+      "offlineFigureFiles": 9,
+      "offlineFigureBytes": 500870,
+      "figureArchive": {
+        "file": "figures-335M50000400036.zip",
+        "bytes": 502422,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 9,
+        "entries": [
+          {
+            "path": "figures/335M50000400036/pict/2FH00000056873.pdf",
+            "mimeType": "application/pdf",
+            "size": 68959,
+            "sha256": "7002b499a3b5cd69963ef4e534da6a5c48321bebe4a7b188eacb0417d91543e1"
+          },
+          {
+            "path": "figures/335M50000400036/pict/2FH00000056874.pdf",
+            "mimeType": "application/pdf",
+            "size": 65261,
+            "sha256": "de38766faab2f20fbe8b30754fe53993cde88ab3e91170c9da1b38cadbfd7dc7"
+          },
+          {
+            "path": "figures/335M50000400036/pict/2FH00000056875.pdf",
+            "mimeType": "application/pdf",
+            "size": 26392,
+            "sha256": "d3b0d434f22fdcb3a9a183b3b058dad67242ebe20ee6e16f3856c1150410aa6f"
+          },
+          {
+            "path": "figures/335M50000400036/pict/2FH00000056876.pdf",
+            "mimeType": "application/pdf",
+            "size": 15263,
+            "sha256": "138ad0d7aaf30b4a198f75f01cab1672d21091ca5a733c5fd9b59584f9e01a61"
+          },
+          {
+            "path": "figures/335M50000400036/pict/2FH00000056877.pdf",
+            "mimeType": "application/pdf",
+            "size": 17234,
+            "sha256": "8bece0ed04f385c198fe8dfdc32b3db7da1a9ff495d1bd932d4204ce2ae69fcd"
+          },
+          {
+            "path": "figures/335M50000400036/pict/2FH00000056878.pdf",
+            "mimeType": "application/pdf",
+            "size": 25824,
+            "sha256": "45da039ee22447126a685b9dbea8258475fb0d24684f8b2bd0e1ae1b3764b000"
+          },
+          {
+            "path": "figures/335M50000400036/pict/2JH00000268235.pdf",
+            "mimeType": "application/pdf",
+            "size": 119407,
+            "sha256": "5ef7fbbc12081c16f0a24f5cbb621dd553cdd30b35d3e6b92c63d763264d8d77"
+          },
+          {
+            "path": "figures/335M50000400036/pict/2FH00000071732.pdf",
+            "mimeType": "application/pdf",
+            "size": 75221,
+            "sha256": "93c6c25b87b6155da400edca1d7edd24fdc9716b131f50a44754380ebf1f8a55"
+          },
+          {
+            "path": "figures/335M50000400036/pict/2FH00000071734.pdf",
+            "mimeType": "application/pdf",
+            "size": 87309,
+            "sha256": "443e6d023bad295e74a1fb102ddecc557d34672ce4f8b653e3a9e5cff0b09e83"
+          }
+        ]
+      }
+    },
+    {
+      "id": "402AC0000000030",
+      "title": "工業所有権に関する手続等の特例に関する法律",
+      "lawNum": "平成二年法律第三十号",
+      "category": "共通手続",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=402AC0000000030_20260624_508AC0000000046",
+      "verifiedAt": "2026-11-24T22:53:00.520419+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "402AC0000000030_20260624_508AC0000000046",
+      "titleReading": "こうぎょうしょゆうけんにかんするてつづきとうのとくれいにかんするほうりつ",
+      "sourceArticleCount": 127,
+      "articleCount": 127,
+      "mainArticleCount": 59,
+      "supplementaryArticleCount": 68,
+      "sourceTextLeafCount": 848,
+      "missingTextLeafCount": 0,
+      "appendixCount": 32,
+      "figureCount": 0,
+      "rawSha256": "51f8e97d0c053d6985ad22f3f6763d88ea199334c7d63c94b5e1a79f82732f3d",
+      "rawBytes": 195019,
+      "file": "402AC0000000030.json",
+      "bytes": 232391,
+      "figureNote": false
+    },
+    {
+      "id": "402CO0000000258",
+      "title": "工業所有権に関する手続等の特例に関する法律施行令",
+      "lawNum": "平成二年政令第二百五十八号",
+      "category": "共通手続",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=402CO0000000258_20160401_428CO0000000018",
+      "verifiedAt": "2026-11-24T22:53:00.548702+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "402CO0000000258_20160401_428CO0000000018",
+      "titleReading": "こうぎょうしょゆうけんにかんするてつづきとうのとくれいにかんするほうりつせこうれい",
+      "sourceArticleCount": 22,
+      "articleCount": 22,
+      "mainArticleCount": 5,
+      "supplementaryArticleCount": 17,
+      "sourceTextLeafCount": 128,
+      "missingTextLeafCount": 0,
+      "appendixCount": 18,
+      "figureCount": 0,
+      "rawSha256": "30103d1bc306fcb3ebbea42198448e44822af214b587cb84a0e9442a12cef754",
+      "rawBytes": 35887,
+      "file": "402CO0000000258.json",
+      "bytes": 42095,
+      "figureNote": false
+    },
+    {
+      "id": "402M50000400041",
+      "title": "工業所有権に関する手続等の特例に関する法律施行規則",
+      "lawNum": "平成二年通商産業省令第四十一号",
+      "category": "共通手続",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=402M50000400041_20260521_508M60000400043",
+      "verifiedAt": "2026-11-24T22:53:00.831930+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "402M50000400041_20260521_508M60000400043",
+      "titleReading": "こうぎょうしょゆうけんにかんするてつづきとうのとくれいにかんするほうりつしこうきそく",
+      "sourceArticleCount": 160,
+      "articleCount": 160,
+      "mainArticleCount": 110,
+      "supplementaryArticleCount": 50,
+      "sourceTextLeafCount": 2870,
+      "missingTextLeafCount": 0,
+      "appendixCount": 141,
+      "figureCount": 41,
+      "rawSha256": "dcbb4b1be3c2221ac99457d31a1162e532a9f911c891d58ed4debdbf3a8ee134",
+      "rawBytes": 816071,
+      "file": "402M50000400041.json",
+      "bytes": 746882,
+      "figureNote": true,
+      "offlineFigureFiles": 41,
+      "offlineFigureBytes": 3417957,
+      "figureArchive": {
+        "file": "figures-402M50000400041.zip",
+        "bytes": 3424949,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 41,
+        "entries": [
+          {
+            "path": "figures/402M50000400041/pict/2FH00000065163.pdf",
+            "mimeType": "application/pdf",
+            "size": 80891,
+            "sha256": "b54cf95a2077cb54032bfb012dd61140aed5fd55227599532f77f83073fa093b"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000065164.pdf",
+            "mimeType": "application/pdf",
+            "size": 122910,
+            "sha256": "cf5f41911dac9201e6efce3f03f31a92712ab7c851bde03b07024f410ac53c69"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063680.pdf",
+            "mimeType": "application/pdf",
+            "size": 70095,
+            "sha256": "70dc408b179bde47c2f84a2961f808071393bb03d3513b781bcf1d2ba550d482"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000075268.pdf",
+            "mimeType": "application/pdf",
+            "size": 112312,
+            "sha256": "83af17d914d600854d935f45ef0d5ac31d4fb79d5d4c12fa775b7dbb6f5db5e8"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063681.pdf",
+            "mimeType": "application/pdf",
+            "size": 56288,
+            "sha256": "4fc7dc36b7ba4098e61077a85e1a2da436916106bcba14340a8dd767eda94d6d"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000070942.pdf",
+            "mimeType": "application/pdf",
+            "size": 280947,
+            "sha256": "a0cfe934a47382c2b69a5a5d7636b1fd7c728100f9aedc5673b9fa6a28e2156c"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051225.pdf",
+            "mimeType": "application/pdf",
+            "size": 108671,
+            "sha256": "17c7b8d69139de26bb7c2105f74e49f4e6231415da89366dd4273a2203c5e945"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000065168.pdf",
+            "mimeType": "application/pdf",
+            "size": 298609,
+            "sha256": "73de0bdec076c89bd24c6f36d8229528e58ac35d27cf92f6bdf338c3fee78435"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000075269.pdf",
+            "mimeType": "application/pdf",
+            "size": 111413,
+            "sha256": "d5c4de2b2113800c9695e7ac17d3041772f056ad5dc2ce2fecacd1884aa7e54b"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063682.pdf",
+            "mimeType": "application/pdf",
+            "size": 95122,
+            "sha256": "33fb03058b509e6de426cfb7d8417c09fa21477106543097bcfdaa99b5e0a6d9"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000070943.pdf",
+            "mimeType": "application/pdf",
+            "size": 76005,
+            "sha256": "6e5876c8ab2333c859de378bf82852ab7a95df1f88530911fa8c8c6d3d2fad7b"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051229.pdf",
+            "mimeType": "application/pdf",
+            "size": 97854,
+            "sha256": "4accd70f92f25887de7925559402ea6db042a1a7cc878680808300f1cf8e1266"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063683.pdf",
+            "mimeType": "application/pdf",
+            "size": 80903,
+            "sha256": "392bdab790e926a8c6ecfb9811fbeac02a5fbbe39905bc842b7decb4d0b431ac"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063684.pdf",
+            "mimeType": "application/pdf",
+            "size": 70325,
+            "sha256": "61aaac5997c6be79444df6b51a6fc6a7d37e1dbd0c8b8ae2f3ef12e9d11ca28d"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051232.pdf",
+            "mimeType": "application/pdf",
+            "size": 78511,
+            "sha256": "8fdd6645a424355e7ba1622b91d342507897ee727bdba5be3ddc8fc9fb7d2364"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063685.pdf",
+            "mimeType": "application/pdf",
+            "size": 67412,
+            "sha256": "a8a8b11634cabb27af747232c369519139f799aaf39b40e7ca3dda2f1bc60500"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000070944.pdf",
+            "mimeType": "application/pdf",
+            "size": 26317,
+            "sha256": "959665d23b2c85f656068f86d7f0e1d38492b131d600ed1632591e388990d494"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063686.pdf",
+            "mimeType": "application/pdf",
+            "size": 95368,
+            "sha256": "24a0820bc44766ad6299a1e85ff199f043f24df19da07f1e68220badbc15739c"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000066418.pdf",
+            "mimeType": "application/pdf",
+            "size": 61435,
+            "sha256": "e9ffa5dce729a231f077ad825878468b7658a258b000e7afbc34a0f54c25d8aa"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000066419.pdf",
+            "mimeType": "application/pdf",
+            "size": 42666,
+            "sha256": "6028d337df9f5a540c58bf91a6d2f6882f341c7b6a4184ead263d3efc369c281"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063688.pdf",
+            "mimeType": "application/pdf",
+            "size": 83833,
+            "sha256": "bf2572f537c8a67280624aea8b192b02be4c6173c471b69689d9c28531ba3dbe"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000066420.pdf",
+            "mimeType": "application/pdf",
+            "size": 42342,
+            "sha256": "64504a6d0abf5acc7433fee4d70763e663571e7e57cea3407995151f727852f9"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051239.pdf",
+            "mimeType": "application/pdf",
+            "size": 115643,
+            "sha256": "19c44d6f2bd0df3f0a8e18336d35aa86a365a0eb34a233fc8b19cea994efe798"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2JH00000268216.pdf",
+            "mimeType": "application/pdf",
+            "size": 71021,
+            "sha256": "6050514305f0bc314ced2e60fd1147f63fa3dacdae33ada4aed4fcda30914240"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051241.pdf",
+            "mimeType": "application/pdf",
+            "size": 101601,
+            "sha256": "55b71ee57b050448949f98dd809086a34e0b8cf64acff88933f47d46ed5a94ef"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000075270.pdf",
+            "mimeType": "application/pdf",
+            "size": 100896,
+            "sha256": "de22097f9f5e7bb887b07ef7f5f180183c4d3a6b666e3eb0e9008b21e2ff15a7"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000075271.pdf",
+            "mimeType": "application/pdf",
+            "size": 52681,
+            "sha256": "d83613a885be8d20a70061ff718410472b841ed792ee88883f84548c554cb7bf"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000075261.pdf",
+            "mimeType": "application/pdf",
+            "size": 43375,
+            "sha256": "e572bc7dcff0cb42c8b9b2ceb85581c5a1ebe249618a7844d88cf0b9560fe030"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000075272.pdf",
+            "mimeType": "application/pdf",
+            "size": 25591,
+            "sha256": "4d6fd04bc6503903b0cfc2a107ca8107e1b85dd9aa482d1889a0175fdcb23109"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000079526.pdf",
+            "mimeType": "application/pdf",
+            "size": 17463,
+            "sha256": "cb4c0526af8c84d2d025eb0c81da4a6b6f897b4014a666d2d4e453cc85553c60"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000065171.pdf",
+            "mimeType": "application/pdf",
+            "size": 54356,
+            "sha256": "ebcee961aaf568017c83b112a94b0c7225ff083751f26b14f9d5f7e71cce4e40"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000065172.pdf",
+            "mimeType": "application/pdf",
+            "size": 26238,
+            "sha256": "f4ad267866d43287c482ca104a67df10341d2e9b6a837192f0c336682288f312"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000065427.pdf",
+            "mimeType": "application/pdf",
+            "size": 28632,
+            "sha256": "2962d2bf7b8d1de1d63279a10587666780e18f7429aa3b89557fe2e56be5407f"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000065174.pdf",
+            "mimeType": "application/pdf",
+            "size": 30655,
+            "sha256": "2233ab1cc703c9fa9f4edf4dd96ffec3b9d6871248f67a2f4d4abdf403fd6ea1"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051250.pdf",
+            "mimeType": "application/pdf",
+            "size": 75778,
+            "sha256": "206701e00c7923938c899c5d3f7c2e6eefdfe43f72292e8118d54aa617f398cd"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000063689.pdf",
+            "mimeType": "application/pdf",
+            "size": 62289,
+            "sha256": "1ae38c71a6043253fef12de9083dec64a02fc3482c967c574fa9e4b47a4338a8"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051252.pdf",
+            "mimeType": "application/pdf",
+            "size": 89109,
+            "sha256": "c211411b5ee32fd304234145bf6aa93b6753719c618b816d0a1ebf46ca423249"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051253.pdf",
+            "mimeType": "application/pdf",
+            "size": 65270,
+            "sha256": "d9d2d967973081e982a2b0ff2da0924e49b596c4e300f39c342b3a5c465ec53d"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051254.pdf",
+            "mimeType": "application/pdf",
+            "size": 97925,
+            "sha256": "c44ea37e9cd5655950b7300466e9d4bc7a89d8eeb9cd709367810f07c69a5985"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051255.pdf",
+            "mimeType": "application/pdf",
+            "size": 72905,
+            "sha256": "26ecad6497d96a5a5e0f6c35b56d2dd3ed3a48889b53e124b7459e96e4d60b2c"
+          },
+          {
+            "path": "figures/402M50000400041/pict/2FH00000051256.pdf",
+            "mimeType": "application/pdf",
+            "size": 126300,
+            "sha256": "38a0e1c03e5e2df3346701e96a45668d4d41b3d80a02726d4ee9161ca350b2a4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "335CO0000000020",
+      "title": "特許法等関係手数料令",
+      "lawNum": "昭和三十五年政令第二十号",
+      "category": "共通手続",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=335CO0000000020_20240401_505CO0000000338",
+      "verifiedAt": "2026-11-24T22:53:00.712013+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "335CO0000000020_20240401_505CO0000000338",
+      "titleReading": "とっきょほうとうかんけいてすうりょうれい",
+      "sourceArticleCount": 43,
+      "articleCount": 43,
+      "mainArticleCount": 15,
+      "supplementaryArticleCount": 28,
+      "sourceTextLeafCount": 735,
+      "missingTextLeafCount": 0,
+      "appendixCount": 53,
+      "figureCount": 0,
+      "rawSha256": "a869815d926f7407cfa991e95c92e834b448ca1d810b59cf7098816323d83e23",
+      "rawBytes": 203041,
+      "file": "335CO0000000020.json",
+      "bytes": 153467,
+      "figureNote": false
+    },
+    {
+      "id": "353AC0000000030",
+      "title": "特許協力条約に基づく国際出願等に関する法律",
+      "lawNum": "昭和五十三年法律第三十号",
+      "category": "国際出願",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=353AC0000000030_20260624_508AC0000000046",
+      "verifiedAt": "2026-11-24T22:53:00.812786+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "353AC0000000030_20260624_508AC0000000046",
+      "titleReading": "とっきょきょうりょくじょうやくにもとづくこくさいしゅつがんとうにかんするほうりつ",
+      "sourceArticleCount": 57,
+      "articleCount": 57,
+      "mainArticleCount": 22,
+      "supplementaryArticleCount": 35,
+      "sourceTextLeafCount": 388,
+      "missingTextLeafCount": 0,
+      "appendixCount": 19,
+      "figureCount": 0,
+      "rawSha256": "45eb624cf471e971795ae245907d6eeb94f7e09fe6fc29de8c928030a0197a5d",
+      "rawBytes": 86443,
+      "file": "353AC0000000030.json",
+      "bytes": 93969,
+      "figureNote": false
+    },
+    {
+      "id": "353CO0000000291",
+      "title": "特許協力条約に基づく国際出願等に関する法律施行令",
+      "lawNum": "昭和五十三年政令第二百九十一号",
+      "category": "国際出願",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=353CO0000000291_20220401_503CO0000000344",
+      "verifiedAt": "2026-11-24T22:53:00.844328+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "353CO0000000291_20220401_503CO0000000344",
+      "titleReading": "とっきょきょうりょくじょうやくにもとづくこくさいしゅつがんとうにかんするほうりつせこうれい",
+      "sourceArticleCount": 21,
+      "articleCount": 21,
+      "mainArticleCount": 7,
+      "supplementaryArticleCount": 14,
+      "sourceTextLeafCount": 179,
+      "missingTextLeafCount": 0,
+      "appendixCount": 20,
+      "figureCount": 0,
+      "rawSha256": "ae7de384729bb18180af28cf918eb4077574b5666daa7014be4af53134ded976",
+      "rawBytes": 39818,
+      "file": "353CO0000000291.json",
+      "bytes": 44042,
+      "figureNote": false
+    },
+    {
+      "id": "353M50000400034",
+      "title": "特許協力条約に基づく国際出願等に関する法律施行規則",
+      "lawNum": "昭和五十三年通商産業省令第三十四号",
+      "category": "国際出願",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=353M50000400034_20260401_506M60000400081",
+      "verifiedAt": "2026-11-24T22:53:01.005960+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "353M50000400034_20260401_506M60000400081",
+      "titleReading": "とっきょきょうりょくじょうやくにもとづくこくさいしゅつがんとうにかんするほうりつしこうきそく",
+      "sourceArticleCount": 183,
+      "articleCount": 183,
+      "mainArticleCount": 134,
+      "supplementaryArticleCount": 49,
+      "sourceTextLeafCount": 1613,
+      "missingTextLeafCount": 0,
+      "appendixCount": 184,
+      "figureCount": 78,
+      "rawSha256": "e98e81b8ac9a42f4aad1bdb64ad731c694c20986efe186e46bc3246b8cf1125f",
+      "rawBytes": 360243,
+      "file": "353M50000400034.json",
+      "bytes": 489302,
+      "figureNote": true,
+      "offlineFigureFiles": 78,
+      "offlineFigureBytes": 6288930,
+      "figureArchive": {
+        "file": "figures-353M50000400034.zip",
+        "bytes": 6302212,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 78,
+        "entries": [
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051370.pdf",
+            "mimeType": "application/pdf",
+            "size": 198975,
+            "sha256": "3881965eb4782644afcc5d4492351dd120d614884742f9eafac659530bcec0c5"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051371.pdf",
+            "mimeType": "application/pdf",
+            "size": 138097,
+            "sha256": "7308d66a6de403d346d643ecf36598dc89d8517bcf94c34b5ffb9d284018a4df"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051372.pdf",
+            "mimeType": "application/pdf",
+            "size": 74720,
+            "sha256": "42d4aae4757050a53dfaeaca06f8d426b0314ce422830c94ce396ba60b983c4b"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051373.pdf",
+            "mimeType": "application/pdf",
+            "size": 78586,
+            "sha256": "b311e13ccb831f6a6331dd6a75f7acbbd326a5daf24353591b55f04ddfbbb267"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051374.pdf",
+            "mimeType": "application/pdf",
+            "size": 85865,
+            "sha256": "1a5bc9227eceaaa823e1527588eb49f75e9fbd37ae8ba6ba4fcdceed5cb0069b"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051375.pdf",
+            "mimeType": "application/pdf",
+            "size": 83861,
+            "sha256": "8f4ebb3ca8553f8cc55f48dfdce447452ce6ac12820f1050cf19ef8bd65964fd"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051376.pdf",
+            "mimeType": "application/pdf",
+            "size": 78782,
+            "sha256": "676ba6d4d34d0b727ce4c10709d11a457a4010dc50635017d68ce9c64eb369ef"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051377.pdf",
+            "mimeType": "application/pdf",
+            "size": 78742,
+            "sha256": "6ba24117d545e4fe81026089c4d9820b65b6738c9fd992c188bd198882849c87"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051378.pdf",
+            "mimeType": "application/pdf",
+            "size": 95472,
+            "sha256": "eda8ed099f5a54d1eaa76df32fe79b60412bd596c6c5e11b62270a03a9e22f1b"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000052126.pdf",
+            "mimeType": "application/pdf",
+            "size": 94036,
+            "sha256": "304db4c92881c5acdeabf4ff585648e58b0985678fc12a870e01ca3aa9451753"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000052127.pdf",
+            "mimeType": "application/pdf",
+            "size": 84706,
+            "sha256": "6ed38447533b02aeddc8b7ba8e8aa968a5fc6db247af873a1c651ab8ffe6dc6a"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051381.pdf",
+            "mimeType": "application/pdf",
+            "size": 86289,
+            "sha256": "24b7a195fe40f4eb7e18660f3552252e76236731f83eb55dd3e89886db746a43"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051382.pdf",
+            "mimeType": "application/pdf",
+            "size": 207733,
+            "sha256": "aec9cc67bf8cb717b02236e97974ef45dcc0b795122344cb33b4864274ec2d78"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051383.pdf",
+            "mimeType": "application/pdf",
+            "size": 70395,
+            "sha256": "28e530b66d8dd940bb75f14b14ba67ed8f46990250fd3fb25b2da15eb96925c9"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051384.pdf",
+            "mimeType": "application/pdf",
+            "size": 99817,
+            "sha256": "bfd6359fe71889165161593741a0cbe123fd7aa587e9b52f04315ea258554837"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051385.pdf",
+            "mimeType": "application/pdf",
+            "size": 54474,
+            "sha256": "f85ade6b125972aac481de3bae46bb7e7624dd2ceb8985d4ae02a0b7ec3549e2"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051386.pdf",
+            "mimeType": "application/pdf",
+            "size": 91989,
+            "sha256": "5aab62dfa786b51730d7894573a59f64390a2ec292b2b6013d856eff8f2df789"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051387.pdf",
+            "mimeType": "application/pdf",
+            "size": 51837,
+            "sha256": "2c0d16477037356e00cd046e0448fe11118be0f5c8425fd5e7380dd64cc17eaf"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051388.pdf",
+            "mimeType": "application/pdf",
+            "size": 86301,
+            "sha256": "fec3624fec6dc4a6869c5a3e01d0df293c608022a93e003a0d8260ff53665fcb"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051389.pdf",
+            "mimeType": "application/pdf",
+            "size": 51865,
+            "sha256": "491fe1a88a6fa696fe60d07da18f93477fa65dc42ccc9135bb33832dbeca100f"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051390.pdf",
+            "mimeType": "application/pdf",
+            "size": 90319,
+            "sha256": "93dc1eb98222d5e70714c9cb22cfb6d81b061918b92b6723d9792f28ebd261ab"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051391.pdf",
+            "mimeType": "application/pdf",
+            "size": 65981,
+            "sha256": "d5aeadfe729842ee3c0f83727aa33f03b22a3d6db8ad69e20a82589c5b47078b"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051392.pdf",
+            "mimeType": "application/pdf",
+            "size": 144642,
+            "sha256": "5b661b7c25073592c36a7cc5d8b584477b41bb891d311cde07aa861eddd810d0"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051393.pdf",
+            "mimeType": "application/pdf",
+            "size": 119457,
+            "sha256": "8059e2eb1208a2ff0ce6efa9b2a19640aba4d4e5fd86b0886718a45f7b045677"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051394.pdf",
+            "mimeType": "application/pdf",
+            "size": 113613,
+            "sha256": "4bb3a0ce24d854f817787b8f8f67d612445e18a0a613af50e47857224aba291b"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051395.pdf",
+            "mimeType": "application/pdf",
+            "size": 58237,
+            "sha256": "45bef562df9bfb59e116c3e5b5ecf58456a96ee2ff8715a5a00a706daae63589"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051396.pdf",
+            "mimeType": "application/pdf",
+            "size": 130229,
+            "sha256": "3e2adcaf36acb9a12a49690e754132849297cf2d9b2c0f76b79e2f834d61ef49"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051397.pdf",
+            "mimeType": "application/pdf",
+            "size": 64249,
+            "sha256": "0ca86fe6dff3631ebf50ed670c2f8d7e4c4ebf09f5ba77115b11a63a8b702e04"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051398.pdf",
+            "mimeType": "application/pdf",
+            "size": 104250,
+            "sha256": "7377c14b4e591815083af3cf186e61b99673e99d484c2e28fcbcba452f32c7a6"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051399.pdf",
+            "mimeType": "application/pdf",
+            "size": 68484,
+            "sha256": "0da42efedaf1032bd743c1bd0c2c3c810da8a3f5632ded7675863bd70bf83f76"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051400.pdf",
+            "mimeType": "application/pdf",
+            "size": 91145,
+            "sha256": "0600740eddf7936dadefbff7a4dcaff2cba7524a4d0ea0ee175b87d354c7550e"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051401.pdf",
+            "mimeType": "application/pdf",
+            "size": 90666,
+            "sha256": "1ed0918760071aca23838d5a80a5ee6a3b9f53f5db97cb6e61780a78aa44a1e8"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051402.pdf",
+            "mimeType": "application/pdf",
+            "size": 89933,
+            "sha256": "5a95ea70d27551af01d2915f1a34b87f4cfb4f41ea7ab677c184ed613b1365a6"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051403.pdf",
+            "mimeType": "application/pdf",
+            "size": 82237,
+            "sha256": "f5b919ec874012dc87e3522e98e89d9fc70c03bc66b03b296e8aa6ddd9190dc4"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051404.pdf",
+            "mimeType": "application/pdf",
+            "size": 117703,
+            "sha256": "d2dbd4406cac61f02ca4a13aa3075084d8cb2fd7b3caaa4f4049aeb1dd2f5868"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051405.pdf",
+            "mimeType": "application/pdf",
+            "size": 69251,
+            "sha256": "61dd03b219b823f0cbe00f4bafcb125a9697a4d61db3cb48032512cfe65de481"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070919.pdf",
+            "mimeType": "application/pdf",
+            "size": 84507,
+            "sha256": "8f2472c37cbab5d14e7cf2a191fb246e35be44a47e5357535df6c7977224fc34"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070920.pdf",
+            "mimeType": "application/pdf",
+            "size": 88047,
+            "sha256": "66a1703ff50bf3e1618706a52426f606319094d7d0d44c43486617c5c2b7b0ff"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051408.pdf",
+            "mimeType": "application/pdf",
+            "size": 78001,
+            "sha256": "e127d1fa9591308c628a3914409e5ff437b7aa5b0ab1d88263f5642104fbd661"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051409.pdf",
+            "mimeType": "application/pdf",
+            "size": 53548,
+            "sha256": "31254bc53648eff4eeb59dd8732b9a405f2ad57d2d153aba30b36fe7da48f3c6"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051410.pdf",
+            "mimeType": "application/pdf",
+            "size": 91297,
+            "sha256": "d2a0ba6bdbad49fa7bcc35396ab1663cd6f23792d21ff4895aad1b43f8ae90b1"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051411.pdf",
+            "mimeType": "application/pdf",
+            "size": 57367,
+            "sha256": "86cd8c720367e6ca7d7e138423a6e2c4637412c91a23eb296379601e161e26e2"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070922.pdf",
+            "mimeType": "application/pdf",
+            "size": 96136,
+            "sha256": "3e70402638dce7b056627cb38055fdf0fc2e38778da1b51d46d006393f724538"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070926.pdf",
+            "mimeType": "application/pdf",
+            "size": 151210,
+            "sha256": "3ccf447fc056a52851aa217d9c8cd109db07d73423819224f8f5beb64931fd59"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000066423.pdf",
+            "mimeType": "application/pdf",
+            "size": 36801,
+            "sha256": "99b91110852a65ee15389f3acf3bab4066cd3ecce2f74c6ce264e8a085a85a66"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051415.pdf",
+            "mimeType": "application/pdf",
+            "size": 55822,
+            "sha256": "428881e6aaacd459fa2322941d4ace4c38ac6317ab8a093c575ddeef8bdbeb3e"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051416.pdf",
+            "mimeType": "application/pdf",
+            "size": 62524,
+            "sha256": "ae0851ba62bac8d9b4347690203e4897dbd292a032538d831d958f10c01d8c82"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051417.pdf",
+            "mimeType": "application/pdf",
+            "size": 55650,
+            "sha256": "ded21c6e1c5bb81053ad695afbc08f313267c13c8455bc01db59fff9941cc38f"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051418.pdf",
+            "mimeType": "application/pdf",
+            "size": 87876,
+            "sha256": "44583dfdc42bb1240c1aa3254b7ec4fcc2ac03b34dd3eb2152453dc926faa84b"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051419.pdf",
+            "mimeType": "application/pdf",
+            "size": 53501,
+            "sha256": "2352cdfcecc591b376591b44e1e9f41d893c83799b25dfebafa7cde4187f7147"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051420.pdf",
+            "mimeType": "application/pdf",
+            "size": 60952,
+            "sha256": "24af63086d61bab04ce42eee345ca892ceada5230262f03eb287c955b17cb61b"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051421.pdf",
+            "mimeType": "application/pdf",
+            "size": 55680,
+            "sha256": "aef06313e9f5b7e0381d1edc1be63afb55d9a0573ceb754ded352f63d6a1b4e8"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051422.pdf",
+            "mimeType": "application/pdf",
+            "size": 73240,
+            "sha256": "abaf69ced43732fb80a301377334983898f64d5e16693d581fa7f9b052137df1"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051423.pdf",
+            "mimeType": "application/pdf",
+            "size": 71780,
+            "sha256": "e2bc48ffbd6086f5a3e441389f75a480b2d0de941e8d371d78f04967b74817ca"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000065548.pdf",
+            "mimeType": "application/pdf",
+            "size": 81598,
+            "sha256": "4297255cbc28ae2340cfca77e9659878dd0ab8b311ae52b649d2dd6c547cc83f"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070927.pdf",
+            "mimeType": "application/pdf",
+            "size": 102058,
+            "sha256": "261df409b4b38499ded2060b890b44eaa937865024a4606c4a243f977174fb83"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070928.pdf",
+            "mimeType": "application/pdf",
+            "size": 28030,
+            "sha256": "fc78a09d7694d76a37554d6d021902612eca6f9d6c9002749e2181329e45cecc"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070930.pdf",
+            "mimeType": "application/pdf",
+            "size": 30730,
+            "sha256": "604f7c901dfe341951127f8fbe2f8ee90a0ff291a07d00e34f02fcd46a3e4490"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070934.pdf",
+            "mimeType": "application/pdf",
+            "size": 55027,
+            "sha256": "3a1ed4c00a99fc11887ca0ed5b36652613a79087d07a698f2598e288c30dd950"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070935.pdf",
+            "mimeType": "application/pdf",
+            "size": 110575,
+            "sha256": "7837d24c0517766f97b0de035fc8ee09b35483507ff4b47e9cb70621da217563"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051430.pdf",
+            "mimeType": "application/pdf",
+            "size": 69510,
+            "sha256": "152cc95625b35f4f8ad08fa2eaf61073732e336bdb95281c5921b0c3240004aa"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051431.pdf",
+            "mimeType": "application/pdf",
+            "size": 70179,
+            "sha256": "0bb321e5f5b7f3a85c96fdfee3888a1e527c5a2c3d99654ec7b9b504d8db7778"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000065218.pdf",
+            "mimeType": "application/pdf",
+            "size": 47678,
+            "sha256": "327d76d2677b6c9901de9547ca2fc652a7f185acae5654007567ce04787cb835"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070937.pdf",
+            "mimeType": "application/pdf",
+            "size": 61050,
+            "sha256": "7f64623e523020edf50c6d00630f38b8fb9b9dbd87f08f7c6fdcd1820754928e"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051434.pdf",
+            "mimeType": "application/pdf",
+            "size": 65612,
+            "sha256": "f89f6f4f02a66628bab9c13380f4a6ac67340b53e49084d85e6407b7f7c78714"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051435.pdf",
+            "mimeType": "application/pdf",
+            "size": 65121,
+            "sha256": "873ecb538e62e31146b1315321717029e156d3a2cfa4d5eb05d6333293fa57b5"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051436.pdf",
+            "mimeType": "application/pdf",
+            "size": 66059,
+            "sha256": "4c81f52331c75d6836b293c63727b2e34caf1bcb72c4aae37db937b35e712b59"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051437.pdf",
+            "mimeType": "application/pdf",
+            "size": 65937,
+            "sha256": "c2dbf348f3f9d68b565b02d9b569b81d6c8e58baf3f7df61e4cf919cae075217"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070938.pdf",
+            "mimeType": "application/pdf",
+            "size": 28991,
+            "sha256": "f6722eeb9a2277108891a9e8818b9bbea16a2b5f9fb86b370bb2bd618c7f8653"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070939.pdf",
+            "mimeType": "application/pdf",
+            "size": 51679,
+            "sha256": "3676f627f7cb026c1a8401bc37a77a00ddcc259af1eea8a556248c0732bebb3a"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051440.pdf",
+            "mimeType": "application/pdf",
+            "size": 87713,
+            "sha256": "f24bcd55939b84c23623ba204e5f392813581f07947c2f0e2522d766c73d59ed"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051441.pdf",
+            "mimeType": "application/pdf",
+            "size": 79820,
+            "sha256": "e12e1b3802b3c913f063657ad82f0b0e67a549046d618df689a2864df436704f"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000065220.pdf",
+            "mimeType": "application/pdf",
+            "size": 44005,
+            "sha256": "701d9dd47c2094d678bb69a86c940bc97c5cd0cb4556147811099e7fcdd9e68a"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070940.pdf",
+            "mimeType": "application/pdf",
+            "size": 54056,
+            "sha256": "e1f84bacf4f28ae0e3939dc221f4bdff50b8dd1a956e5c7515f05673d7de091f"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000063485.pdf",
+            "mimeType": "application/pdf",
+            "size": 83841,
+            "sha256": "ecd3c899ccf821463c42764b2855acec3ef6202bb6acd06ec1ce3bb994c62f71"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000070941.pdf",
+            "mimeType": "application/pdf",
+            "size": 43280,
+            "sha256": "4d16c562e6e0d6d1d55fdfcdc945ee82f0b1a3c8322fdac6752a7cc2dff7a69b"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051446.pdf",
+            "mimeType": "application/pdf",
+            "size": 124749,
+            "sha256": "6c2ee7e919034351bdbf5d0542af06ed6c20e917fdc2d41825aad30474921f26"
+          },
+          {
+            "path": "figures/353M50000400034/pict/2FH00000051447.pdf",
+            "mimeType": "application/pdf",
+            "size": 64755,
+            "sha256": "7ad17f91e2f4908e68cf86055bdc829da60373ed46a944cdc90194f9090c1642"
+          }
+        ]
+      }
+    },
+    {
+      "id": "345AC0000000048",
+      "title": "著作権法",
+      "lawNum": "昭和四十五年法律第四十八号",
+      "category": "著作権",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=345AC0000000048_20260624_508AC0000000048",
+      "verifiedAt": "2026-11-24T22:53:01.165213+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "345AC0000000048_20260624_508AC0000000048",
+      "titleReading": "ちょさくけんほう",
+      "sourceArticleCount": 389,
+      "articleCount": 389,
+      "mainArticleCount": 239,
+      "supplementaryArticleCount": 150,
+      "sourceTextLeafCount": 3592,
+      "missingTextLeafCount": 0,
+      "appendixCount": 70,
+      "figureCount": 0,
+      "rawSha256": "f95d64512a9ae02c840097a751814f53a28dde55a0d46222c972680d08684f8c",
+      "rawBytes": 880481,
+      "file": "345AC0000000048.json",
+      "bytes": 1004153,
+      "figureNote": false
+    },
+    {
+      "id": "345CO0000000335",
+      "title": "著作権法施行令",
+      "lawNum": "昭和四十五年政令第三百三十五号",
+      "category": "著作権",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=345CO0000000335_20260521_508CO0000000169",
+      "verifiedAt": "2026-11-24T22:53:01.143585+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "345CO0000000335_20260521_508CO0000000169",
+      "titleReading": "ちょさくけんほうしこうれい",
+      "sourceArticleCount": 144,
+      "articleCount": 144,
+      "mainArticleCount": 119,
+      "supplementaryArticleCount": 25,
+      "sourceTextLeafCount": 1548,
+      "missingTextLeafCount": 0,
+      "appendixCount": 79,
+      "figureCount": 0,
+      "rawSha256": "773d7074bfcdac24b04d318c220d3eae91c22fac7fd17bb2797e30ecd2a271f8",
+      "rawBytes": 329048,
+      "file": "345CO0000000335.json",
+      "bytes": 317753,
+      "figureNote": false
+    },
+    {
+      "id": "345M50000080026",
+      "title": "著作権法施行規則",
+      "lawNum": "昭和四十五年文部省令第二十六号",
+      "category": "著作権",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=345M50000080026_20260401_508M60000080004",
+      "verifiedAt": "2026-11-24T22:53:01.143011+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "345M50000080026_20260401_508M60000080004",
+      "titleReading": "ちょさくけんほうしこうきそく",
+      "sourceArticleCount": 88,
+      "articleCount": 88,
+      "mainArticleCount": 87,
+      "supplementaryArticleCount": 1,
+      "sourceTextLeafCount": 1004,
+      "missingTextLeafCount": 0,
+      "appendixCount": 51,
+      "figureCount": 16,
+      "rawSha256": "a9f83d83f23275333d0d95ee5981e101234eeeac05d828454140338699fb4930",
+      "rawBytes": 210708,
+      "file": "345M50000080026.json",
+      "bytes": 227252,
+      "figureNote": true,
+      "offlineFigureFiles": 16,
+      "offlineFigureBytes": 1227637,
+      "figureArchive": {
+        "file": "figures-345M50000080026.zip",
+        "bytes": 1230379,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 16,
+        "entries": [
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051080.pdf",
+            "mimeType": "application/pdf",
+            "size": 60647,
+            "sha256": "b2df40a8aab062839993207456e87d30f07029989d21c0dc678099262674f6c0"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051081.pdf",
+            "mimeType": "application/pdf",
+            "size": 58563,
+            "sha256": "52b23b9163b1030870a4280c970ef781bb6ac8828320cad99120f82a79e6ef55"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051082.pdf",
+            "mimeType": "application/pdf",
+            "size": 71788,
+            "sha256": "7356ccacf1d7ed961bffe9aaa6388f71e3af9b04fba1a725880dba1a86261954"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051083.pdf",
+            "mimeType": "application/pdf",
+            "size": 121893,
+            "sha256": "ee2607baf7a6201f012335ca31e124a4aa66aa14c5264c0c09ea4d3a2e1e06ce"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051084.pdf",
+            "mimeType": "application/pdf",
+            "size": 67652,
+            "sha256": "097fb6073087eb225e59deba6de0144b52d592f13b235229cd7da1bc26f3f8e2"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051085.pdf",
+            "mimeType": "application/pdf",
+            "size": 56420,
+            "sha256": "c750969184ba3ff04675a997dd67864e1ba569c5fc68fdafb647fd5e41ae3f08"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051086.pdf",
+            "mimeType": "application/pdf",
+            "size": 78986,
+            "sha256": "893bab7a0eb2d79efd256e505fa12566a66498f9e7a4f4a17e72cff3c94e9ee2"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051087.pdf",
+            "mimeType": "application/pdf",
+            "size": 73890,
+            "sha256": "77a67ca523e675a95180f92a5dd75aed1b67b20fdb49342c52f5df1d00a9d2ba"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051088.pdf",
+            "mimeType": "application/pdf",
+            "size": 99060,
+            "sha256": "31063f788238b0fccd218b7afca9271187a7a03a6201d8c4bc2c2ed67dbb1191"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051089.pdf",
+            "mimeType": "application/pdf",
+            "size": 72661,
+            "sha256": "83b0a09cfa9412b7b48ac835382ac77da1a0c019bd148485891489386cf90b23"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051090.pdf",
+            "mimeType": "application/pdf",
+            "size": 83787,
+            "sha256": "26e6d2695948f18ef79a907c79abc26ad5eaf1265433f19a3e0ca29e4921996a"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051091.pdf",
+            "mimeType": "application/pdf",
+            "size": 71321,
+            "sha256": "c1ff3c59bf719ca9e591e871e0ddffcc0871d146cfcbc9e81922e18d1547390f"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051092.pdf",
+            "mimeType": "application/pdf",
+            "size": 72243,
+            "sha256": "d0bb708b3c60a0a4465718792ec5fab4b1ca308b43dbbf84e81f12e4ef9fd7a5"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051093.pdf",
+            "mimeType": "application/pdf",
+            "size": 103398,
+            "sha256": "de242f1eb65df8ead0c6a390410603d6af479f6da38508d951cce3c351d76fcd"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051094.pdf",
+            "mimeType": "application/pdf",
+            "size": 68449,
+            "sha256": "a5b41979ab534d09ea57b67d261d77339d055591ed41f8b3ea95a96207c0aa64"
+          },
+          {
+            "path": "figures/345M50000080026/pict/2FH00000051095.pdf",
+            "mimeType": "application/pdf",
+            "size": 66879,
+            "sha256": "a3938a2ee9e245a86963adaa83c6ec6830d2444637211752e6be87d802a79f99"
+          }
+        ]
+      }
+    },
+    {
+      "id": "405AC0000000047",
+      "title": "不正競争防止法",
+      "lawNum": "平成五年法律第四十七号",
+      "category": "不正競争",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=405AC0000000047_20260521_507AC0000000039",
+      "verifiedAt": "2026-11-24T22:53:01.226092+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "405AC0000000047_20260521_507AC0000000039",
+      "titleReading": "ふせいきょうそうぼうしほう",
+      "sourceArticleCount": 107,
+      "articleCount": 107,
+      "mainArticleCount": 45,
+      "supplementaryArticleCount": 62,
+      "sourceTextLeafCount": 909,
+      "missingTextLeafCount": 0,
+      "appendixCount": 30,
+      "figureCount": 0,
+      "rawSha256": "93e5ea650d4423e5f2116d9427a738967b47baee6b9121604a41fb17179e2dcb",
+      "rawBytes": 234046,
+      "file": "405AC0000000047.json",
+      "bytes": 290297,
+      "figureNote": false
+    },
+    {
+      "id": "413CO0000000388",
+      "title": "不正競争防止法施行令",
+      "lawNum": "平成十三年政令第三百八十八号",
+      "category": "不正競争",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=413CO0000000388_20240401_505CO0000000338",
+      "verifiedAt": "2026-11-24T22:53:01.167328+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "413CO0000000388_20240401_505CO0000000338",
+      "titleReading": "ふせいきょうそうぼうしほうしこうれい",
+      "sourceArticleCount": 3,
+      "articleCount": 3,
+      "mainArticleCount": 3,
+      "supplementaryArticleCount": 0,
+      "sourceTextLeafCount": 33,
+      "missingTextLeafCount": 0,
+      "appendixCount": 5,
+      "figureCount": 0,
+      "rawSha256": "3d2bc6136080aeecc2d27809363a311fe9fa6861effc4853c8daa06b3aaa1844",
+      "rawBytes": 9820,
+      "file": "413CO0000000388.json",
+      "bytes": 10860,
+      "figureNote": false
+    },
+    {
+      "id": "412AC0000000049",
+      "title": "弁理士法",
+      "lawNum": "平成十二年法律第四十九号",
+      "category": "弁理士制度",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=412AC0000000049_20260521_504AC0000000048",
+      "verifiedAt": "2026-11-24T22:53:01.330806+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "412AC0000000049_20260521_504AC0000000048",
+      "titleReading": "べんりしほう",
+      "sourceArticleCount": 188,
+      "articleCount": 188,
+      "mainArticleCount": 122,
+      "supplementaryArticleCount": 66,
+      "sourceTextLeafCount": 1331,
+      "missingTextLeafCount": 0,
+      "appendixCount": 36,
+      "figureCount": 0,
+      "rawSha256": "8cc48609449fdc14e432f2bbe13583fc6e803a4b08a641b853dbc4b37c8c57f8",
+      "rawBytes": 277964,
+      "file": "412AC0000000049.json",
+      "bytes": 303315,
+      "figureNote": false
+    },
+    {
+      "id": "412CO0000000384",
+      "title": "弁理士法施行令",
+      "lawNum": "平成十二年政令第三百八十四号",
+      "category": "弁理士制度",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=412CO0000000384_20220401_503CO0000000344",
+      "verifiedAt": "2026-11-24T22:53:01.199381+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "412CO0000000384_20220401_503CO0000000344",
+      "titleReading": "べんりしほうせこうれい",
+      "sourceArticleCount": 21,
+      "articleCount": 21,
+      "mainArticleCount": 8,
+      "supplementaryArticleCount": 13,
+      "sourceTextLeafCount": 175,
+      "missingTextLeafCount": 0,
+      "appendixCount": 20,
+      "figureCount": 0,
+      "rawSha256": "20885f4a15d61a4ab8961945d0e1a5d9e00922fd96d50710bd1d94323f9b1743",
+      "rawBytes": 35077,
+      "file": "412CO0000000384.json",
+      "bytes": 36988,
+      "figureNote": false
+    },
+    {
+      "id": "412M50000400411",
+      "title": "弁理士法施行規則",
+      "lawNum": "平成十二年通商産業省令第四百十一号",
+      "category": "弁理士制度",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=412M50000400411_20260521_508M60000400043",
+      "verifiedAt": "2026-11-24T22:53:01.287358+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "412M50000400411_20260521_508M60000400043",
+      "titleReading": "べんりしほうしこうきそく",
+      "sourceArticleCount": 79,
+      "articleCount": 79,
+      "mainArticleCount": 62,
+      "supplementaryArticleCount": 17,
+      "sourceTextLeafCount": 840,
+      "missingTextLeafCount": 0,
+      "appendixCount": 39,
+      "figureCount": 10,
+      "rawSha256": "705f92c11d40020811c03e4aa04d5f998ff0ba012f6be12cd117f6242965d760",
+      "rawBytes": 174605,
+      "file": "412M50000400411.json",
+      "bytes": 160255,
+      "figureNote": true,
+      "offlineFigureFiles": 10,
+      "offlineFigureBytes": 747793,
+      "figureArchive": {
+        "file": "figures-412M50000400411.zip",
+        "bytes": 749515,
+        "compression": "stored",
+        "method": 0,
+        "entryCount": 10,
+        "entries": [
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049582.pdf",
+            "mimeType": "application/pdf",
+            "size": 100029,
+            "sha256": "94614d473d8a8db6b5c116c870adb25074f3c6e50275ed35144ab2f2c218d5f5"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000068431.pdf",
+            "mimeType": "application/pdf",
+            "size": 45582,
+            "sha256": "aeac3250f068440dce271890784bbc26ddb75270417871c18bf44b7dddc7091b"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049584.pdf",
+            "mimeType": "application/pdf",
+            "size": 108121,
+            "sha256": "12d1ad4f456e39974cf2f2ff737c5e63d4a7e4c1a5e1204f1fcf1eeca3aec847"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049585.pdf",
+            "mimeType": "application/pdf",
+            "size": 61310,
+            "sha256": "ef5b891d5f921acde4009a8a209013310303e1d3d343acf46d9affbac30311e6"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049586.pdf",
+            "mimeType": "application/pdf",
+            "size": 54507,
+            "sha256": "3813c139b4a1806422d43f7515a4eb4aeaabe255f3db481540d45254bced9a56"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049587.pdf",
+            "mimeType": "application/pdf",
+            "size": 60650,
+            "sha256": "08b9246388321fcaef665d8d2685b3f76c60dc2cc16eb711f4258c060cd17265"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049588.pdf",
+            "mimeType": "application/pdf",
+            "size": 110059,
+            "sha256": "7578b6d60a320421c028b05149e105bd1b55839c701b9f7e6d973376964b17c2"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049589.pdf",
+            "mimeType": "application/pdf",
+            "size": 61883,
+            "sha256": "9fd1cf44566aeec7094ebf9d7faad4e94b08b17541f36dc1db7d65c249a14f1f"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049590.pdf",
+            "mimeType": "application/pdf",
+            "size": 69682,
+            "sha256": "507d4a10a3d4ce4b25f19e69ce4e9c609ccd384a6229b7ba2a8555d8d2bb8961"
+          },
+          {
+            "path": "figures/412M50000400411/pict/2FH00000049591.pdf",
+            "mimeType": "application/pdf",
+            "size": 75970,
+            "sha256": "d25a96e75f2b32732017f8e79c62d2d40255367ea7034f4b1d6245ee04c18354"
+          }
+        ]
+      }
+    },
+    {
+      "id": "129AC0000000089",
+      "title": "民法",
+      "lawNum": "明治二十九年法律第八十九号",
+      "category": "民事・行政",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=129AC0000000089_20260624_508AC0000000045",
+      "verifiedAt": "2026-11-24T22:53:02.291417+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "129AC0000000089_20260624_508AC0000000045",
+      "titleReading": "みんぽう",
+      "sourceArticleCount": 1374,
+      "articleCount": 1374,
+      "mainArticleCount": 1173,
+      "supplementaryArticleCount": 201,
+      "sourceTextLeafCount": 7738,
+      "missingTextLeafCount": 0,
+      "appendixCount": 73,
+      "figureCount": 0,
+      "rawSha256": "3592e3eee095f23d9e7ea8b9c2cb6fc29bb3c8fad6f9e785a92d170cc8f2c9ce",
+      "rawBytes": 1634259,
+      "file": "129AC0000000089.json",
+      "bytes": 1705104,
+      "figureNote": false
+    },
+    {
+      "id": "408AC0000000109",
+      "title": "民事訴訟法",
+      "lawNum": "平成八年法律第百九号",
+      "category": "民事・行政",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=408AC0000000109_20260624_508AC0000000046",
+      "verifiedAt": "2026-11-24T22:53:01.814304+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "408AC0000000109_20260624_508AC0000000046",
+      "titleReading": "みんじそしょうほう",
+      "sourceArticleCount": 588,
+      "articleCount": 588,
+      "mainArticleCount": 475,
+      "supplementaryArticleCount": 113,
+      "sourceTextLeafCount": 3897,
+      "missingTextLeafCount": 0,
+      "appendixCount": 34,
+      "figureCount": 0,
+      "rawSha256": "ac6b93623a78ce4ac14e4b0061b6c84b1ac1548ae4b897e67af3b097f160482b",
+      "rawBytes": 857892,
+      "file": "408AC0000000109.json",
+      "bytes": 922738,
+      "figureNote": false
+    },
+    {
+      "id": "426AC0000000068",
+      "title": "行政不服審査法",
+      "lawNum": "平成二十六年法律第六十八号",
+      "category": "民事・行政",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=426AC0000000068_20260624_508AC0000000046",
+      "verifiedAt": "2026-11-24T22:53:01.640966+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "426AC0000000068_20260624_508AC0000000046",
+      "titleReading": "ぎょうせいふふくしんさほう",
+      "sourceArticleCount": 108,
+      "articleCount": 108,
+      "mainArticleCount": 87,
+      "supplementaryArticleCount": 21,
+      "sourceTextLeafCount": 1294,
+      "missingTextLeafCount": 0,
+      "appendixCount": 13,
+      "figureCount": 0,
+      "rawSha256": "42e79075fd5f5bbd1c327f875c54d76f3ff2be8ff7a78ccd328a9f16bc795819",
+      "rawBytes": 309386,
+      "file": "426AC0000000068.json",
+      "bytes": 224438,
+      "figureNote": false
+    },
+    {
+      "id": "337AC0000000139",
+      "title": "行政事件訴訟法",
+      "lawNum": "昭和三十七年法律第百三十九号",
+      "category": "民事・行政",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=337AC0000000139_20261001_507AC0000000070",
+      "verifiedAt": "2026-11-24T22:53:01.764931+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "337AC0000000139_20261001_507AC0000000070",
+      "titleReading": "ぎょうせいじけんそしょうほう",
+      "sourceArticleCount": 129,
+      "articleCount": 129,
+      "mainArticleCount": 51,
+      "supplementaryArticleCount": 78,
+      "sourceTextLeafCount": 836,
+      "missingTextLeafCount": 0,
+      "appendixCount": 40,
+      "figureCount": 0,
+      "rawSha256": "a92efb70166e0ae7c063f0e9fc2c2d2b09a949a90024d80fea347cabedd3bc5d",
+      "rawBytes": 180120,
+      "file": "337AC0000000139.json",
+      "bytes": 192375,
+      "figureNote": false
+    },
+    {
+      "id": "405AC0000000088",
+      "title": "行政手続法",
+      "lawNum": "平成五年法律第八十八号",
+      "category": "民事・行政",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=405AC0000000088_20260724_508AC0000000066",
+      "verifiedAt": "2026-11-24T22:53:01.937863+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "405AC0000000088_20260724_508AC0000000066",
+      "titleReading": "ぎょうせいてつづきほう",
+      "sourceArticleCount": 74,
+      "articleCount": 74,
+      "mainArticleCount": 48,
+      "supplementaryArticleCount": 26,
+      "sourceTextLeafCount": 687,
+      "missingTextLeafCount": 0,
+      "appendixCount": 19,
+      "figureCount": 0,
+      "rawSha256": "58eec97f664bd296f3fa224a73eb8d401e4e5c70829132e0f50a486c5f5fc173",
+      "rawBytes": 143696,
+      "file": "405AC0000000088.json",
+      "bytes": 152114,
+      "figureNote": false
+    },
+    {
+      "id": "354AC0000000004",
+      "title": "民事執行法",
+      "lawNum": "昭和五十四年法律第四号",
+      "category": "民事・行政",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=354AC0000000004_20260521_505AC0000000053",
+      "verifiedAt": "2026-11-24T22:53:02.195190+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "354AC0000000004_20260521_505AC0000000053",
+      "titleReading": "みんじしっこうほう",
+      "sourceArticleCount": 324,
+      "articleCount": 324,
+      "mainArticleCount": 250,
+      "supplementaryArticleCount": 74,
+      "sourceTextLeafCount": 2931,
+      "missingTextLeafCount": 0,
+      "appendixCount": 40,
+      "figureCount": 0,
+      "rawSha256": "9084fcc52f7dcc805f44f17e5280d0055c65e9cb9926772948ae066c6656eaf0",
+      "rawBytes": 694992,
+      "file": "354AC0000000004.json",
+      "bytes": 734973,
+      "figureNote": false
+    },
+    {
+      "id": "401AC0000000091",
+      "title": "民事保全法",
+      "lawNum": "平成元年法律第九十一号",
+      "category": "民事・行政",
+      "sourceUrl": "https://laws.e-gov.go.jp/document?lawid=401AC0000000091_20260521_505AC0000000053",
+      "verifiedAt": "2026-11-24T22:53:02.108786+00:00",
+      "asOf": "2026-11-25",
+      "revisionId": "401AC0000000091_20260521_505AC0000000053",
+      "titleReading": "みんじほぜんほう",
+      "sourceArticleCount": 98,
+      "articleCount": 98,
+      "mainArticleCount": 71,
+      "supplementaryArticleCount": 27,
+      "sourceTextLeafCount": 662,
+      "missingTextLeafCount": 0,
+      "appendixCount": 25,
+      "figureCount": 0,
+      "rawSha256": "bee084df68e9e2eab97985fb61b027dde863c3e78e009c394cf0136f868a77fb",
+      "rawBytes": 155199,
+      "file": "401AC0000000091.json",
+      "bytes": 158556,
+      "figureNote": false
+    }
+  ],
+  "errors": [],
+  "files": [
+    {
+      "path": "334AC0000000121.json",
+      "bytes": 1094065,
+      "mimeType": "application/json",
+      "lawId": "334AC0000000121"
+    },
+    {
+      "path": "335CO0000000016.json",
+      "bytes": 144285,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000016"
+    },
+    {
+      "path": "335M50000400010.json",
+      "bytes": 904199,
+      "mimeType": "application/json",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part001.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part002.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part003.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part004.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part005.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part006.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part007.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part008.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "figures-335M50000400010.zip.part009.bin",
+      "bytes": 646456,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400010"
+    },
+    {
+      "path": "335CO0000000039.json",
+      "bytes": 145823,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000039"
+    },
+    {
+      "path": "335M50000400033.json",
+      "bytes": 212235,
+      "mimeType": "application/json",
+      "lawId": "335M50000400033"
+    },
+    {
+      "path": "figures-335M50000400033.zip",
+      "bytes": 1037235,
+      "mimeType": "application/zip",
+      "lawId": "335M50000400033",
+      "compression": "stored",
+      "sha256": "d5bf8529cc912098800704f3dedd84c874f8c7af9680328ba2fb9701e1b1f5c4"
+    },
+    {
+      "path": "334AC0000000123.json",
+      "bytes": 552207,
+      "mimeType": "application/json",
+      "lawId": "334AC0000000123"
+    },
+    {
+      "path": "335CO0000000017.json",
+      "bytes": 31369,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000017"
+    },
+    {
+      "path": "335M50000400011.json",
+      "bytes": 200769,
+      "mimeType": "application/json",
+      "lawId": "335M50000400011"
+    },
+    {
+      "path": "figures-335M50000400011.zip.part001.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400011"
+    },
+    {
+      "path": "figures-335M50000400011.zip.part002.bin",
+      "bytes": 1341944,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400011"
+    },
+    {
+      "path": "335CO0000000040.json",
+      "bytes": 52193,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000040"
+    },
+    {
+      "path": "335M50000400034.json",
+      "bytes": 52287,
+      "mimeType": "application/json",
+      "lawId": "335M50000400034"
+    },
+    {
+      "path": "figures-335M50000400034.zip",
+      "bytes": 200541,
+      "mimeType": "application/zip",
+      "lawId": "335M50000400034",
+      "compression": "stored",
+      "sha256": "7ec17aa750624875c87afb724083cf981be484655c48f733d2ce357a18b1a761"
+    },
+    {
+      "path": "334AC0000000125.json",
+      "bytes": 457788,
+      "mimeType": "application/json",
+      "lawId": "334AC0000000125"
+    },
+    {
+      "path": "335CO0000000018.json",
+      "bytes": 9789,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000018"
+    },
+    {
+      "path": "335M50000400012.json",
+      "bytes": 224769,
+      "mimeType": "application/json",
+      "lawId": "335M50000400012"
+    },
+    {
+      "path": "figures-335M50000400012.zip.part001.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400012"
+    },
+    {
+      "path": "figures-335M50000400012.zip.part002.bin",
+      "bytes": 1059025,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400012"
+    },
+    {
+      "path": "335CO0000000041.json",
+      "bytes": 60316,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000041"
+    },
+    {
+      "path": "335M50000400035.json",
+      "bytes": 62110,
+      "mimeType": "application/json",
+      "lawId": "335M50000400035"
+    },
+    {
+      "path": "figures-335M50000400035.zip",
+      "bytes": 285445,
+      "mimeType": "application/zip",
+      "lawId": "335M50000400035",
+      "compression": "stored",
+      "sha256": "d3a9403ce0e16a48b16513b984594c4254f3739f5238135c94f8eef1a2343fdc"
+    },
+    {
+      "path": "334AC0000000127.json",
+      "bytes": 788014,
+      "mimeType": "application/json",
+      "lawId": "334AC0000000127"
+    },
+    {
+      "path": "335CO0000000019.json",
+      "bytes": 39649,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000019"
+    },
+    {
+      "path": "335M50000400013.json",
+      "bytes": 585798,
+      "mimeType": "application/json",
+      "lawId": "335M50000400013"
+    },
+    {
+      "path": "figures-335M50000400013.zip.part001.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400013"
+    },
+    {
+      "path": "figures-335M50000400013.zip.part002.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400013"
+    },
+    {
+      "path": "figures-335M50000400013.zip.part003.bin",
+      "bytes": 1565217,
+      "mimeType": "application/octet-stream",
+      "lawId": "335M50000400013"
+    },
+    {
+      "path": "335CO0000000042.json",
+      "bytes": 60745,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000042"
+    },
+    {
+      "path": "335M50000400036.json",
+      "bytes": 131244,
+      "mimeType": "application/json",
+      "lawId": "335M50000400036"
+    },
+    {
+      "path": "figures-335M50000400036.zip",
+      "bytes": 502422,
+      "mimeType": "application/zip",
+      "lawId": "335M50000400036",
+      "compression": "stored",
+      "sha256": "fa5583bc5c9e231e890c4150f2425a4fbbc274516b353c4960d6688948967892"
+    },
+    {
+      "path": "402AC0000000030.json",
+      "bytes": 232391,
+      "mimeType": "application/json",
+      "lawId": "402AC0000000030"
+    },
+    {
+      "path": "402CO0000000258.json",
+      "bytes": 42095,
+      "mimeType": "application/json",
+      "lawId": "402CO0000000258"
+    },
+    {
+      "path": "402M50000400041.json",
+      "bytes": 746882,
+      "mimeType": "application/json",
+      "lawId": "402M50000400041"
+    },
+    {
+      "path": "figures-402M50000400041.zip.part001.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "402M50000400041"
+    },
+    {
+      "path": "figures-402M50000400041.zip.part002.bin",
+      "bytes": 1327797,
+      "mimeType": "application/octet-stream",
+      "lawId": "402M50000400041"
+    },
+    {
+      "path": "335CO0000000020.json",
+      "bytes": 153467,
+      "mimeType": "application/json",
+      "lawId": "335CO0000000020"
+    },
+    {
+      "path": "353AC0000000030.json",
+      "bytes": 93969,
+      "mimeType": "application/json",
+      "lawId": "353AC0000000030"
+    },
+    {
+      "path": "353CO0000000291.json",
+      "bytes": 44042,
+      "mimeType": "application/json",
+      "lawId": "353CO0000000291"
+    },
+    {
+      "path": "353M50000400034.json",
+      "bytes": 489302,
+      "mimeType": "application/json",
+      "lawId": "353M50000400034"
+    },
+    {
+      "path": "figures-353M50000400034.zip.part001.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "353M50000400034"
+    },
+    {
+      "path": "figures-353M50000400034.zip.part002.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "353M50000400034"
+    },
+    {
+      "path": "figures-353M50000400034.zip.part003.bin",
+      "bytes": 2097152,
+      "mimeType": "application/octet-stream",
+      "lawId": "353M50000400034"
+    },
+    {
+      "path": "figures-353M50000400034.zip.part004.bin",
+      "bytes": 10756,
+      "mimeType": "application/octet-stream",
+      "lawId": "353M50000400034"
+    },
+    {
+      "path": "345AC0000000048.json",
+      "bytes": 1004153,
+      "mimeType": "application/json",
+      "lawId": "345AC0000000048"
+    },
+    {
+      "path": "345CO0000000335.json",
+      "bytes": 317753,
+      "mimeType": "application/json",
+      "lawId": "345CO0000000335"
+    },
+    {
+      "path": "345M50000080026.json",
+      "bytes": 227252,
+      "mimeType": "application/json",
+      "lawId": "345M50000080026"
+    },
+    {
+      "path": "figures-345M50000080026.zip",
+      "bytes": 1230379,
+      "mimeType": "application/zip",
+      "lawId": "345M50000080026",
+      "compression": "stored",
+      "sha256": "a380ec2d87731e741c5280c5b67ffe5e7d21df2579113efc1a1d4513311d3b1a"
+    },
+    {
+      "path": "405AC0000000047.json",
+      "bytes": 290297,
+      "mimeType": "application/json",
+      "lawId": "405AC0000000047"
+    },
+    {
+      "path": "413CO0000000388.json",
+      "bytes": 10860,
+      "mimeType": "application/json",
+      "lawId": "413CO0000000388"
+    },
+    {
+      "path": "412AC0000000049.json",
+      "bytes": 303315,
+      "mimeType": "application/json",
+      "lawId": "412AC0000000049"
+    },
+    {
+      "path": "412CO0000000384.json",
+      "bytes": 36988,
+      "mimeType": "application/json",
+      "lawId": "412CO0000000384"
+    },
+    {
+      "path": "412M50000400411.json",
+      "bytes": 160255,
+      "mimeType": "application/json",
+      "lawId": "412M50000400411"
+    },
+    {
+      "path": "figures-412M50000400411.zip",
+      "bytes": 749515,
+      "mimeType": "application/zip",
+      "lawId": "412M50000400411",
+      "compression": "stored",
+      "sha256": "9e68cdc98e4d7f332671f270d7929b09837f8d81945c02b75e672445e01f177a"
+    },
+    {
+      "path": "129AC0000000089.json",
+      "bytes": 1705104,
+      "mimeType": "application/json",
+      "lawId": "129AC0000000089"
+    },
+    {
+      "path": "408AC0000000109.json",
+      "bytes": 922738,
+      "mimeType": "application/json",
+      "lawId": "408AC0000000109"
+    },
+    {
+      "path": "426AC0000000068.json",
+      "bytes": 224438,
+      "mimeType": "application/json",
+      "lawId": "426AC0000000068"
+    },
+    {
+      "path": "337AC0000000139.json",
+      "bytes": 192375,
+      "mimeType": "application/json",
+      "lawId": "337AC0000000139"
+    },
+    {
+      "path": "405AC0000000088.json",
+      "bytes": 152114,
+      "mimeType": "application/json",
+      "lawId": "405AC0000000088"
+    },
+    {
+      "path": "354AC0000000004.json",
+      "bytes": 734973,
+      "mimeType": "application/json",
+      "lawId": "354AC0000000004"
+    },
+    {
+      "path": "401AC0000000091.json",
+      "bytes": 158556,
+      "mimeType": "application/json",
+      "lawId": "401AC0000000091"
+    }
+  ],
+  "jsonBytes": 14052973,
+  "assetBytes": 43511164,
+  "offlineFigureFiles": 405,
+  "offlineFigureComplete": true,
+  "attachmentErrors": [],
+  "uncompressedFigureBytes": 43441850,
+  "totalFigureCount": 405,
+  "figureArchiveCount": 12,
+  "deployedFileCount": 71,
+  "archiveFormat": {
+    "compressionMethod": 0,
+    "zip64": false,
+    "memberPath": "figureLinks.archivePath matches figureLinks.url and the ZIP central-directory member name exactly",
+    "deployedFiles": "Only manifest.files are needed; loose figures remain in scratch for validation."
+  },
+  "archiveParts": {
+    "figures-335M50000400010.zip": [
+      {
+        "path": "figures-335M50000400010.zip.part001.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400010.zip.part002.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400010.zip.part003.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400010.zip.part004.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400010.zip.part005.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400010.zip.part006.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400010.zip.part007.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400010.zip.part008.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400010.zip.part009.bin",
+        "bytes": 646456
+      }
+    ],
+    "figures-335M50000400011.zip": [
+      {
+        "path": "figures-335M50000400011.zip.part001.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400011.zip.part002.bin",
+        "bytes": 1341944
+      }
+    ],
+    "figures-335M50000400012.zip": [
+      {
+        "path": "figures-335M50000400012.zip.part001.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400012.zip.part002.bin",
+        "bytes": 1059025
+      }
+    ],
+    "figures-335M50000400013.zip": [
+      {
+        "path": "figures-335M50000400013.zip.part001.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400013.zip.part002.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-335M50000400013.zip.part003.bin",
+        "bytes": 1565217
+      }
+    ],
+    "figures-402M50000400041.zip": [
+      {
+        "path": "figures-402M50000400041.zip.part001.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-402M50000400041.zip.part002.bin",
+        "bytes": 1327797
+      }
+    ],
+    "figures-353M50000400034.zip": [
+      {
+        "path": "figures-353M50000400034.zip.part001.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-353M50000400034.zip.part002.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-353M50000400034.zip.part003.bin",
+        "bytes": 2097152
+      },
+      {
+        "path": "figures-353M50000400034.zip.part004.bin",
+        "bytes": 10756
+      }
+    ]
+  },
+  "archivePartCount": 22,
+  "archivePartMaxBytes": 2097152
+}

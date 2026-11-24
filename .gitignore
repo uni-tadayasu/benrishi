@@ -1,0 +1,5 @@
+work/
+__pycache__/
+*.pyc
+.openai/
+qa-preview.html
