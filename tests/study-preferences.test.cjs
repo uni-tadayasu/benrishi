@@ -26,6 +26,7 @@ function makeHarness(appPath,stored){
   get innerHTML(){return this.html||''}
   setAttribute(key,value){this.attributes[key]=String(value)}
   getAttribute(key){return this.attributes[key]??null}
+  removeAttribute(key){delete this.attributes[key];if(key.startsWith('data-'))delete this.dataset[key.slice(5).replace(/-([a-z])/g,(_match,char)=>char.toUpperCase())]}
   closest(query){return query.split(',').some(selector=>selector.trim()===this.tag)?this:this.parent?.closest(query)||null}
   querySelector(query){return elements.get(query)||null}
   querySelectorAll(query){return query==='[data-motion-mode]'?[...all].filter(element=>element.dataset.motionMode):[]}

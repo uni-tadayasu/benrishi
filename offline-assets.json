@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.25.4",
+  "version": "2026.11.25.5",
   "asOf": "2026-11-25",
   "files": [
     {
@@ -9,8 +9,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 91390,
-      "sha256": "ccb66875a38db3f9c6d4e9f30b8a7f2f184cc665424f43697d6620d7f57523e8"
+      "bytes": 96017,
+      "sha256": "4f19391beffcedc1f97688a62ebe67507af91e6f3f7b11ada28e12e390be3650"
     },
     {
       "path": "apple-touch-icon.png",
@@ -84,8 +84,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 4567,
-      "sha256": "a8a3e108289a34c63838d88a20be61b14b7fa78ff5a0d49f362834c871377e48"
+      "bytes": 4635,
+      "sha256": "02c1d529ba3da4ca0441dc63a9eff05da39e4b79793eade8b4bfbfca72957aeb"
     },
     {
       "path": "interaction-guard.js",
@@ -94,8 +94,8 @@
     },
     {
       "path": "law-library.js",
-      "bytes": 30897,
-      "sha256": "5d1792d740bc42f2ce7f7a7a6db4d7aceaded84e1709117b5c9a02075436a4c3"
+      "bytes": 30933,
+      "sha256": "3106ab566ce4178b2c8dd22f0a61f8f7f1b3f9b57aab5a1ede8f09ec99a95672"
     },
     {
       "path": "legal-guides.js",
@@ -141,6 +141,11 @@
       "path": "speech-engine.js",
       "bytes": 19192,
       "sha256": "b83d63d62c6c9e7fb113f1b8eb7b92b5668d5a20b9e926a3de14f1b99d30b154"
+    },
+    {
+      "path": "speech-player.css",
+      "bytes": 11692,
+      "sha256": "841d340adb2f6ddf54920d165ee12765d03d0db392b96c195b260f80882a8dd0"
     },
     {
       "path": "style.css",
@@ -758,5 +763,5 @@
       "sha256": "c1ef8883eff7c2ecdf019711fc97dd41c62dbf9dc2270374de2e80afba03bd69"
     }
   ],
-  "totalBytes": 80697663
+  "totalBytes": 80714086
 }

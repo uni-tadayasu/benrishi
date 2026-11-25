@@ -1,0 +1,364 @@
+/* Compact speech UI. Loaded after legacy, visual and motion styles.
+ * Only the fixed player is positioned; article text and annotation geometry stay intact.
+ */
+:root {
+  --speech-sidebar-width: 244px;
+  --speech-bottom-offset: 16px;
+  --speech-compact-height: 72px;
+  --speech-mini-height: 56px;
+}
+
+#speech-dock.speech-dock-compact,
+#speech-dock.speech-dock-mini {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: calc(var(--speech-bottom-offset) + env(safe-area-inset-bottom, 0px));
+  z-index: 55;
+  max-height: none;
+  margin: 0;
+  overflow: visible;
+  overscroll-behavior: auto;
+  color: #244b3e;
+  background: #f8fcf9;
+  border: 1px solid #cfdfd4;
+  box-shadow: 0 5px 20px #14382c17, 0 1px 3px #14382c0a;
+  color-scheme: light;
+}
+#speech-dock.speech-dock-compact {
+  left: calc(var(--speech-sidebar-width) + (100vw - var(--speech-sidebar-width)) / 2);
+  right: auto;
+  transform: translateX(-50%);
+  width: min(800px, calc(100vw - var(--speech-sidebar-width) - 40px));
+  min-height: 64px;
+  padding: 9px 12px;
+  display: block;
+  border-radius: 14px;
+}
+#speech-dock .speech-dock-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+#speech-dock.speech-dock-compact .speech-info {
+  flex: 1 1 0;
+  flex-basis: auto;
+  min-width: 0;
+  margin: 0;
+  order: 0;
+}
+#speech-dock.speech-dock-compact .speech-info strong {
+  display: block;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: initial;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 650;
+  color: #244b3e;
+}
+#speech-dock.speech-dock-compact .speech-info small {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0;
+  color: #61796d;
+  font-size: 12px;
+  line-height: 18px;
+}
+#speech-dock .speech-controls-primary {
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  order: 0;
+}
+#speech-dock.speech-dock-compact button,
+#speech-dock.speech-dock-mini button {
+  box-sizing: border-box;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 44px;
+  min-height: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 8px 10px;
+  border: 1px solid #d5e2d9;
+  border-radius: 9px;
+  background: #fff;
+  color: #284e40;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+  touch-action: manipulation;
+  order: 0;
+}
+#speech-dock button .icon {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+}
+#speech-dock button.speech-pause {
+  background: #e6f2e9;
+  border-color: #c9dfd0;
+  color: #214e38;
+}
+#speech-dock button.speech-stop {
+  margin-left: 0;
+  background: #fffaf7;
+  border-color: #e5d8d0;
+  color: #815747;
+}
+#speech-dock button.speech-minimize {
+  width: 44px;
+  padding: 0;
+}
+#speech-dock .speech-minimize .speech-button-label { display: none; }
+@media (min-width: 901px) {
+  #speech-dock.speech-dock-compact button.speech-minimize { width: auto; padding: 8px 10px; }
+  #speech-dock.speech-dock-compact .speech-minimize .speech-button-label { display: inline; }
+}
+#speech-dock button:disabled { opacity: .45; }
+#speech-dock button:focus-visible {
+  outline: 3px solid #58a68a;
+  outline-offset: 3px;
+}
+@media (hover: hover) and (pointer: fine) {
+  #speech-dock button:not(:disabled):hover { background: #edf5ee; border-color: #a9c6b4; }
+  #speech-dock button.speech-stop:not(:disabled):hover { background: #f8eee8; border-color: #d7bdad; }
+}
+
+/* Mini keeps pause, expand and stop available; its state remains accessible. */
+#speech-dock.speech-dock-mini {
+  left: auto;
+  right: max(14px, env(safe-area-inset-right, 0px));
+  transform: none;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  width: max-content;
+  max-width: min(282px, calc(100vw - 24px));
+  min-height: var(--speech-mini-height);
+  padding: 5px 7px;
+  border-radius: 999px;
+  background: #fbfdfb;
+}
+#speech-dock.speech-dock-mini .speech-mini-summary {
+  display: flex;
+  flex: 0 1 70px;
+  align-items: center;
+  gap: 4px;
+  min-width: 18px;
+  max-width: 70px;
+  overflow: hidden;
+  color: #4b6d5b;
+  font-size: 12px;
+  line-height: 18px;
+  white-space: nowrap;
+}
+#speech-dock.speech-dock-mini .speech-mini-summary > .icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+}
+#speech-dock.speech-dock-mini .speech-mini-summary > span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#speech-dock.speech-dock-mini button { border-radius: 999px; padding: 8px; gap: 0; }
+#speech-dock.speech-dock-mini :is(.speech-pause, .speech-stop) { width: 44px; padding: 0; }
+#speech-dock.speech-dock-mini :is(.speech-pause, .speech-stop) .speech-button-label { display: none; }
+#speech-dock.speech-dock-mini .speech-expand { padding: 8px; }
+#speech-dock.speech-dock-mini .speech-expand .speech-button-label { display: inline; }
+#speech-dock.speech-dock-mini .speech-expand > .icon { display: none; }
+
+/* The body state is the source of truth for space below the reading content. */
+body[data-speech-player="compact"] { --speech-player-height: var(--speech-compact-height); }
+body[data-speech-player="mini"] { --speech-player-height: var(--speech-mini-height); }
+body[data-speech-player] .workspace {
+  padding-bottom: calc(var(--speech-player-height) + var(--speech-bottom-offset) + env(safe-area-inset-bottom, 0px) + 12px);
+}
+/* Higher specificity deliberately replaces the old :has(.speech-dock) 245/320px rule. */
+body[data-speech-player]:has(#speech-dock) .workspace {
+  padding-bottom: calc(var(--speech-player-height) + var(--speech-bottom-offset) + env(safe-area-inset-bottom, 0px) + 12px);
+}
+html:has(body[data-speech-player="compact"]) {
+  scroll-padding-bottom: calc(var(--speech-compact-height) + var(--speech-bottom-offset) + env(safe-area-inset-bottom, 0px) + 12px);
+}
+html:has(body[data-speech-player="mini"]) {
+  scroll-padding-bottom: calc(var(--speech-mini-height) + var(--speech-bottom-offset) + env(safe-area-inset-bottom, 0px) + 12px);
+}
+body[data-speech-player] :is(.article-surface, .law-bottom-nav, .law-note) {
+  scroll-margin-bottom: calc(var(--speech-player-height) + var(--speech-bottom-offset) + env(safe-area-inset-bottom, 0px) + 12px);
+}
+
+/* Audio options move to a conventional light dialog, outside the reading area. */
+#app-dialog.speech-options-dialog {
+  width: min(580px, calc(100vw - 24px));
+  max-height: min(84dvh, 720px);
+  padding: 24px;
+  color: #244738;
+  background: #fff;
+  color-scheme: light;
+}
+#app-dialog.speech-options-dialog .dialog-head { align-items: center; gap: 12px; margin-bottom: 18px; }
+#app-dialog.speech-options-dialog .dialog-head h2 { font-size: 21px; line-height: 1.5; }
+#app-dialog.speech-options-dialog .dialog-head .icon-button {
+  flex: 0 0 44px;
+  width: 44px;
+  min-height: 44px;
+  padding: 8px;
+}
+#app-dialog .speech-options-panel { min-width: 0; color: #294e3c; }
+#app-dialog .speech-options-panel .speech-controls-secondary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: end;
+  gap: 16px 14px;
+  margin: 0 0 20px;
+}
+#app-dialog .speech-options-panel :is(button, select) {
+  min-height: 44px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+#app-dialog .speech-options-panel button {
+  border: 1px solid #d0e0d4;
+  border-radius: 9px;
+  padding: 10px 12px;
+  background: #f6faf6;
+  color: #30553f;
+}
+#app-dialog .speech-options-panel button[data-action="continuous-speech"] {
+  grid-column: 1 / -1;
+  width: 100%;
+  text-align: left;
+}
+#app-dialog .speech-options-panel button:is(.active, [aria-pressed="true"]) {
+  background: #e8f3e9;
+  border-color: #abc9b4;
+  color: #235337;
+}
+#app-dialog .speech-options-panel .speech-select-control {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 7px;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+#app-dialog .speech-options-panel .speech-select-control select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  min-height: 46px;
+  margin: 0;
+  padding: 10px 34px 10px 12px;
+  border: 1px solid #cfdfd3;
+  border-radius: 9px;
+  background-color: #f8fbf8;
+  color: #254c37;
+  font-size: 14px;
+}
+#app-dialog .speech-options-panel .speech-volume-control {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 48px;
+  gap: 4px 12px;
+  min-width: 0;
+  width: 100%;
+  margin: 6px 0 10px;
+  font-size: 14px;
+}
+#app-dialog .speech-options-panel .speech-control-label { grid-column: 1 / -1; font-size: 14px; line-height: 1.7; }
+#app-dialog .speech-options-panel .speech-volume-control input[type="range"] {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  margin: 0;
+  accent-color: #347555;
+  touch-action: pan-y;
+}
+#app-dialog .speech-options-panel .speech-volume-control output {
+  align-self: center;
+  min-width: 0;
+  width: 48px;
+  font-size: 14px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: #345b43;
+}
+#app-dialog .speech-options-panel .speech-dock-help {
+  margin: 8px 0 0;
+  color: #64786b;
+  font-size: 13px;
+  line-height: 1.8;
+}
+#app-dialog.speech-options-dialog .dialog-footer { margin-top: 22px; }
+#app-dialog.speech-options-dialog .dialog-footer .btn { min-height: 44px; font-size: 14px; }
+
+@media (max-width: 1200px) {
+  :root { --speech-sidebar-width: 218px; }
+}
+@media (max-width: 1000px) {
+  :root { --speech-sidebar-width: 0px; --speech-bottom-offset: 76px; }
+  #speech-dock.speech-dock-compact { width: min(800px, calc(100vw - 24px)); }
+}
+@media (max-width: 700px) {
+  :root { --speech-compact-height: 92px; }
+  #speech-dock.speech-dock-compact {
+    width: calc(100vw - 16px);
+    min-height: 0;
+    padding: 8px;
+    border-radius: 12px;
+  }
+  #speech-dock .speech-dock-bar { display: grid; grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  #speech-dock.speech-dock-compact .speech-info { display: flex; align-items: baseline; gap: 8px; }
+  #speech-dock.speech-dock-compact .speech-info strong { flex: 1 1 0; min-width: 0; line-height: 20px; }
+  #speech-dock.speech-dock-compact .speech-info small { flex: 0 1 auto; max-width: 43%; line-height: 20px; }
+  #speech-dock .speech-controls-primary { width: 100%; gap: 4px; justify-content: flex-end; }
+  #speech-dock.speech-dock-compact button { gap: 4px; padding: 8px 7px; font-size: 14px; }
+  #speech-dock.speech-dock-compact :is(.speech-next, .speech-minimize) { width: 44px; padding: 0; }
+  #speech-dock.speech-dock-compact .speech-next .speech-button-label { display: none; }
+  #speech-dock.speech-dock-compact .speech-options-toggle { padding: 8px; }
+  #speech-dock.speech-dock-compact .speech-options-toggle > .icon { display: none; }
+  #speech-dock.speech-dock-mini { right: max(8px, env(safe-area-inset-right, 0px)); }
+  #speech-dock.speech-dock-mini .speech-mini-summary { flex: 0 0 18px; width: 18px; max-width: 18px; }
+  #speech-dock.speech-dock-mini .speech-mini-summary > span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+  }
+}
+@media (max-width: 560px) {
+  #app-dialog.speech-options-dialog { padding: 20px 18px; }
+  #app-dialog .speech-options-panel .speech-controls-secondary { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+}
+@media (max-width: 389px) {
+  #speech-dock.speech-dock-compact :is(.speech-pause, .speech-stop) { width: 44px; padding: 0; }
+  #speech-dock.speech-dock-compact :is(.speech-pause, .speech-stop) .speech-button-label { display: none; }
+  #speech-dock.speech-dock-compact .speech-info small { max-width: 36%; }
+}
+#speech-dock[hidden] { display: none !important; }

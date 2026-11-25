@@ -1,9 +1,9 @@
-/* Release 2026.11.25.4: important-term recall mode and responsive interface motion. */
+/* Release 2026.11.25.5: compact speech player with on-demand settings. */
 importScripts('./cache-codec.js');
 const CACHE = 'benrishi-v1-20261125';
-const RELEASE = '2026.11.25.4';
+const RELEASE = '2026.11.25.5';
 const CORE = [
-  './style.css', './visual.css', './important-terms.css', './motion.css', './visual.js', './motion.js', './icon.svg', './manifest.webmanifest',
+  './style.css', './visual.css', './important-terms.css', './motion.css', './speech-player.css', './visual.js', './motion.js', './icon.svg', './manifest.webmanifest',
   './app.js', './question-bank.js', './written-oral.js', './speech-engine.js', './prosody-engine.js',
   './annotation.js', './legal-guides.js', './law-library.js', './offline.js',
   './interaction-guard.js', './glossary.js', './glossary-study.js', './important-terms.js',

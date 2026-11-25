@@ -38,46 +38,71 @@ function resolveTargets(argv=process.argv.slice(2),full=false){
 }
 
 function createHarness(targets){
- const elements=new Map(),events=new Map(),timers=new Map(),storage=new Map(),scrolls=[],histories=[];
+ const elements=new Map(),events=new Map(),timers=new Map(),storage=new Map(),scrolls=[],histories=[],roots=[];
  let timerId=0,now=Date.UTC(2026,10,25),document;
+ const decode=text=>text.replace(/&(?:amp|lt|gt|quot|#39);/g,value=>({'&amp;':'&','&lt;':'<','&gt;':'>','&quot;':'"','&#39;':"'"}[value]));
+ const dataKey=name=>name.replace(/-([a-z])/g,(_match,char)=>char.toUpperCase());
  class Element{
   constructor(tag='button'){
-   const classes=new Set();this.tag=tag;this.style={};this.children=[];this.dataset={};this.hidden=false;this.value='';this.attributes={};this.id='';
-   this.classList={contains:name=>classes.has(name),add:(...names)=>names.forEach(name=>classes.add(name)),remove:(...names)=>names.forEach(name=>classes.delete(name)),toggle:name=>classes.has(name)?(classes.delete(name),false):(classes.add(name),true)};
+   const classes=new Set();this.tag=tag;this.style={};this.children=[];this.dataset={};this.hidden=false;this.value='';this.attributes={};this.id='';this.open=false;this.listeners=new Map();this.text='';
+   Object.defineProperty(this,'className',{get:()=>[...classes].join(' '),set:value=>{classes.clear();for(const name of String(value).split(/\s+/).filter(Boolean))classes.add(name)}});
+   this.classList={contains:name=>classes.has(name),add:(...names)=>names.forEach(name=>classes.add(name)),remove:(...names)=>names.forEach(name=>classes.delete(name)),toggle:(name,force)=>{const on=force===undefined?!classes.has(name):!!force;on?classes.add(name):classes.delete(name);return on}};
   }
   set innerHTML(html){
-   this.html=String(html);for(const old of this.children)if(elements.get('#'+old.id)===old)elements.delete('#'+old.id);this.children=[];
-   for(const match of this.html.matchAll(/<([a-z]+)[^>]*\bid="([^"]+)"[^>]*>/g)){
-    const element=new Element(match[1]);element.id=match[2];element.parent=this;element.value=match[0].match(/\bvalue="([^"]*)"/)?.[1]||'';
-    const classes=match[0].match(/\bclass="([^"]*)"/)?.[1]||'';element.classList.add(...classes.split(/\s+/).filter(Boolean));
-    for(const data of match[0].matchAll(/\bdata-([\w-]+)(?:="([^"]*)")?/g))element.dataset[data[1].replace(/-([a-z])/g,(_m,c)=>c.toUpperCase())]=data[2]||'';
-    elements.set('#'+element.id,element);this.children.push(element);
+   if(document?.activeElement!==this&&this.contains(document?.activeElement))document.activeElement=null;
+   for(const old of this.descendants())if(elements.get('#'+old.id)===old)elements.delete('#'+old.id);
+   this.html=String(html);this.children=[];this.text='';const stack=[this],voids=new Set(['input','img','br','hr','meta','link','source','area','wbr']);
+   for(const token of this.html.match(/<!--[\s\S]*?-->|<\/?[a-zA-Z][^>]*>|[^<]+/g)||[]){
+    if(token.startsWith('<!--'))continue;
+    if(token.startsWith('</')){if(stack.length>1)stack.pop();continue}
+    if(!token.startsWith('<')){stack.at(-1).text+=decode(token);continue}
+    const match=token.match(/^<([\w-]+)([\s\S]*?)\/?\s*>$/);if(!match)continue;
+    const element=new Element(match[1].toLowerCase());element.parent=stack.at(-1);
+    for(const attribute of match[2].matchAll(/([^\s=]+)(?:\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s]+)))?/g))element.setAttribute(attribute[1],decode(attribute[2]??attribute[3]??attribute[4]??''));
+    if(element.id)elements.set('#'+element.id,element);element.parent.children.push(element);
+    if(!voids.has(element.tag)&&!token.endsWith('/>'))stack.push(element);
    }
   }
   get innerHTML(){return this.html||''}
-  setAttribute(key,value){this.attributes[key]=String(value)}
-  contains(element){return element===this||this.children.includes(element)}
-  querySelector(query){return document.querySelector(query)}
-  querySelectorAll(query){return document.querySelectorAll(query)}
+  get textContent(){return this.text+this.children.map(child=>child.textContent).join('')}
+  set textContent(value){this.innerHTML='';this.text=String(value)}
+  setAttribute(key,value){value=String(value);this.attributes[key]=value;if(key==='id')this.id=value;else if(key==='class')this.className=value;else if(key==='value')this.value=value;else if(key.startsWith('data-'))this.dataset[dataKey(key.slice(5))]=value;else if(['hidden','disabled','selected'].includes(key))this[key]=true}
+  getAttribute(key){if(key==='id')return this.id||null;if(key==='class')return this.className||null;if(key.startsWith('data-'))return this.dataset[dataKey(key.slice(5))]??null;if(['hidden','disabled','selected'].includes(key))return this[key]?'':null;return this.attributes[key]??null}
+  removeAttribute(key){delete this.attributes[key];if(key.startsWith('data-'))delete this.dataset[dataKey(key.slice(5))];if(['hidden','disabled','selected'].includes(key))this[key]=false}
+  hasAttribute(key){return this.getAttribute(key)!==null}
+  descendants(){return this.children.flatMap(child=>[child,...child.descendants()])}
+  contains(element){for(let current=element;current;current=current.parent)if(current===this)return true;return false}
+  matches(query){return query.split(',').some(raw=>{
+   const parts=raw.trim().split(/\s+(?![^\[]*\])/),simple=(element,input)=>{
+    let selector=input,valid=true;
+    selector=selector.replace(/:not\(([^()]*)\)/g,(_whole,inner)=>{if(element.matches(inner))valid=false;return ''});
+    selector=selector.replace(/\[([\w-]+)(?:="([^"]*)")?\]/g,(_whole,name,value)=>{if(!element.hasAttribute(name)||(value!==undefined&&element.getAttribute(name)!==value))valid=false;return ''});
+    selector=selector.replace(/#([\w-]+)/g,(_whole,id)=>{if(element.id!==id)valid=false;return ''});
+    selector=selector.replace(/\.([\w-]+)/g,(_whole,name)=>{if(!element.classList.contains(name))valid=false;return ''});
+    return valid&&(!selector||selector==='*'||selector===element.tag);
+   };
+   let current=this;if(!simple(current,parts.pop()))return false;
+   while(parts.length){const part=parts.pop();current=current.parent;while(current&&!simple(current,part))current=current.parent;if(!current)return false}
+   return true;
+  })}
+  querySelector(query){return this.querySelectorAll(query)[0]||null}
+  querySelectorAll(query){return this.descendants().filter(element=>element.matches(query))}
   scrollIntoView(){scrolls.push(this.id)}
   focus(){document.activeElement=this}
-  closest(query){
-   const matches=query.split(',').some(part=>{
-    const selector=part.trim();
-    if(selector.startsWith('.'))return this.classList.contains(selector.slice(1));
-    if(selector.startsWith('[data-'))return selector.slice(6,-1).replace(/-([a-z])/g,(_m,c)=>c.toUpperCase())in this.dataset;
-    return selector===this.tag;
-   });
-   return matches?this:this.parent?.closest(query)||null;
-  }
-  addEventListener(){}
+  closest(query){return this.matches(query)?this:this.parent?.closest(query)||null}
+  addEventListener(type,fn,options){if(!this.listeners.has(type))this.listeners.set(type,[]);this.listeners.get(type).push({fn,capture:options===true||!!options?.capture})}
+  showModal(){if(!this.open)this.returnFocus=document.activeElement;this.open=true;(this.querySelector('button,input,select,textarea')||this).focus()}
+  close(){if(!this.open)return;this.open=false;if(this.returnFocus?.isConnected)this.returnFocus.focus();for(const {fn}of this.listeners.get('close')||[])fn({target:this})}
+  get isConnected(){return roots.some(root=>root.contains(this))}
+  getBoundingClientRect(){return{left:100,top:100,right:500,bottom:400,width:400,height:300}}
  }
- for(const id of ['main','sidebar','sidebar-shade','topbar','mobile-nav','toast','speech-dock','app-dialog']){const element=new Element('div');element.id=id;elements.set('#'+id,element)}
+ for(const id of ['main','sidebar','sidebar-shade','topbar','mobile-nav','toast','speech-dock','app-dialog']){const element=new Element(id==='app-dialog'?'dialog':'div');element.id=id;elements.set('#'+id,element);roots.push(element)}
  document={activeElement:null,hidden:false,
-  querySelector:query=>elements.get(query)||null,
-  querySelectorAll:query=>[...elements.values()].filter(element=>query==='input[data-speech-volume]'?element.tag==='input'&&'speechVolume'in element.dataset:query==='[data-speech-volume-output]'?'speechVolumeOutput'in element.dataset:false),
+  querySelector:query=>document.querySelectorAll(query)[0]||null,
+  querySelectorAll:query=>roots.flatMap(root=>[root,...root.descendants()]).filter(element=>element.matches(query)),
   addEventListener:(name,fn)=>{if(!events.has(name))events.set(name,[]);events.get(name).push(fn)}
  };
+ document.body=new Element('body');
  // Native pause is independent of the app flag: cancel() DOES NOT resume it.
  // speak() while paused queues a record without starting it, making this bug visible.
  const spoken=[],nativeCalls=[];let current=null,cancels=0;
@@ -109,10 +134,17 @@ function createHarness(targets){
  vm.createContext(context);
  const original=fs.readFileSync(targets.app,'utf8'),tail=/\}\)\(\);\s*$/;
  assert(tail.test(original),'app.js must end with its IIFE; cannot safely attach test hooks.');
- const code=original.replace(tail,'window.__test={normalizeSpeechVolume,normalizeSpeechPitch,normalizeSpeechStyle,normalizedState,blank,save,speech,speakQueue,stopSpeech,pauseSpeech,setSpeechVolume,renderSettings};})();');
+ const code=original.replace(tail,'window.__test={normalizeSpeechVolume,normalizeSpeechPitch,normalizeSpeechStyle,normalizedState,blank,save,speech,speakQueue,stopSpeech,pauseSpeech,setSpeechVolume,renderSettings,speechDock,openSpeechOptions:typeof openSpeechOptions===\'function\'?openSpeechOptions:null,minimizeSpeechDock:typeof minimizeSpeechDock===\'function\'?minimizeSpeechDock:null,expandSpeechDock:typeof expandSpeechDock===\'function\'?expandSpeechDock:null,speechUi:typeof speechUi===\'undefined\'?null:speechUi};})();');
  vm.runInContext(code,context,{filename:targets.app});
  const test=context.__test;
- const fire=(type,target)=>Promise.all((events.get(type)||[]).map(fn=>fn({target,preventDefault(){}})));
+ const fire=(type,target,extra={})=>{
+  const event={type,target,cancelable:true,defaultPrevented:false,stopped:false,preventDefault(){this.defaultPrevented=true},stopPropagation(){this.stopped=true},stopImmediatePropagation(){this.stopped=true},...extra},pending=[];
+  const chain=[];for(let current=target;current instanceof Element;current=current.parent)chain.push(current);
+  for(const current of [...chain].reverse())for(const {fn,capture}of current.listeners.get(type)||[])if(capture&&!event.stopped)pending.push(fn(event));
+  for(const current of chain)for(const {fn,capture}of current.listeners.get(type)||[])if(!capture&&!event.stopped)pending.push(fn(event));
+  if(!event.stopped)for(const fn of events.get(type)||[])pending.push(fn(event));
+  return Promise.all(pending);
+ };
  const flush=()=>{let runs=0;for(;;){const due=[...timers].find(([,entry])=>entry.delay===0&&entry.due<=now);if(!due)break;assert(++runs<1000,'Immediate timer loop');timers.delete(due[0]);due[1].fn()}};
  const advanceTimer=id=>{const timer=timers.get(id);assert(timer,'Expected pending timer '+id);timers.delete(id);now=Math.max(now,timer.due);timer.fn()};
  const gapTimer=()=>test.speech.pauseTimer===null?null:[test.speech.pauseTimer,timers.get(test.speech.pauseTimer)];
@@ -132,7 +164,11 @@ function runVolumeTests(h){
  context.App.state.profile.speechVolume=-3;t.save();assert.equal(JSON.parse(storage.get('benrishi-lab-v1')).profile.speechVolume,0);
  t.renderSettings();assert(elements.get('#settings-volume'));
  t.speakQueue([{title:'volume',text:'あ'.repeat(310)}]);assert.equal(spoken.at(-1).u.volume,0);
- for(const label of ['停止','繰り返しなし','音量'])assert(elements.get('#speech-dock').innerHTML.includes(label));
+ for(const label of ['停止','音量・設定'])assert(elements.get('#speech-dock').innerHTML.includes(label));
+ assert.equal(elements.get('#speech-dock').querySelector('input,select'),null,'The default player keeps settings out of the bar');
+ assert.equal(typeof t.openSpeechOptions,'function');t.openSpeechOptions();assert.equal(elements.get('#app-dialog').open,true);
+ for(const label of ['繰り返しなし','音量'])assert(elements.get('#app-dialog').innerHTML.includes(label));
+ assert(elements.get('#speech-options-panel').contains(elements.get('#dock-volume')));
  const initial=spoken.at(-1),initialCount=spoken.length,initialCancels=h.cancels;
  const slider=elements.get('#dock-volume');slider.value='25';slider.focus();fire('input',slider);
  assert.equal(context.App.state.profile.speechVolume,.25);assert.equal(elements.get('#settings-volume').value,'25');assert.equal(elements.get('#dock-volume-value').textContent,'25%');assert.equal(spoken.length,initialCount);assert.equal(h.cancels,initialCancels);

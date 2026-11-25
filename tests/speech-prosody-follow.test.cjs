@@ -64,16 +64,19 @@ async function runProsodyFollowTests(h){
  const readAll=new Element();readAll.dataset.lawAction='read-all';await fire('click',readAll);await microtasks();
  assert.equal(context.App.route,'laws/'+lawId+'/'+law.articles[0].id);assert.equal(context.location.hash,'#'+context.App.route);assert.equal(t.speech.items[0].articleId,law.articles[0].id);assert.equal(scrolls.at(-1),'article-surface');assert.equal(spoken.at(-1).started,true);
  const firstRoute=context.App.route,routeCount=histories.length,scrollCount=scrolls.length;t.setSpeechVolume(.7,true);flush();assert.equal(histories.length,routeCount);assert.equal(scrolls.length,scrollCount);assert.equal(context.App.route,firstRoute);
+ t.openSpeechOptions();const lawOptions=h.document.querySelector('#speech-options-panel'),lawVolume=h.document.querySelector('#dock-volume');lawVolume.focus();
 
  let guard=0;
  while(t.speech.index===0&&guard++<50){finish();const gap=gapTimer();if(gap)advanceTimer(gap[0]);await microtasks()}
  assert.equal(t.speech.index,1);assert.equal(context.App.route,'laws/'+lawId+'/'+law.articles[1].id);assert.equal(context.location.hash,'#'+context.App.route);assert.equal(scrolls.at(-1),'article-surface');
+ assert.equal(h.document.querySelector('#speech-options-panel'),lawOptions);assert.equal(h.document.querySelector('#dock-volume'),lawVolume);assert.equal(h.document.activeElement,lawVolume);assert.equal(h.elements.get('#app-dialog').open,true);
  // Repeat the pause→next regression through the real asynchronous law-route hook.
  t.pauseSpeech();assert.equal(synth.paused,true);const beforeLawNext=spoken.length,next=new Element();next.dataset.action='next-speech';await fire('click',next);await microtasks();
  assert.equal(t.speech.index,2);assert.equal(context.App.route,'laws/'+lawId+'/'+law.articles[2].id);assert.equal(context.location.hash,'#'+context.App.route);assert.equal(scrolls.at(-1),'article-surface');
  assert.equal(spoken.length,beforeLawNext+1);assert.equal(synth.paused,false);assert.equal(synth.pending,false);assert.equal(spoken.at(-1).started,true,'Paused law navigation must resume native audio after its async route completes');
- const kept=context.App.route;t.stopSpeech();assert.equal(context.App.route,kept);assert.equal(context.location.hash,'#'+kept);
- console.log('PASS prosody/follow: real prepare+plan modules and law corpus, pitch/style, guarded pauses, stale timers, async start/stop/volume, paused style changes, loop hooks, string/error fallback; bare law route, automatic next route/hash/scroll, async paused-next resumes, volume retains viewport, stop retains page.');
+ assert.equal(h.document.querySelector('#speech-options-panel'),lawOptions);assert.equal(h.document.activeElement,lawVolume);
+ const kept=context.App.route;t.stopSpeech();assert.equal(context.App.route,kept);assert.equal(context.location.hash,'#'+kept);assert.equal(h.elements.get('#app-dialog').open,false);
+ console.log('PASS prosody/follow: real prepare+plan modules and law corpus, pitch/style, guarded pauses, stale timers, async start/stop/volume, paused style changes, loop hooks, string/error fallback; bare law route, automatic next route/hash/scroll, async paused-next resumes, volume retains viewport, popup DOM/focus survive actual law navigation, stop closes options and retains page.');
 }
 
 module.exports={runProsodyFollowTests};

@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--web', type=Path, default=ROOT / 'dist' if (ROOT / 'dist').is_dir() else ROOT)
-parser.add_argument('--version', default='2026.11.25.4')
+parser.add_argument('--version', default='2026.11.25.5')
 args = parser.parse_args()
 WEB = args.web.resolve()
 files, seen = [], set()
