@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.25.2",
+  "version": "2026.11.25.3",
   "asOf": "2026-11-25",
   "files": [
     {
@@ -10,7 +10,7 @@
     {
       "path": "app.js",
       "bytes": 87473,
-      "sha256": "b777ef593d97c468f42c35f95f59f9c0f25262e4ac8d62fb19ec9011b6f719de"
+      "sha256": "9dda79b685f75c2d36db023948fe153ff1ab745bca3d6e26e6c8b8917e301f5c"
     },
     {
       "path": "apple-touch-icon.png",
@@ -44,8 +44,8 @@
     },
     {
       "path": "glossary.js",
-      "bytes": 20756,
-      "sha256": "cab10af25d50851077a883311338d87c9e26997d646aff73c7dff504f1caf38c"
+      "bytes": 20995,
+      "sha256": "7eef88b83a40074f3c93d7dfd01b37422bd0c64bd277a1289ee22d17f5589cdb"
     },
     {
       "path": "icon-192.png",
@@ -75,7 +75,7 @@
     {
       "path": "index.html",
       "bytes": 4309,
-      "sha256": "3e4eeb119c669cc85e3318f7387637cbbea2cbef349e9340e82df5f5ba024d07"
+      "sha256": "d6af0ae15d13d00688d07bbc7cdf03fd79afef9d1f3eabda03cc8e9f136a4945"
     },
     {
       "path": "interaction-guard.js",
@@ -738,5 +738,5 @@
       "sha256": "c1ef8883eff7c2ecdf019711fc97dd41c62dbf9dc2270374de2e80afba03bd69"
     }
   ],
-  "totalBytes": 80662282
+  "totalBytes": 80662521
 }

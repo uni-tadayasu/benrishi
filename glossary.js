@@ -1,11 +1,11 @@
 (() => {
 'use strict';
 const A=window.App,{esc,icon,$}=A;
-let dataset=null,index=null,loading=null,mode=false,openId=0,current=null,longTerms=[];
+let dataset=null,index=null,loading=null,mode=false,openId=0,current=null;
 let termTrie=null,observer=null,decorationFrame=0,decorating=false,started=false,termGroup=0;
 const history=[];
 const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('ja',{granularity:'word'}):null;
-async function load(){if(index)return index;if(loading)return loading;loading=(async()=>{const compressed=typeof DecompressionStream==='function';const r=await fetch(compressed?'./glossary-data.json.gz':'./glossary-data.json');if(!r.ok)throw Error('missing');dataset=compressed?await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).json():await r.json();const map=new Map();for(const e of dataset.entries||[])map.set(e.term,{...e,definitions:e.definitions||[]});for(const e of window.STUDY_GLOSSARY||[]){const old=map.get(e.term);map.set(e.term,{...old,...e,definitions:old?.definitions||[]})}index=map;longTerms=[...map.keys()].filter(t=>t.length>1).sort((a,b)=>b.length-a.length);buildTermTrie();scheduleDecoration();return map})();try{return await loading}catch(e){loading=null;throw e}}
+async function load(){if(index)return index;if(loading)return loading;loading=(async()=>{const compressed=typeof DecompressionStream==='function';const r=await fetch(compressed?'./glossary-data.json.gz':'./glossary-data.json');if(!r.ok)throw Error('missing');dataset=compressed?await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).json():await r.json();const map=new Map();for(const e of dataset.entries||[])map.set(e.term,{...e,definitions:e.definitions||[]});for(const e of window.STUDY_GLOSSARY||[]){const old=map.get(e.term);map.set(e.term,{...old,...e,definitions:old?.definitions||[]})}index=map;buildTermTrie();scheduleDecoration();return map})();try{return await loading}catch(e){loading=null;throw e}}
 function updateMode(){document.body.classList.toggle('term-mode',mode);for(const b of document.querySelectorAll('[data-glossary-mode]')){b.classList.toggle('btn-soft',mode);b.setAttribute('aria-pressed',String(mode));const html=icon('book','small-icon')+(mode?'下線のない言葉も調べる：ON':'下線のない言葉も調べる');if(b.innerHTML!==html)b.innerHTML=html}const chip=$('#term-mode-indicator');if(chip)chip.hidden=!mode}
 function installControls(){
   const meta=$('.topbar-meta');
@@ -31,14 +31,24 @@ function buildTermTrie(){
   }
 }
 function matchedTerms(text){
-  const singles=new Set();
-  if(segmenter)for(const part of segmenter.segment(text))if(part.isWordLike!==false&&Array.from(part.segment).length===1&&index.has(part.segment))singles.add(part.index+':'+part.segment.length);
+  const boundaries=new Set([0,text.length]),singles=new Set();
+  if(segmenter){
+    for(const part of segmenter.segment(text)){
+      boundaries.add(part.index);boundaries.add(part.index+part.segment.length);
+      if(part.isWordLike!==false&&Array.from(part.segment).length===1&&index.has(part.segment))singles.add(part.index+':'+part.segment.length);
+    }
+  }else{
+    // Without a word segmenter, only explicitly separated multi-character terms
+    // are safe to link; the dictionary and manual search remain available.
+    for(const part of text.matchAll(/[\s\p{Punctuation}]/gu)){boundaries.add(part.index);boundaries.add(part.index+part[0].length)}
+  }
   const matches=[];
   for(let start=0;start<text.length;){
+    if(!boundaries.has(start)){start++;continue}
     let node=termTrie,best=null;
     for(let end=start;end<text.length;end++){
       node=node.next.get(text[end]);if(!node)break;
-      if(node.term&&(Array.from(node.term).length>1||singles.has(start+':'+node.term.length)))best=node.term;
+      if(node.term&&boundaries.has(end+1)&&(Array.from(node.term).length>1||singles.has(start+':'+node.term.length)))best=node.term;
     }
     if(best){matches.push({start,end:start+best.length,term:best,group:String(++termGroup)});start+=best.length}else start++;
   }
@@ -133,7 +143,7 @@ async function openTerm(query='',context='',options={}){
 }
 async function toggleMode(){try{await load();mode=!mode;if(mode)A.laws?.setReadingMode();$('#app-dialog').close();updateMode();installControls();scheduleDecoration();A.toast(mode?'下線のない言葉も、本文をタップして検索できます。':'下線の用語は、いつでもタップして調べられます。')}catch{A.toast('用語データを読み込めませんでした。オンラインで保存してください。')}}
 function caretAt(x,y){if(document.caretPositionFromPoint){const p=document.caretPositionFromPoint(x,y);if(p)return{node:p.offsetNode,offset:p.offset}}if(document.caretRangeFromPoint){const r=document.caretRangeFromPoint(x,y);if(r)return{node:r.startContainer,offset:r.startOffset}}return null}
-function termAt(event){const point=caretAt(event.clientX,event.clientY);if(!point||point.node.nodeType!==Node.TEXT_NODE)return null;const el=point.node.parentElement.closest('.law-original p,.law-explanation p,.law-explanation li,.quote,td,th,.glossary-definition-text,.choice,.prompt-block,.essential-content p,.oral-answer p,.record-card h3,h1,h2,h3,p,li');if(!el||!$('#main').contains(el))return null;const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let node,offset=0,text='';while(node=walker.nextNode()){if(node===point.node)offset=text.length+point.offset;text+=node.textContent||''}if(!text.trim())return null;offset=Math.min(Math.max(0,offset),text.length-1);for(const t of longTerms){const start=Math.max(0,offset-t.length+1),end=Math.min(text.length,offset+t.length),area=text.slice(start,end);let at=area.indexOf(t);while(at>=0){const absolute=start+at;if(absolute<=offset&&absolute+t.length>offset)return{term:t,context:text.slice(Math.max(0,offset-110),offset+170)};at=area.indexOf(t,at+1)}}if(segmenter){for(const s of segmenter.segment(text))if(s.index<=offset&&s.index+s.segment.length>offset){const t=s.segment.trim();return t?{term:t,context:text.slice(Math.max(0,offset-110),offset+170)}:null}}const t=text.slice(Math.max(0,offset-8),offset+8).match(/[一-龠ぁ-ゔァ-ヴーa-zA-Z0-9]+/)?.[0];return t?{term:t,context:text.slice(Math.max(0,offset-110),offset+170)}:null}
+function termAt(event){const point=caretAt(event.clientX,event.clientY);if(!point||point.node.nodeType!==Node.TEXT_NODE)return null;const el=point.node.parentElement.closest('.law-original p,.law-explanation p,.law-explanation li,.quote,td,th,.glossary-definition-text,.choice,.prompt-block,.essential-content p,.oral-answer p,.record-card h3,h1,h2,h3,p,li');if(!el||!$('#main').contains(el))return null;const walker=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let node,offset=0,text='';while(node=walker.nextNode()){if(node===point.node)offset=text.length+point.offset;text+=node.textContent||''}if(!text.trim())return null;offset=Math.min(Math.max(0,offset),text.length-1);for(const match of matchedTerms(text))if(match.start<=offset&&match.end>offset)return{term:match.term,context:text.slice(Math.max(0,offset-110),offset+170)};if(segmenter){for(const s of segmenter.segment(text))if(s.index<=offset&&s.index+s.segment.length>offset){const t=s.segment.trim();return t?{term:t,context:text.slice(Math.max(0,offset-110),offset+170)}:null}}const t=text.slice(Math.max(0,offset-8),offset+8).match(/[一-龠ぁ-ゔァ-ヴーa-zA-Z0-9]+/)?.[0];return t?{term:t,context:text.slice(Math.max(0,offset-110),offset+170)}:null}
 function activateWord(event){
   const target=event.target?.nodeType===Node.ELEMENT_NODE?event.target:event.target?.parentElement;
   const word=target?.closest('.glossary-term[data-term]');if(!word||!index?.has(word.dataset.term))return false;

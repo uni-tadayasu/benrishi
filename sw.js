@@ -1,7 +1,7 @@
-/* Release 2026.11.25.2: illustrations, term links and guided continuous listening. */
+/* Release 2026.11.25.3: illustrations, term links and guided continuous listening. */
 importScripts('./cache-codec.js');
 const CACHE = 'benrishi-v1-20261125';
-const RELEASE = '2026.11.25.2';
+const RELEASE = '2026.11.25.3';
 const CORE = [
   './style.css', './visual.css', './visual.js', './icon.svg', './manifest.webmanifest',
   './app.js', './question-bank.js', './written-oral.js', './speech-engine.js', './prosody-engine.js',
