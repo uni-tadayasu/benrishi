@@ -25,7 +25,9 @@
   <link rel="icon" type="image/svg+xml" href="./icon.svg">
   <link rel="icon" type="image/png" href="./icon-32.png" sizes="32x32">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=2026.11.25.2">
+  <link rel="stylesheet" href="./visual.css?v=2026.11.25.2">
+  <link rel="preload" as="image" href="./art/hero.webp" imagesrcset="./art/hero-small.webp 800w, ./art/hero.webp 1440w" imagesizes="(max-width: 560px) 100vw, 1000px">
 </head>
 <body>
   <a class="skip-link" href="#main">本文へ移動</a>
@@ -35,6 +37,7 @@
     <div class="workspace">
       <header class="topbar" id="topbar"></header>
       <main id="main" tabindex="-1"><div class="initial-loading"><img src="./icon.svg" alt="" width="52" height="52"><p>学びの準備をしています</p></div></main>
+      <div class="footer-landscape" aria-hidden="true"><img src="./art/library-small.webp" width="600" height="338" alt="" loading="lazy" decoding="async"></div>
       <footer class="site-footer"><span>© 2026 弁理士合格ラボ</span><span>理解を積み重ねる、あなたの学習室。</span></footer>
     </div>
   </div>
@@ -42,17 +45,19 @@
   <div id="speech-dock" class="speech-dock" hidden></div>
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <dialog id="app-dialog"></dialog>
-  <script src="./question-bank.js" defer></script>
-  <script src="./written-oral.js" defer></script>
-  <script src="./speech-engine.js" defer></script>
-  <script src="./annotation.js" defer></script>
-  <script src="./legal-guides.js" defer></script>
-  <script src="./app.js" defer></script>
-  <script src="./law-library.js" defer></script>
-  <script src="./cache-codec.js" defer></script>
-  <script src="./offline.js" defer></script>
-  <script src="./interaction-guard.js" defer></script>
-  <script src="./glossary-study.js" defer></script>
-  <script src="./glossary.js" defer></script>
+  <script src="./question-bank.js?v=2026.11.25.2" defer></script>
+  <script src="./written-oral.js?v=2026.11.25.2" defer></script>
+  <script src="./speech-engine.js?v=2026.11.25.2" defer></script>
+  <script src="./prosody-engine.js?v=2026.11.25.2" defer></script>
+  <script src="./annotation.js?v=2026.11.25.2" defer></script>
+  <script src="./legal-guides.js?v=2026.11.25.2" defer></script>
+  <script src="./visual.js?v=2026.11.25.2" defer></script>
+  <script src="./app.js?v=2026.11.25.2" defer></script>
+  <script src="./law-library.js?v=2026.11.25.2" defer></script>
+  <script src="./cache-codec.js?v=2026.11.25.2" defer></script>
+  <script src="./offline.js?v=2026.11.25.2" defer></script>
+  <script src="./interaction-guard.js?v=2026.11.25.2" defer></script>
+  <script src="./glossary-study.js?v=2026.11.25.2" defer></script>
+  <script src="./glossary.js?v=2026.11.25.2" defer></script>
 </body>
 </html>

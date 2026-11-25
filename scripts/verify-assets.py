@@ -99,13 +99,17 @@ if not args.skip_offline:
     html = safe_file('index.html').read_text()
     for source in re.findall(r'<script[^>]+src=[\"\']([^\"\']+)', html):
         if not source.startswith(('http:', 'https:', '//')):
-            assert safe_file(source.removeprefix('./')).is_file(), source
+            assert safe_file(source.split('?', 1)[0].removeprefix('./')).is_file(), source
     sw = safe_file('sw.js').read_text()
-    core = re.search(r'const CORE=\[([^\]]+)\]', sw)
+    core = re.search(r'const CORE\s*=\s*\[([^\]]+)\]', sw)
     if core:
         for source in re.findall(r"'([^']+)'", core[1]):
             if source not in ('./', '/'):
                 assert safe_file(source.removeprefix('./')).is_file(), source
+    art = json.loads(safe_file('art/manifest.json').read_text())
+    for record in art['files']:
+        check_file(record['path'], record)
+        assert record['path'] in {r['path'] for r in offline['files']}, record['path']
 print(json.dumps({'ok': True, 'laws': len(loaded_laws), 'articles': sum(len(l['articles']) for l in loaded_laws.values()),
                   'figurePdfs': figures, 'treaties': len(treaties['treaties']), 'glossaryTerms': len(glossary['entries']),
                   'glossaryDefinitions': definition_count, 'offlineManifestChecked': not args.skip_offline}, ensure_ascii=False))

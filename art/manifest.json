@@ -1,0 +1,160 @@
+{
+  "version": "2026.11.25.2",
+  "kind": "Decorative generated illustrations",
+  "files": [
+    {
+      "path": "art/hero.webp",
+      "width": 1440,
+      "height": 810,
+      "bytes": 119386,
+      "sha256": "935b217b33d806007f119f2e37d57e88ff355f6ce49b20908fada75435a7155a"
+    },
+    {
+      "path": "art/hero-small.webp",
+      "width": 800,
+      "height": 450,
+      "bytes": 40616,
+      "sha256": "c88e24e748ca450b8182524cfe0fcf11d13bdae0c588281a14b45e8d0cd6d1be"
+    },
+    {
+      "path": "art/library.webp",
+      "width": 1200,
+      "height": 675,
+      "bytes": 152806,
+      "sha256": "f3656a3c4d5f4efa8a367208f7f63c9b3a02debe194b1127b10e3c20c74afb7e"
+    },
+    {
+      "path": "art/library-small.webp",
+      "width": 600,
+      "height": 338,
+      "bytes": 40924,
+      "sha256": "5ea1b7cb18de0d143628b2b0037642a90952396015f558d18ab8f4b939d785cc"
+    },
+    {
+      "path": "art/patent.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 22064,
+      "sha256": "e083fe0a8c7f82b6dc4cd1180e0880ff5e3e5f3c13ea818037987d00887a85d4"
+    },
+    {
+      "path": "art/patent-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 7154,
+      "sha256": "c383da99d668f22dbb2f9e05f919237ca24c8bb6f4e8621f79348875ae312da5"
+    },
+    {
+      "path": "art/utility.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 26326,
+      "sha256": "36ec6c6b855edc4f53f650dbd985478f80c3ec9f12e49756fed2f644e6acb44a"
+    },
+    {
+      "path": "art/utility-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 7924,
+      "sha256": "970de08959450980d8d211023b19407c8400effdf2633038e0660877931f4517"
+    },
+    {
+      "path": "art/design.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 25752,
+      "sha256": "814b13fcba58bee4fd160040a33690966a2c6bfeb80b3e1224668abd00da926c"
+    },
+    {
+      "path": "art/design-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 8264,
+      "sha256": "b622ebfa62a07801a02a797df91afe6ca04a2a275bc1c977c566542143fc66fa"
+    },
+    {
+      "path": "art/trademark.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 32634,
+      "sha256": "18f7271e9bc279e346e2099a6074f75ec3a3b4d6ab6dfb863b6033067628d124"
+    },
+    {
+      "path": "art/trademark-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 9842,
+      "sha256": "fd19c511693062463dc0d76007925572b4344de333f1254c4f696af1806e954c"
+    },
+    {
+      "path": "art/treaty.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 28302,
+      "sha256": "9fe608c8f07d68a53b4743b020cb733c72b5638f909e2fc54649a4e6e3a997cd"
+    },
+    {
+      "path": "art/treaty-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 8334,
+      "sha256": "4f873c95e1e57b510377254b3e98a61a0dcff241cd16aa7ac124f16086173189"
+    },
+    {
+      "path": "art/copyright.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 44738,
+      "sha256": "0d76431ffdcfc95c7ec639239be477ec58150a59d3d6b4087f5c36e9b6eee608"
+    },
+    {
+      "path": "art/copyright-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 11364,
+      "sha256": "25ac0cb83221264047dd158815b531b67b168ec46e668b422e6132c61fe70fcc"
+    },
+    {
+      "path": "art/listening.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 23452,
+      "sha256": "58423ecdd4cad84121f3091fad8d87a39543c1ab9939586f4587e38f6c390032"
+    },
+    {
+      "path": "art/listening-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 6718,
+      "sha256": "f24ed26c51298517fff3df8b4c07176f3cae5a01cc9b5955b903d09e3210fc14"
+    },
+    {
+      "path": "art/writing.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 31656,
+      "sha256": "0e5dff9a7555c5e604286f865db113af5f5358fcd97685b83882315a8ba0f2d7"
+    },
+    {
+      "path": "art/writing-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 9642,
+      "sha256": "aab3110b39e643d090a762464c04006b558e7598048b8620a8ecad8270b61211"
+    },
+    {
+      "path": "art/practice.webp",
+      "width": 720,
+      "height": 720,
+      "bytes": 36958,
+      "sha256": "b6bff3f0d1fa7e0fa7d1249755fd4ac7b137f1214564c240b1a00e2ff9647c84"
+    },
+    {
+      "path": "art/practice-small.webp",
+      "width": 360,
+      "height": 360,
+      "bytes": 10550,
+      "sha256": "c1ef8883eff7c2ecdf019711fc97dd41c62dbf9dc2270374de2e80afba03bd69"
+    }
+  ]
+}

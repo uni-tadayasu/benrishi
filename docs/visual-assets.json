@@ -1,0 +1,229 @@
+{
+  "generator": "image_gen.imagegen",
+  "use": "Decorative editorial illustrations. Legal information remains live HTML.",
+  "generatedOn": "2026-11-25",
+  "transparentBackground": false,
+  "processing": "Resized and encoded as WebP with sharp. No artistic post-editing.",
+  "assets": [
+    {
+      "key": "hero",
+      "prompt": "Use case: stylized-concept. Asset type: wide panoramic hero illustration for a sophisticated Japanese patent attorney exam study website. Create an exquisitely art-directed miniature world of knowledge: sculptural open law books as a gentle architectural landscape, a refined desk and reading lamps, luminous paper pages, a subtle precision gear and globe as small accents. Premium editorial 3D paper sculpture and matte ceramic objects, warm brass details, crafted tactile surfaces, soft diffuse cinematic light. Deep forest teal #123437 backdrop, sage mint #A7DCC8, warm ivory and restrained gold. Composition: panoramic 16:9, entire main sculptural scene on the RIGHT two-thirds, left third is calm deep teal with airy negative space for real HTML headings. Layered depth, inviting and intelligent, rich detail, elegant calm mood. No people, no text, no letters, no badges, no logos, no watermark. Nothing depicting an actual legal doctrine or guaranteed achievement. Website-ready polished artwork, not a screenshot or interface.",
+      "files": [
+        {
+          "path": "art/hero.webp",
+          "width": 1440,
+          "height": 810,
+          "bytes": 119386,
+          "sha256": "935b217b33d806007f119f2e37d57e88ff355f6ce49b20908fada75435a7155a"
+        },
+        {
+          "path": "art/hero-small.webp",
+          "width": 800,
+          "height": 450,
+          "bytes": 40616,
+          "sha256": "c88e24e748ca450b8182524cfe0fcf11d13bdae0c588281a14b45e8d0cd6d1be"
+        }
+      ]
+    },
+    {
+      "key": "library",
+      "prompt": "Use case: stylized-concept. Asset type: wide editorial banner illustration for a Japanese intellectual property law library. An elegant miniature architectural library with sculptural shelves of orderly law volumes, a few open books, arch-shaped shelving, a small brass reading lamp and quiet indoor greenery. Books have blank spines with subtle decorative geometry but NO letters or readable writing. Premium editorial 3D paper sculpture and matte ceramic miniature aesthetic, soft tactile material, diffuse studio light with gentle ambient shadow. Color palette deep forest teal #123437, warm ivory #F3F5F1, sage mint #A7DCC8, tiny brass gold accents. Panoramic landscape 16:9 composition, centered library with generous clear edges; rich but serene detail. Professional scholarly atmosphere, beautiful modern Japanese learning product. No people, no logos, no watermarks, no UI, no legal-information diagram.",
+      "files": [
+        {
+          "path": "art/library.webp",
+          "width": 1200,
+          "height": 675,
+          "bytes": 152806,
+          "sha256": "f3656a3c4d5f4efa8a367208f7f63c9b3a02debe194b1127b10e3c20c74afb7e"
+        },
+        {
+          "path": "art/library-small.webp",
+          "width": 600,
+          "height": 338,
+          "bytes": 40924,
+          "sha256": "5ea1b7cb18de0d143628b2b0037642a90952396015f558d18ab8f4b939d785cc"
+        }
+      ]
+    },
+    {
+      "key": "patent",
+      "prompt": "Use case: stylized-concept. Asset type: decorative subject-card illustration for a premium Japanese patent-attorney exam learning website, not an explanatory diagram. Create one finished image, approximately 1024 by 1024 pixels square. Style: premium editorial 3D paper-and-ceramic miniature, refined soft tactile materials, matte glazed ceramic and thick folded paper, delicate restrained brass accents. Seamless warm ivory background #F3F5F1, deep forest teal #123437, sage mint #A7DCC8, very small brass gold accents. Soft diffuse studio lighting from upper left, subtle grounded shadows, calm polished aesthetic. Composition: one coherent compact centered group, strong easily understood silhouette, three-quarter view, generous clear breathing room; keep the complete important subject inside the central 70 percent of width and central 54 percent of height so it also crops elegantly to a landscape card. No people, no hands, no words, no letters, no numbers, no captions, no logos, no watermarks. No UI frame, no charts, no precise legal or technical instruction.\nSubject: the idea of invention. A beautiful warm-ivory ceramic lightbulb with a restrained brass socket, paired with one deep-forest-teal precision gear and a folded sage blueprint sheet. The blueprint has only a few subtle abstract embossed lines without any writing. Arrange these as a single elegant little invention sculpture on a very low rounded teal base. The lightbulb is the clear hero, gear and blueprint secondary. Warm, clever, composed.",
+      "files": [
+        {
+          "path": "art/patent.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 22064,
+          "sha256": "e083fe0a8c7f82b6dc4cd1180e0880ff5e3e5f3c13ea818037987d00887a85d4"
+        },
+        {
+          "path": "art/patent-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 7154,
+          "sha256": "c383da99d668f22dbb2f9e05f919237ca24c8bb6f4e8621f79348875ae312da5"
+        }
+      ]
+    },
+    {
+      "key": "utility",
+      "prompt": "Use case: stylized-concept. Asset type: decorative subject-card illustration for a premium Japanese patent-attorney exam learning website, not an explanatory diagram. Create one finished image, approximately 1024 by 1024 pixels square. Style: premium editorial 3D paper-and-ceramic miniature, refined soft tactile materials, matte glazed ceramic and thick folded paper, delicate restrained brass accents. Seamless warm ivory background #F3F5F1, deep forest teal #123437, sage mint #A7DCC8, very small brass gold accents. Soft diffuse studio lighting from upper left, subtle grounded shadows, calm polished aesthetic. Composition: one coherent compact centered group, strong easily understood silhouette, three-quarter view, generous clear breathing room; keep the complete important subject inside the central 70 percent of width and central 54 percent of height so it also crops elegantly to a landscape card. No people, no hands, no words, no letters, no numbers, no captions, no logos, no watermarks. No UI frame, no charts, no precise legal or technical instruction.\nSubject: the practical improvement of useful everyday objects. An elegant ergonomic adjustable hand wrench with a rounded sage-mint handle and deep-teal working head, next to a compact miniature desk clamp prototype with a tiny brass pivot and smooth ivory fitted components. Present the tool and the small mechanism as a single cohesive sculptural still life on a very low rounded teal base. Make the improved comfortable shape and neatly fitted mechanical parts clear at thumbnail size. Understated craftsmanship, purposeful and approachable.",
+      "files": [
+        {
+          "path": "art/utility.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 26326,
+          "sha256": "36ec6c6b855edc4f53f650dbd985478f80c3ec9f12e49756fed2f644e6acb44a"
+        },
+        {
+          "path": "art/utility-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 7924,
+          "sha256": "970de08959450980d8d211023b19407c8400effdf2633038e0660877931f4517"
+        }
+      ]
+    },
+    {
+      "key": "treaty",
+      "prompt": "Use case: stylized-concept. Asset type: decorative subject-card illustration for a premium Japanese patent-attorney exam learning website, not an explanatory diagram. Create one finished image, approximately 1024 by 1024 pixels square. Style: premium editorial 3D paper-and-ceramic miniature, refined soft tactile materials, matte glazed ceramic and thick folded paper, delicate restrained brass accents. Seamless warm ivory background #F3F5F1, deep forest teal #123437, sage mint #A7DCC8, very small brass gold accents. Soft diffuse studio lighting from upper left, subtle grounded shadows, calm polished aesthetic. Composition: one coherent compact centered group, strong easily understood silhouette, three-quarter view, generous clear breathing room; keep the complete important subject inside the central 70 percent of width and central 54 percent of height so it also crops elegantly to a landscape card. No people, no hands, no words, no letters, no numbers, no captions, no logos, no watermarks. No UI frame, no charts, no precise legal or technical instruction.\nSubject: calm international cooperation through agreements. A small beautiful globe with sage-mint landforms and deep-forest-teal oceans rests above two gently rounded ivory and sage books with completely blank covers and spines. A pair of delicate restrained brass arcs connects a few small nodes around the globe, suggesting international connections. Arrange the globe, books and arcs as one stable balanced sculpture on a very low rounded teal base. Harmonious, thoughtful and quietly global. No flags or emblems.",
+      "files": [
+        {
+          "path": "art/treaty.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 28302,
+          "sha256": "9fe608c8f07d68a53b4743b020cb733c72b5638f909e2fc54649a4e6e3a997cd"
+        },
+        {
+          "path": "art/treaty-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 8334,
+          "sha256": "4f873c95e1e57b510377254b3e98a61a0dcff241cd16aa7ac124f16086173189"
+        }
+      ]
+    },
+    {
+      "key": "design",
+      "prompt": "Use case: stylized-concept.\nAsset type: a premium Japanese intellectual-property exam website subject-card illustration. Produce one square image, approximately 1024 x 1024, with an opaque background.\nShared art direction: premium editorial 3D paper and ceramic miniatures; soft tactile matte materials, finely crafted sculptural forms, warm ivory seamless background #F3F5F1, deep forest teal #123437, sage mint #A7DCC8, restrained brass-gold accents. Soft diffuse studio light, soft contact shadows, elegant refined composition, substantial dimensional depth, clean visual hierarchy. A strong centered silhouette with the complete subject group concentrated in the middle 60% of the canvas height and middle 80% of the canvas width so a landscape website crop remains safe. Beautiful art-directed miniature still life, gently elevated three-quarter viewpoint, polished but not glossy. No words, letters, captions, existing logos, brand names, watermarks, interface elements, people, or hands. No frame or border. This is an evocative decorative visual, not a legal diagram.\nSubject: the beauty of industrial design. Arrange an original elegantly curved forest-teal miniature lounge chair, a sage-mint sculptural ceramic vessel, and one ivory abstract flowing shape on a low exhibition plinth. Include a small ivory design sketch sheet lying partly flat with clean unlettered curved line studies of the same chair and vessel, and a restrained brass pencil. Emphasize graceful silhouettes, attractive form, careful proportions, the relationship between a sketch and a finished sculptural object. No recognizable designer products or existing commercial designs.",
+      "files": [
+        {
+          "path": "art/design.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 25752,
+          "sha256": "814b13fcba58bee4fd160040a33690966a2c6bfeb80b3e1224668abd00da926c"
+        },
+        {
+          "path": "art/design-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 8264,
+          "sha256": "b622ebfa62a07801a02a797df91afe6ca04a2a275bc1c977c566542143fc66fa"
+        }
+      ]
+    },
+    {
+      "key": "trademark",
+      "prompt": "Use case: stylized-concept.\nAsset type: a premium Japanese intellectual-property exam website subject-card illustration. Produce one square image, approximately 1024 x 1024, with an opaque background.\nShared art direction: premium editorial 3D paper and ceramic miniatures; soft tactile matte materials, finely crafted sculptural forms, warm ivory seamless background #F3F5F1, deep forest teal #123437, sage mint #A7DCC8, restrained brass-gold accents. Soft diffuse studio light, soft contact shadows, elegant refined composition, substantial dimensional depth, clean visual hierarchy. A strong centered silhouette with the complete subject group concentrated in the middle 60% of the canvas height and middle 80% of the canvas width so a landscape website crop remains safe. Beautiful art-directed miniature still life, gently elevated three-quarter viewpoint, polished but not glossy. No words, letters, captions, existing logos, brand names, watermarks, interface elements, people, or hands. No frame or border. This is an evocative decorative visual, not a legal diagram.\nSubject: the distinct identity of a product presentation. Arrange two refined unbranded product packages, an ivory rigid carton and a deep-forest-teal cylindrical package, with a sage-mint blank hangtag and a small original geometric seal. The seal is a purely abstract invented arrangement of two offset rounded arches and one small disk, used sparingly as a tiny embossed shape on a single package and echoed by a freestanding ceramic token. All other packaging surfaces are blank, with beautiful paper folds and restrained brass details. Create a confident memorable centered still life. Do not use any existing trademarks, checkmarks, shields, recognizable logos, alphabetic shapes, words, numbers, or pseudo-writing.",
+      "files": [
+        {
+          "path": "art/trademark.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 32634,
+          "sha256": "18f7271e9bc279e346e2099a6074f75ec3a3b4d6ab6dfb863b6033067628d124"
+        },
+        {
+          "path": "art/trademark-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 9842,
+          "sha256": "fd19c511693062463dc0d76007925572b4344de333f1254c4f696af1806e954c"
+        }
+      ]
+    },
+    {
+      "key": "copyright",
+      "prompt": "Use case: stylized-concept.\nAsset type: a premium Japanese intellectual-property exam website subject-card illustration. Produce one square image, approximately 1024 x 1024, with an opaque background.\nShared art direction: premium editorial 3D paper and ceramic miniatures; soft tactile matte materials, finely crafted sculptural forms, warm ivory seamless background #F3F5F1, deep forest teal #123437, sage mint #A7DCC8, restrained brass-gold accents. Soft diffuse studio light, soft contact shadows, elegant refined composition, substantial dimensional depth, clean visual hierarchy. A strong centered silhouette with the complete subject group concentrated in the middle 60% of the canvas height and middle 80% of the canvas width so a landscape website crop remains safe. Beautiful art-directed miniature still life, gently elevated three-quarter viewpoint, polished but not glossy. No words, letters, captions, existing logos, brand names, watermarks, interface elements, people, or hands. No frame or border. This is an evocative decorative visual, not a legal diagram.\nSubject: creative works across art, photography, and music. Compose an elegant still life of a small ivory canvas bearing an original abstract teal-and-mint brush composition, a sculptural unbranded miniature camera with a brass-edged lens, one carefully placed paintbrush, and a folded paper music sheet with a few clean understated musical-note shapes but no words. Arrange as one cohesive low sculptural group on an ivory surface. The canvas, camera, brush, and music should read clearly at small card size, with warm tactile paper and ceramic finishes and balanced breathing room. No recognizable artworks, copyrighted characters, song titles, brands, text, or watermark.",
+      "files": [
+        {
+          "path": "art/copyright.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 44738,
+          "sha256": "0d76431ffdcfc95c7ec639239be477ec58150a59d3d6b4087f5c36e9b6eee608"
+        },
+        {
+          "path": "art/copyright-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 11364,
+          "sha256": "25ac0cb83221264047dd158815b531b67b168ec46e668b422e6132c61fe70fcc"
+        }
+      ]
+    },
+    {
+      "key": "listening",
+      "prompt": "Use case: stylized-concept.\nAsset type: premium Japanese legal-exam study website illustration, one consistent editorial asset family.\nPrimary request: an inviting miniature still life conveying the act of learning, never a guarantee of results.\nStyle/medium: premium editorial 3D paper-and-ceramic miniatures, sculptural yet finely tactile, sophisticated adult learning aesthetic.\nScene/backdrop: seamless warm ivory studio backdrop, very pale warm gray-green #F3F5F1.\nColor palette: deep forest teal #123437, sage mint #A7DCC8, warm ivory papers; restrained small brass-gold accents.\nLighting/mood: soft diffuse studio light, subtle ambient contact shadows, calm concentration.\nComposition/framing: approximately 1024 x 1024 square; centered, compact harmonious silhouette; main objects in the central horizontal band with generous clear margins so a landscape crop stays safe; three-quarter view, all main objects fully visible.\nMaterials/textures: matte glazed ceramic, softly embossed paper and book cloth, smooth rounded edges, delicate paper layering; high-quality clean rendering.\nConstraints: no letters, numbers, typography, logos, watermark, UI screenshot, trophy, certificate, medal, graduation hat, celebratory confetti, person, or hand. Keep pages and book covers unlettered. No score or test-pass symbolism. Only a study atmosphere.\nSubject: one beautifully bound open ivory book with a deep forest-teal cover, a sculptural sage-mint pair of over-ear headphones gently embracing it, and a small elegant abstract audio waveform formed from a few rounded mint ceramic bars behind or beside the book. The waveform is purely decorative, no interface or text. Keep the book and headphones as the clear dominant objects, with balanced tangible proportions.",
+      "files": [
+        {
+          "path": "art/listening.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 23452,
+          "sha256": "58423ecdd4cad84121f3091fad8d87a39543c1ab9939586f4587e38f6c390032"
+        },
+        {
+          "path": "art/listening-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 6718,
+          "sha256": "f24ed26c51298517fff3df8b4c07176f3cae5a01cc9b5955b903d09e3210fc14"
+        }
+      ]
+    },
+    {
+      "key": "writing",
+      "prompt": "Use case: stylized-concept.\nAsset type: premium Japanese legal-exam study website illustration, one consistent editorial asset family.\nPrimary request: an inviting miniature still life conveying the act of learning, never a guarantee of results.\nStyle/medium: premium editorial 3D paper-and-ceramic miniatures, sculptural yet finely tactile, sophisticated adult learning aesthetic.\nScene/backdrop: seamless warm ivory studio backdrop, very pale warm gray-green #F3F5F1.\nColor palette: deep forest teal #123437, sage mint #A7DCC8, warm ivory papers; restrained small brass-gold accents.\nLighting/mood: soft diffuse studio light, subtle ambient contact shadows, calm concentration.\nComposition/framing: approximately 1024 x 1024 square; centered, compact harmonious silhouette; main objects in the central horizontal band with generous clear margins so a landscape crop stays safe; three-quarter view, all main objects fully visible.\nMaterials/textures: matte glazed ceramic, softly embossed paper and book cloth, smooth rounded edges, delicate paper layering; high-quality clean rendering.\nConstraints: no letters, numbers, typography, logos, watermark, UI screenshot, trophy, certificate, medal, graduation hat, celebratory confetti, person, or hand. Keep pages and book covers unlettered. No score or test-pass symbolism. Only a study atmosphere.\nSubject: an open ivory notebook with softly layered blank pages, one elegant deep forest-teal fountain pen with a restrained brass nib placed diagonally across the foreground, one closed mint book, and a tidy small stack of completely unlettered ivory writing sheets suggesting a carefully organized answer draft. The paper is blank, no fake handwriting, no calligraphy, no ruled letter-like marks. Make the fountain pen, notebook and organized paper the clear focus.",
+      "files": [
+        {
+          "path": "art/writing.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 31656,
+          "sha256": "0e5dff9a7555c5e604286f865db113af5f5358fcd97685b83882315a8ba0f2d7"
+        },
+        {
+          "path": "art/writing-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 9642,
+          "sha256": "aab3110b39e643d090a762464c04006b558e7598048b8620a8ecad8270b61211"
+        }
+      ]
+    },
+    {
+      "key": "practice",
+      "prompt": "Use case: stylized-concept.\nAsset type: premium Japanese legal-exam study website illustration, one consistent editorial asset family.\nPrimary request: an inviting miniature still life conveying the act of learning, never a guarantee of results.\nStyle/medium: premium editorial 3D paper-and-ceramic miniatures, sculptural yet finely tactile, sophisticated adult learning aesthetic.\nScene/backdrop: seamless warm ivory studio backdrop, very pale warm gray-green #F3F5F1.\nColor palette: deep forest teal #123437, sage mint #A7DCC8, warm ivory papers; restrained small brass-gold accents.\nLighting/mood: soft diffuse studio light, subtle ambient contact shadows, calm concentration.\nComposition/framing: approximately 1024 x 1024 square; centered, compact harmonious silhouette; main objects in the central horizontal band with generous clear margins so a landscape crop stays safe; three-quarter view, all main objects fully visible.\nMaterials/textures: matte glazed ceramic, softly embossed paper and book cloth, smooth rounded edges, delicate paper layering; high-quality clean rendering.\nConstraints: no letters, numbers, typography, logos, watermark, UI screenshot, trophy, certificate, medal, graduation hat, celebratory confetti, person, or hand. Keep pages and book covers unlettered. No score or test-pass symbolism. Only a study atmosphere.\nSubject: a well-crafted sage-mint pencil with a small brass accent beside ivory practice sheets with only a few tiny EMPTY square check boxes, three tactile unlettered study cards, and a small understated abstract target of concentric teal-and-mint circles with no arrow and no impact mark. Arrange these as a compact study still life. Empty check boxes indicate preparation, not correct answers; no scores, no filled check marks, no achievement symbols.",
+      "files": [
+        {
+          "path": "art/practice.webp",
+          "width": 720,
+          "height": 720,
+          "bytes": 36958,
+          "sha256": "b6bff3f0d1fa7e0fa7d1249755fd4ac7b137f1214564c240b1a00e2ff9647c84"
+        },
+        {
+          "path": "art/practice-small.webp",
+          "width": 360,
+          "height": 360,
+          "bytes": 10550,
+          "sha256": "c1ef8883eff7c2ecdf019711fc97dd41c62dbf9dc2270374de2e80afba03bd69"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.25.1",
+  "version": "2026.11.25.2",
   "asOf": "2026-11-25",
   "files": [
     {
@@ -9,8 +9,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 75604,
-      "sha256": "03f300cd6eff8c14d757c72371d09576fe80edc64b3444c71b3f9a030f1b8e54"
+      "bytes": 87473,
+      "sha256": "b777ef593d97c468f42c35f95f59f9c0f25262e4ac8d62fb19ec9011b6f719de"
     },
     {
       "path": "apple-touch-icon.png",
@@ -44,8 +44,8 @@
     },
     {
       "path": "glossary.js",
-      "bytes": 12041,
-      "sha256": "4a1e468d2ef95f58c97ece3ed30fb42482abc7d0da93b1891e7a304a9b84149b"
+      "bytes": 20756,
+      "sha256": "cab10af25d50851077a883311338d87c9e26997d646aff73c7dff504f1caf38c"
     },
     {
       "path": "icon-192.png",
@@ -74,8 +74,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 3598,
-      "sha256": "2954b9a8ad3144412ea5a71a7cf58faa6e300252143de8fcdb0f30bb7eac53f8"
+      "bytes": 4309,
+      "sha256": "3e4eeb119c669cc85e3318f7387637cbbea2cbef349e9340e82df5f5ba024d07"
     },
     {
       "path": "interaction-guard.js",
@@ -84,8 +84,8 @@
     },
     {
       "path": "law-library.js",
-      "bytes": 29893,
-      "sha256": "731f8794ec15361430054ef163b0be949d43d26667d63840c0ad15b1538071ea"
+      "bytes": 30897,
+      "sha256": "5d1792d740bc42f2ce7f7a7a6db4d7aceaded84e1709117b5c9a02075436a4c3"
     },
     {
       "path": "legal-guides.js",
@@ -108,6 +108,11 @@
       "sha256": "08ff07409b94d5667ce0312921dcea894f7e0b82df07de0617fb1bd8a98eb713"
     },
     {
+      "path": "prosody-engine.js",
+      "bytes": 9543,
+      "sha256": "822ff3ebb4f3e8972034d8278541354b3181d0c60774600fb24afcc7f02cd7f4"
+    },
+    {
       "path": "question-bank.js",
       "bytes": 81177,
       "sha256": "321380b9bbc275f7b1857e26ce2a67ba876503f4be384183a0d3ca62e5479fca"
@@ -121,6 +126,16 @@
       "path": "style.css",
       "bytes": 37331,
       "sha256": "1ced9b6320104dfd0c4b23dcc44370b0259856c92773ae7e76861f85b74c1392"
+    },
+    {
+      "path": "visual.css",
+      "bytes": 13820,
+      "sha256": "b7d1de2973ca9c48d74f95ebe5ed11923a1e5a8aedda07dc5efe7c6fc3e17280"
+    },
+    {
+      "path": "visual.js",
+      "bytes": 3149,
+      "sha256": "32625eed88a50458271d8c990d37b33975aeaae3076a0f8ae0ba4803b6c302d8"
     },
     {
       "path": "written-oral.js",
@@ -606,7 +621,122 @@
       "path": "treaty-corpus/madrid.json",
       "bytes": 87341,
       "sha256": "f6b0b0ff101ad1aae76520dcd89d7b74d76f20388567f9f4c58cd64597ae1b95"
+    },
+    {
+      "path": "art/manifest.json",
+      "bytes": 4408,
+      "sha256": "a6722dbda6edd37f24bc0540732a27626de87336fc7378d92905db3003580c66"
+    },
+    {
+      "path": "art/hero.webp",
+      "bytes": 119386,
+      "sha256": "935b217b33d806007f119f2e37d57e88ff355f6ce49b20908fada75435a7155a"
+    },
+    {
+      "path": "art/hero-small.webp",
+      "bytes": 40616,
+      "sha256": "c88e24e748ca450b8182524cfe0fcf11d13bdae0c588281a14b45e8d0cd6d1be"
+    },
+    {
+      "path": "art/library.webp",
+      "bytes": 152806,
+      "sha256": "f3656a3c4d5f4efa8a367208f7f63c9b3a02debe194b1127b10e3c20c74afb7e"
+    },
+    {
+      "path": "art/library-small.webp",
+      "bytes": 40924,
+      "sha256": "5ea1b7cb18de0d143628b2b0037642a90952396015f558d18ab8f4b939d785cc"
+    },
+    {
+      "path": "art/patent.webp",
+      "bytes": 22064,
+      "sha256": "e083fe0a8c7f82b6dc4cd1180e0880ff5e3e5f3c13ea818037987d00887a85d4"
+    },
+    {
+      "path": "art/patent-small.webp",
+      "bytes": 7154,
+      "sha256": "c383da99d668f22dbb2f9e05f919237ca24c8bb6f4e8621f79348875ae312da5"
+    },
+    {
+      "path": "art/utility.webp",
+      "bytes": 26326,
+      "sha256": "36ec6c6b855edc4f53f650dbd985478f80c3ec9f12e49756fed2f644e6acb44a"
+    },
+    {
+      "path": "art/utility-small.webp",
+      "bytes": 7924,
+      "sha256": "970de08959450980d8d211023b19407c8400effdf2633038e0660877931f4517"
+    },
+    {
+      "path": "art/design.webp",
+      "bytes": 25752,
+      "sha256": "814b13fcba58bee4fd160040a33690966a2c6bfeb80b3e1224668abd00da926c"
+    },
+    {
+      "path": "art/design-small.webp",
+      "bytes": 8264,
+      "sha256": "b622ebfa62a07801a02a797df91afe6ca04a2a275bc1c977c566542143fc66fa"
+    },
+    {
+      "path": "art/trademark.webp",
+      "bytes": 32634,
+      "sha256": "18f7271e9bc279e346e2099a6074f75ec3a3b4d6ab6dfb863b6033067628d124"
+    },
+    {
+      "path": "art/trademark-small.webp",
+      "bytes": 9842,
+      "sha256": "fd19c511693062463dc0d76007925572b4344de333f1254c4f696af1806e954c"
+    },
+    {
+      "path": "art/treaty.webp",
+      "bytes": 28302,
+      "sha256": "9fe608c8f07d68a53b4743b020cb733c72b5638f909e2fc54649a4e6e3a997cd"
+    },
+    {
+      "path": "art/treaty-small.webp",
+      "bytes": 8334,
+      "sha256": "4f873c95e1e57b510377254b3e98a61a0dcff241cd16aa7ac124f16086173189"
+    },
+    {
+      "path": "art/copyright.webp",
+      "bytes": 44738,
+      "sha256": "0d76431ffdcfc95c7ec639239be477ec58150a59d3d6b4087f5c36e9b6eee608"
+    },
+    {
+      "path": "art/copyright-small.webp",
+      "bytes": 11364,
+      "sha256": "25ac0cb83221264047dd158815b531b67b168ec46e668b422e6132c61fe70fcc"
+    },
+    {
+      "path": "art/listening.webp",
+      "bytes": 23452,
+      "sha256": "58423ecdd4cad84121f3091fad8d87a39543c1ab9939586f4587e38f6c390032"
+    },
+    {
+      "path": "art/listening-small.webp",
+      "bytes": 6718,
+      "sha256": "f24ed26c51298517fff3df8b4c07176f3cae5a01cc9b5955b903d09e3210fc14"
+    },
+    {
+      "path": "art/writing.webp",
+      "bytes": 31656,
+      "sha256": "0e5dff9a7555c5e604286f865db113af5f5358fcd97685b83882315a8ba0f2d7"
+    },
+    {
+      "path": "art/writing-small.webp",
+      "bytes": 9642,
+      "sha256": "aab3110b39e643d090a762464c04006b558e7598048b8620a8ecad8270b61211"
+    },
+    {
+      "path": "art/practice.webp",
+      "bytes": 36958,
+      "sha256": "b6bff3f0d1fa7e0fa7d1249755fd4ac7b137f1214564c240b1a00e2ff9647c84"
+    },
+    {
+      "path": "art/practice-small.webp",
+      "bytes": 10550,
+      "sha256": "c1ef8883eff7c2ecdf019711fc97dd41c62dbf9dc2270374de2e80afba03bd69"
     }
   ],
-  "totalBytes": 79903657
+  "totalBytes": 80662282
 }

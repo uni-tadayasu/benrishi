@@ -1,15 +1,26 @@
-/* Release 2026.11.25.1: compressed, verified offline storage. */
+/* Release 2026.11.25.2: illustrations, term links and guided continuous listening. */
 importScripts('./cache-codec.js');
 const CACHE = 'benrishi-v1-20261125';
+const RELEASE = '2026.11.25.2';
 const CORE = [
-  './', './index.html', './style.css', './icon.svg', './manifest.webmanifest',
-  './app.js', './question-bank.js', './written-oral.js', './speech-engine.js',
+  './style.css', './visual.css', './visual.js', './icon.svg', './manifest.webmanifest',
+  './app.js', './question-bank.js', './written-oral.js', './speech-engine.js', './prosody-engine.js',
   './annotation.js', './legal-guides.js', './law-library.js', './offline.js',
   './interaction-guard.js', './glossary.js', './glossary-study.js',
   './glossary-data.json.gz', './cache-codec.js', './offline-assets.json',
-  './law-corpus/manifest.json', './treaty-corpus/manifest.json'
+  './law-corpus/manifest.json', './treaty-corpus/manifest.json',
+  './art/manifest.json', './art/hero-small.webp', './art/hero.webp', './art/library-small.webp',
+  './index.html', './'
 ];
 const url = path => new URL(path, self.registration.scope).href;
+const versionedEntries = new Set(CORE.filter(path => /\.(js|css)$/.test(path)).map(path => new URL(url(path)).pathname));
+function canonicalKey(request, target) {
+  if (versionedEntries.has(target.pathname) && target.searchParams.get('v') === RELEASE &&
+      [...target.searchParams.keys()].length === 1) {
+    const clean = new URL(target.href); clean.search = ''; return clean.href;
+  }
+  return request;
+}
 async function storeResponse(cache, key, response) {
   const pathname = new URL(typeof key === 'string' ? key : key.url).pathname;
   const stored = pathname.endsWith('/offline-assets.json')
@@ -28,6 +39,10 @@ self.addEventListener('install', event => event.waitUntil((async () => {
     const response = await fetch(new Request(url(path), { cache: 'reload' }));
     if (!response.ok) throw new Error('Offline shell missing: ' + path);
     await storeResponse(cache, url(path), response);
+    // Keep the versioned entry usable if the previous worker still serves an open page.
+    if (versionedEntries.has(new URL(url(path)).pathname)) {
+      await storeResponse(cache, url(path) + '?v=' + RELEASE, response);
+    }
   }
   await self.skipWaiting();
 })()));
@@ -45,6 +60,7 @@ self.addEventListener('fetch', event => {
       target.searchParams.has('__offline_manifest')) return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
+    const key = canonicalKey(request, target);
     const scopePath = new URL(self.registration.scope).pathname;
     const appNavigation = request.mode === 'navigate' &&
       (target.pathname === scopePath || target.pathname === scopePath + 'index.html');
@@ -61,18 +77,18 @@ self.addEventListener('fetch', event => {
           return response;
         }
       } catch (_) {}
-      return await savedResponse(cache, request) || await savedResponse(cache, url('./index.html')) ||
+      return await savedResponse(cache, url('./index.html')) || await savedResponse(cache, request) ||
         new Response('初回はオンラインでサイトを開いてください。', {
           status: 503, headers: { 'Content-Type': 'text/plain; charset=utf-8' }
         });
     }
-    const saved = await savedResponse(cache, request);
+    const saved = await savedResponse(cache, key);
     if (saved) return saved;
     try {
       const response = await fetch(request);
       // Cache.put rejects partial (206) PDF responses. Return those to the viewer as-is.
       if (response.status === 200 && response.type !== 'opaque') {
-        try { await storeResponse(cache, request, response); } catch (_) {}
+        try { await storeResponse(cache, key, response); } catch (_) {}
       }
       return response;
     } catch (_) {

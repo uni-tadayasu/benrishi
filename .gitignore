@@ -3,3 +3,5 @@ __pycache__/
 *.pyc
 .openai/
 qa-preview.html
+qa/
+art-source/

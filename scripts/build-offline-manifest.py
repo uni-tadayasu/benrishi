@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--web', type=Path, default=ROOT / 'dist' if (ROOT / 'dist').is_dir() else ROOT)
-parser.add_argument('--version', default='2026.11.25.1')
+parser.add_argument('--version', default='2026.11.25.2')
 args = parser.parse_args()
 WEB = args.web.resolve()
 files, seen = [], set()
@@ -34,6 +34,12 @@ for folder in ['law-corpus', 'treaty-corpus']:
         if (WEB / path).stat().st_size != record['bytes']:
             raise RuntimeError('Corpus manifest size mismatch: ' + path)
         add(path)
+art_manifest = json.loads((WEB / 'art/manifest.json').read_text())
+add('art/manifest.json')
+for record in art_manifest['files']:
+    add(record['path'])
+    if files[-1]['bytes'] != record['bytes'] or files[-1]['sha256'] != record['sha256']:
+        raise RuntimeError('Artwork manifest mismatch: ' + record['path'])
 law_manifest = json.loads((WEB / 'law-corpus/manifest.json').read_text())
 manifest = {'version': args.version, 'asOf': law_manifest['asOf'], 'files': files,
             'totalBytes': sum(item['bytes'] for item in files)}
