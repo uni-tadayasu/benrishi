@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* Embolden by painting strokes rather than changing glyph advances or line boxes.
+   Masking never changes text, font metrics, padding, display, or paragraph height. */
+.glossary-term.important-term{color:#ad4912;text-decoration-color:#c16935}
+.important-term-text{-webkit-text-stroke:.018em currentColor;text-shadow:.012em 0 currentColor,-.012em 0 currentColor}
+.glossary-term.important-term:hover,.glossary-term.important-term:focus-visible{background:#fae9db;outline-color:#d4a17d;text-decoration-color:#ad4912}
+.glossary-term.important-term.is-important-hidden{color:transparent!important;background:#ead5c3;box-shadow:inset 0 -1px 0 #b67b50;text-decoration-color:transparent!important;border-radius:3px;forced-color-adjust:none}
+.glossary-term.important-term.is-important-hidden *{color:transparent!important;-webkit-text-fill-color:transparent!important;-webkit-text-stroke:0 transparent!important;text-shadow:none!important;text-decoration-color:transparent!important;forced-color-adjust:none}
+.glossary-term.important-term.is-important-hidden:hover,.glossary-term.important-term.is-important-hidden:focus-visible{background:#dfbfa3;outline-color:#ad6e3f}
+.glossary-term.important-term.is-important-hidden::selection,.glossary-term.important-term.is-important-hidden *::selection{color:transparent;background:#dfbfa3}
+.important-study-controls{position:relative;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 18px;margin:0 0 18px;padding:15px 17px;border:1px solid #e7d2bf;border-radius:12px;background:#fff8f1}
+.important-study-copy{flex:1 1 290px;min-width:0}
+.important-study-copy strong{display:block;color:#8e4118;font-size:14px;line-height:1.7}
+.important-study-copy p{margin:4px 0 0;color:#766556;font-size:14px;line-height:1.8}
+.important-study-actions{display:flex;gap:8px;flex:0 0 auto;flex-wrap:wrap;align-items:center}
+.important-study-actions .btn{box-sizing:border-box;min-height:44px;font-size:14px;white-space:nowrap}
+.important-study-actions [data-important-toggle]{width:12em;background:#ad4912;color:#fff;border-color:#ad4912}
+.important-study-actions [data-important-toggle]:hover{background:#923b0b}
+.important-study-actions [data-important-reset]{width:7.5em}
+.important-study-actions [data-important-reset]:disabled{opacity:.45;cursor:default}
+.important-study-announcement{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:560px){.important-study-controls{padding:13px 14px}.important-study-copy{flex-basis:100%}.important-study-actions{width:100%;flex-wrap:nowrap}.important-study-actions [data-important-toggle]{flex:1 1 auto;min-width:0}.important-study-actions [data-important-reset]{flex:0 0 7.5em}}
+@media(max-width:360px){.important-study-actions{flex-direction:column;align-items:stretch}.important-study-actions [data-important-toggle],.important-study-actions [data-important-reset]{width:100%;flex:0 0 auto;min-width:0}}
+@media(forced-colors:active){.glossary-term.important-term.is-important-hidden{background:CanvasText;box-shadow:none}.glossary-term.important-term.is-important-hidden:hover,.glossary-term.important-term.is-important-hidden:focus-visible{background:Highlight;outline-color:Highlight}}

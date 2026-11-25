@@ -4,6 +4,8 @@ const A=window.App,{esc,icon,$}=A;
 let dataset=null,index=null,loading=null,mode=false,openId=0,current=null;
 let termTrie=null,observer=null,decorationFrame=0,decorating=false,started=false,termGroup=0;
 const history=[];
+const importantTerms=new Set(window.IMPORTANT_LEGAL_TERMS||[]),revealedImportantGroups=new Set();
+let lastImportantHidden=null,lastImportantRoute=null;
 const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('ja',{granularity:'word'}):null;
 async function load(){if(index)return index;if(loading)return loading;loading=(async()=>{const compressed=typeof DecompressionStream==='function';const r=await fetch(compressed?'./glossary-data.json.gz':'./glossary-data.json');if(!r.ok)throw Error('missing');dataset=compressed?await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).json():await r.json();const map=new Map();for(const e of dataset.entries||[])map.set(e.term,{...e,definitions:e.definitions||[]});for(const e of window.STUDY_GLOSSARY||[]){const old=map.get(e.term);map.set(e.term,{...old,...e,definitions:old?.definitions||[]})}index=map;buildTermTrie();scheduleDecoration();return map})();try{return await loading}catch(e){loading=null;throw e}}
 function updateMode(){document.body.classList.toggle('term-mode',mode);for(const b of document.querySelectorAll('[data-glossary-mode]')){b.classList.toggle('btn-soft',mode);b.setAttribute('aria-pressed',String(mode));const html=icon('book','small-icon')+(mode?'下線のない言葉も調べる：ON':'下線のない言葉も調べる');if(b.innerHTML!==html)b.innerHTML=html}const chip=$('#term-mode-indicator');if(chip)chip.hidden=!mode}
@@ -13,6 +15,63 @@ function installControls(){
   const main=$('#main');
   if(main&&!$('#glossary-inline-hint')){const hint=document.createElement('p');hint.id='glossary-inline-hint';hint.className='small-note glossary-inline-hint';hint.dataset.glossaryUi='';hint.innerHTML=icon('book','small-icon')+'<span>下線の用語をタップすると、意味と読みを確認できます。</span>';main.prepend(hint)}
   if(main&&!$('#term-mode-indicator')){const bar=document.createElement('div');bar.id='term-mode-indicator';bar.className='term-mode-indicator';bar.dataset.glossaryUi='';bar.hidden=!mode;bar.innerHTML=`<span>${icon('book','small-icon')}下線のない言葉も、本文をタップして検索できます。</span><button class="btn btn-small" data-glossary-disable>終了</button>`;main.prepend(bar)}
+  if(main&&importantTerms.size&&!$('#important-study-controls')){
+    const controls=document.createElement('section');controls.id='important-study-controls';controls.className='important-study-controls';controls.dataset.glossaryUi='';controls.setAttribute('aria-label','重要語句の暗記練習');
+    controls.innerHTML='<div class="important-study-copy"><strong>重要語句で暗記練習</strong><p>オレンジの太字が重要語句。隠した語をタップで確認。読み上げは原文どおりです。</p></div><div class="important-study-actions"><button class="btn" type="button" data-important-toggle>重要語句を隠す</button><button class="btn" type="button" data-important-reset>隠し直す</button></div><span class="important-study-announcement" data-important-announcement role="status" aria-live="polite"></span>';
+    const hint=$('#glossary-inline-hint');if(hint?.nextSibling)hint.nextSibling.before(controls);else main.prepend(controls);
+  }
+  updateImportantControls();
+}
+
+function importantHidden(){return A.state?.profile?.importantTermsHidden===true}
+function updateImportantControls(){
+  const hidden=importantHidden(),toggle=$('[data-important-toggle]'),reset=$('[data-important-reset]');
+  const label=hidden?'重要語句を表示する':'重要語句を隠す';if(toggle&&toggle.textContent!==label)toggle.textContent=label;
+  if(toggle)toggle.setAttribute('aria-label',label);if(reset)reset.disabled=!hidden;
+}
+function announceImportant(text){const region=$('[data-important-announcement]');if(region)region.textContent=text}
+function prepareImportantWord(word){
+  if(!importantTerms.has(word.dataset.term))return;
+  word.classList.add('important-term');
+  let visual=[...word.childNodes].find(node=>node.nodeType===Node.ELEMENT_NODE&&node.classList.contains('important-term-text'));
+  if(!visual){visual=document.createElement('span');visual.className='important-term-text';for(const child of [...word.childNodes])visual.appendChild(child);word.appendChild(visual)}
+  const first=word.dataset.glossaryFirst!=='false',choice=!!word.closest('.choice');
+  // The dictionary is an explicit request for an explanation, so it stays readable.
+  const hidden=importantHidden()&&!!$('#main')?.contains(word)&&!revealedImportantGroups.has(word.dataset.glossaryGroup);
+  word.classList.toggle('is-important-hidden',hidden);word.dataset.importantHidden=String(hidden);
+  word.title=hidden?'押すと重要語句の答えを表示':word.dataset.term+'の意味と読みを確認';
+  for(const name of ['aria-label','aria-description','aria-haspopup','aria-hidden','role','tabindex'])word.removeAttribute(name);
+  if(hidden){
+    visual.setAttribute('aria-hidden','true');
+    if(first){word.setAttribute('role',choice?'img':'button');word.setAttribute('aria-label','隠された重要語句');word.setAttribute('aria-description','押すと答えを表示');if(!choice)word.tabIndex=0}
+    else word.setAttribute('aria-hidden','true');
+  }else if(choice){
+    // Keep the option's accessible text natural; there is no nested focus target.
+    visual.removeAttribute('aria-hidden');
+  }else{
+    visual.setAttribute('aria-hidden','true');
+    if(first){word.setAttribute('role','button');word.tabIndex=0;word.setAttribute('aria-label',word.dataset.term);word.setAttribute('aria-description','意味と読みを確認');word.setAttribute('aria-haspopup','dialog')}
+    else word.setAttribute('aria-hidden','true');
+  }
+}
+function applyImportantMode(){
+  const hidden=importantHidden();
+  if(hidden!==lastImportantHidden||A.route!==lastImportantRoute){revealedImportantGroups.clear();lastImportantHidden=hidden;lastImportantRoute=A.route;announceImportant('')}
+  document.body.classList.toggle('important-terms-hidden',hidden);
+  for(const word of document.querySelectorAll('.glossary-term[data-term]'))prepareImportantWord(word);
+  updateImportantControls();
+}
+function syncStudyMode(){
+  revealedImportantGroups.clear();lastImportantHidden=null;lastImportantRoute=null;
+  if(index)decorate();else{installControls();applyImportantMode()}
+}
+function toggleImportantMode(){
+  if(!A.state?.profile)return;
+  A.state.profile.importantTermsHidden=!importantHidden();A.save();syncStudyMode();
+  announceImportant(importantHidden()?'本文の重要語句を隠しました。押すと1か所ずつ答えを表示します。':'本文の重要語句をすべて表示しました。');
+}
+function resetImportantWords(){
+  if(!importantHidden())return;revealedImportantGroups.clear();decorate();announceImportant('表示した重要語句を、もう一度すべて隠しました。');
 }
 
 // Only text nodes are split. Marks, inline formatting, and character offsets stay intact.
@@ -71,7 +130,7 @@ function textRuns(block){
   walk(block);flush();return runs;
 }
 function makeTermSpan(match,text,first,choice){
-  const span=document.createElement('span');span.className='glossary-term';span.dataset.term=match.term;span.dataset.glossaryGroup=match.group;span.textContent=text;
+  const span=document.createElement('span');span.className='glossary-term';span.dataset.term=match.term;span.dataset.glossaryGroup=match.group;span.dataset.glossaryFirst=String(first);span.textContent=text;
   span.title=match.term+'の意味と読みを確認';
   if(!choice){span.setAttribute('role','button');span.tabIndex=first?0:-1;span.setAttribute('aria-haspopup','dialog');span.setAttribute('aria-label',match.term);span.setAttribute('aria-description','意味と読みを確認')}
   return span;
@@ -118,6 +177,7 @@ function decorate(root){
       const dialog=$('#app-dialog');
       if(dialog?.open&&dialog.querySelector('#glossary-search'))for(const section of dialog.querySelectorAll(DEFINITION_ROOTS))count+=decorateRoot(section);
     }
+    applyImportantMode();
   }finally{decorating=false;observeRoots()}
   return count;
 }
@@ -152,6 +212,7 @@ function activateWord(event){
   if(dialog?.open&&!dialog.contains(word)||drawingAt(word)||target.closest('canvas,[data-annotation-ui]'))return false;
   event.preventDefault();event.stopImmediatePropagation();
   if(event.repeat)return true;
+  if(word.classList.contains('is-important-hidden')){revealedImportantGroups.add(word.dataset.glossaryGroup);decorate();announceImportant('重要語句を1か所表示しました。表示した語をもう一度押すと辞典を開けます。');return true}
   const block=word.closest(READABLE)||word.parentElement,text=block.textContent||'';
   let offset=text.indexOf(word.textContent);try{const range=document.createRange();range.selectNodeContents(block);range.setEndBefore(word);offset=range.toString().length}catch{}
   openTerm(word.dataset.term,text.slice(Math.max(0,offset-110),offset+170));return true;
@@ -166,10 +227,10 @@ document.addEventListener('click',e=>{
   e.preventDefault();e.stopImmediatePropagation();openTerm(found.term,found.context);
 },{capture:true});
 document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.matches?.('.glossary-term[role="button"]'))activateWord(e)},{capture:true});
-document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.closest('.annotation-toolbar'))scheduleDecoration();const d=b.dataset;if('glossaryOpen'in d)openTerm();else if('glossaryBack'in d){const previous=history.pop();if(previous)openTerm(previous.query,previous.context,{history:'back'})}else if('glossaryMode'in d)toggleMode();else if('glossaryDisable'in d){mode=false;updateMode()}else if(d.glossaryTerm)openTerm(d.glossaryTerm,current?.context||'');else if('glossaryRead'in d&&current?.entry)A.speakQueue([{title:current.entry.term+'の説明',text:readWhole(current.entry)}]);else if('glossaryStop'in d)A.stopSpeech();else if('glossaryReadWord'in d)A.speakQueue([{title:current.query,text:current.query}]);else if(d.glossaryDefinition!==undefined&&current?.entry){const ds=[...current.entry.definitions].sort((a,b)=>Number(b.section==='本則')-Number(a.section==='本則')),def=ds[Number(d.glossaryDefinition)];if(def)A.speakQueue([{title:current.query+' · '+def.lawTitle,text:def.lawTitle+'。'+def.articleTitle+'。'+def.text}])}else if(d.glossaryNav){$('#app-dialog').close();A.go(d.glossaryNav)}});
+document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.closest('.annotation-toolbar'))scheduleDecoration();const d=b.dataset;if('importantToggle'in d)toggleImportantMode();else if('importantReset'in d)resetImportantWords();else if('glossaryOpen'in d)openTerm();else if('glossaryBack'in d){const previous=history.pop();if(previous)openTerm(previous.query,previous.context,{history:'back'})}else if('glossaryMode'in d)toggleMode();else if('glossaryDisable'in d){mode=false;updateMode()}else if(d.glossaryTerm)openTerm(d.glossaryTerm,current?.context||'');else if('glossaryRead'in d&&current?.entry)A.speakQueue([{title:current.entry.term+'の説明',text:readWhole(current.entry)}]);else if('glossaryStop'in d)A.stopSpeech();else if('glossaryReadWord'in d)A.speakQueue([{title:current.query,text:current.query}]);else if(d.glossaryDefinition!==undefined&&current?.entry){const ds=[...current.entry.definitions].sort((a,b)=>Number(b.section==='本則')-Number(a.section==='本則')),def=ds[Number(d.glossaryDefinition)];if(def)A.speakQueue([{title:current.query+' · '+def.lawTitle,text:def.lawTitle+'。'+def.articleTitle+'。'+def.text}])}else if(d.glossaryNav){$('#app-dialog').close();A.go(d.glossaryNav)}});
 document.addEventListener('submit',e=>{if(e.target.id==='glossary-search-form'){e.preventDefault();openTerm($('#glossary-search').value,current?.context||'')}});
 function start(){if(started)return;started=true;installControls();observer=new MutationObserver(scheduleDecoration);observeRoots();load().then(scheduleDecoration).catch(()=>{});document.addEventListener('toggle',e=>{if(e.target.matches?.('details'))scheduleDecoration()},{capture:true})}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start,{once:true});else start();
 window.addEventListener('hashchange',()=>{openId++;history.length=0;scheduleDecoration()});
-A.glossary={open:openTerm,load,decorate,get size(){return index?.size||0},get mode(){return mode},disable(){mode=false;updateMode()}};
+A.glossary={open:openTerm,load,decorate,syncStudyMode,get size(){return index?.size||0},get importantCount(){return importantTerms.size},get mode(){return mode},disable(){mode=false;updateMode()}};
 })();

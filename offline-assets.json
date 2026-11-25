@@ -1,5 +1,5 @@
 {
-  "version": "2026.11.25.3",
+  "version": "2026.11.25.4",
   "asOf": "2026-11-25",
   "files": [
     {
@@ -9,8 +9,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 87473,
-      "sha256": "9dda79b685f75c2d36db023948fe153ff1ab745bca3d6e26e6c8b8917e301f5c"
+      "bytes": 91390,
+      "sha256": "ccb66875a38db3f9c6d4e9f30b8a7f2f184cc665424f43697d6620d7f57523e8"
     },
     {
       "path": "apple-touch-icon.png",
@@ -44,8 +44,8 @@
     },
     {
       "path": "glossary.js",
-      "bytes": 20995,
-      "sha256": "7eef88b83a40074f3c93d7dfd01b37422bd0c64bd277a1289ee22d17f5589cdb"
+      "bytes": 26254,
+      "sha256": "bb1eeeadf50dc75e993106498d92140640e0179364aa6adfd0770f2179c71114"
     },
     {
       "path": "icon-192.png",
@@ -73,9 +73,19 @@
       "sha256": "f751e9270d399c934c29dec4ca8520031708d8c3baca765604a4d4bbd9cbab43"
     },
     {
+      "path": "important-terms.css",
+      "bytes": 3299,
+      "sha256": "d26bdb1efe4a924931645a11af09d24fb9bb7469ae65a41ea75f7119bd801a94"
+    },
+    {
+      "path": "important-terms.js",
+      "bytes": 2778,
+      "sha256": "f0a137edc1c90a9df02422fad885074f1f2ee4f384f954fb0a9ad4c1ec3c15d3"
+    },
+    {
       "path": "index.html",
-      "bytes": 4309,
-      "sha256": "d6af0ae15d13d00688d07bbc7cdf03fd79afef9d1f3eabda03cc8e9f136a4945"
+      "bytes": 4567,
+      "sha256": "a8a3e108289a34c63838d88a20be61b14b7fa78ff5a0d49f362834c871377e48"
     },
     {
       "path": "interaction-guard.js",
@@ -96,6 +106,16 @@
       "path": "manifest.webmanifest",
       "bytes": 617,
       "sha256": "b375beaf8e00fc157819a750ad43b9bb0060b4b86564c7af6ab71bbd8e69c02a"
+    },
+    {
+      "path": "motion.css",
+      "bytes": 6737,
+      "sha256": "6c5c9bfd09532507386cc97d391931b8eb01c32497154ae82678ba139493c6fb"
+    },
+    {
+      "path": "motion.js",
+      "bytes": 12894,
+      "sha256": "ff7cee13219cb0add3fc27336c71c06a0e943d9c273fc1f813ef3bbd400f17a9"
     },
     {
       "path": "offline.js",
@@ -738,5 +758,5 @@
       "sha256": "c1ef8883eff7c2ecdf019711fc97dd41c62dbf9dc2270374de2e80afba03bd69"
     }
   ],
-  "totalBytes": 80662521
+  "totalBytes": 80697663
 }

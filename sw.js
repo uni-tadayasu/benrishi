@@ -1,12 +1,12 @@
-/* Release 2026.11.25.3: illustrations, term links and guided continuous listening. */
+/* Release 2026.11.25.4: important-term recall mode and responsive interface motion. */
 importScripts('./cache-codec.js');
 const CACHE = 'benrishi-v1-20261125';
-const RELEASE = '2026.11.25.3';
+const RELEASE = '2026.11.25.4';
 const CORE = [
-  './style.css', './visual.css', './visual.js', './icon.svg', './manifest.webmanifest',
+  './style.css', './visual.css', './important-terms.css', './motion.css', './visual.js', './motion.js', './icon.svg', './manifest.webmanifest',
   './app.js', './question-bank.js', './written-oral.js', './speech-engine.js', './prosody-engine.js',
   './annotation.js', './legal-guides.js', './law-library.js', './offline.js',
-  './interaction-guard.js', './glossary.js', './glossary-study.js',
+  './interaction-guard.js', './glossary.js', './glossary-study.js', './important-terms.js',
   './glossary-data.json.gz', './cache-codec.js', './offline-assets.json',
   './law-corpus/manifest.json', './treaty-corpus/manifest.json',
   './art/manifest.json', './art/hero-small.webp', './art/hero.webp', './art/library-small.webp',

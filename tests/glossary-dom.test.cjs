@@ -60,9 +60,9 @@ const document=new Element('document');document.head=new Element('head');documen
 document.createTreeWalker=(root,what,filter)=>{const all=[];const walk=n=>{for(const c of n.childNodes){if(c.nodeType===3&&(!filter||filter.acceptNode(c)===1))all.push(c);walk(c)}};walk(root);let i=-1;return{currentNode:null,nextNode(){return this.currentNode=all[++i]||null}}};
 document.createRange=()=>{let root,end;return{selectNodeContents(n){root=n},setEndBefore(n){end=n},toString(){let text='',stopped=false;const walk=n=>{if(n===end){stopped=true;return}if(stopped)return;if(n.nodeType===3)text+=n.data;else for(const c of n.childNodes)walk(c)};walk(root);return text}}};
 const storage=new Map(),localStorage={getItem:key=>storage.get(key)||null,setItem:(key,value)=>storage.set(key,String(value))};
-let answerClicks=0,dialogCalls=0;
+let answerClicks=0,dialogCalls=0,speechStops=0;const savedProfiles=[];
 const escape=text=>String(text).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const A={esc:escape,icon:()=>'', $:(selector,root=document)=>root.querySelector(selector),route:'practice',stopSpeech(){},speakQueue(){},toast(){},go(){},laws:{setReadingMode(){}},dialog(title,body){dialogCalls++;const d=document.querySelector('#app-dialog');d.innerHTML=body;d.showModal()}};
+const A={esc:escape,icon:()=>'', $:(selector,root=document)=>root.querySelector(selector),route:'practice',state:{profile:{importantTermsHidden:false}},save(){savedProfiles.push(JSON.parse(JSON.stringify(this.state.profile)));localStorage.setItem('benrishi-lab-v1',JSON.stringify(this.state))},stopSpeech(){speechStops++},speakQueue(){},toast(){},go(){},laws:{setReadingMode(){}},dialog(title,body){dialogCalls++;const d=document.querySelector('#app-dialog');d.innerHTML=body;d.showModal()}};
 const context={console,document,localStorage,Map,Set,Intl,Array,String,Number,Math,Date,JSON,Response,DecompressionStream,URL,Node:{TEXT_NODE:3,ELEMENT_NODE:1},NodeFilter:{SHOW_TEXT:4,FILTER_REJECT:2,FILTER_ACCEPT:1},HTMLElement:Element,MutationObserver:Observer,App:A,SiteArt:{img:()=>'<img class="glossary-art" alt="" src="library.webp">'},getComputedStyle:el=>({position:el.style.position||'static',pointerEvents:el.style.pointerEvents||(el.tagName==='CANVAS'?'none':'auto')}),fetch:async url=>new Response(fs.readFileSync(path.join(dist,String(url).replace(/^\.\//,'')))),requestAnimationFrame:callback=>{const id=++frameId;frames.set(id,callback);return id},cancelAnimationFrame:id=>frames.delete(id),setTimeout,clearTimeout,performance};
 context.window=context;context.addEventListener=()=>{};context.removeEventListener=()=>{};context.devicePixelRatio=1;
 function event(type,target,extra={}){const e={type,target,defaultPrevented:false,stopped:false,preventDefault(){this.defaultPrevented=true},stopImmediatePropagation(){this.stopped=true},...extra};const handlers=document.listeners.get(type)||[];for(const h of handlers.filter(x=>x.capture)){h.callback(e);if(e.stopped)return e}for(const h of handlers.filter(x=>!x.capture)){h.callback(e);if(e.stopped)return e}return e}
@@ -83,7 +83,7 @@ const compoundFixtures=[
 ].map(([lawId,number,term],i)=>{const law=JSON.parse(fs.readFileSync(path.join(dist,'law-corpus',lawId+'.json')));const article=law.articles.find(a=>a.section==='本則'&&a.number===number);assert(article?.text.includes(term));const p=new Element('p');p.id='compound-'+i;p.textContent=article.text;document.querySelector('#main').appendChild(p);return{element:p,text:article.text,term,lawId,number}});
 const existingMark=document.querySelector('#marked-static mark');
 document.addEventListener('click',e=>{if(e.target.closest('.choice'))answerClicks++});
-vm.createContext(context);for(const filename of ['glossary-study.js','annotation.js','glossary.js'])vm.runInContext(fs.readFileSync(path.join(dist,filename),'utf8'),context,{filename});
+vm.createContext(context);for(const filename of ['glossary-study.js','important-terms.js','annotation.js','glossary.js'])vm.runInContext(fs.readFileSync(path.join(dist,filename),'utf8'),context,{filename});
 const checks=[];const pass=name=>checks.push(name);
 (async()=>{
   event('DOMContentLoaded',document);await A.glossary.load();await settle();assert.equal(A.glossary.size,1242);pass('merged dictionary loads 1242 terms and decorates at startup');
@@ -111,5 +111,57 @@ const checks=[];const pass=name=>checks.push(name);
   let annotation=context.AnnotationLayer.mount({host,key:'qa:marks'});surface.before(annotation.toolbar);await settle();assert.equal(surface.textContent,text);assert.equal(surface.querySelectorAll('mark[data-benrishi-ink]').map(n=>n.textContent).join(''),text.slice(1,5));assert.equal(annotation.getState().marks[0].start,1);assert.equal(annotation.getState().marks[0].end,5);assert(surface.querySelector('.glossary-term[data-term="特許請求の範囲"]'));
   const word=surface.querySelector('.glossary-term');annotation.setMode('pen');const calls=dialogCalls;event('click',word);await settle();assert.equal(dialogCalls,calls);annotation.setMode('select');event('click',word);await settle();assert.equal(dialogCalls,calls+1);document.querySelector('#app-dialog').close();pass('real AnnotationLayer preserves saved character offsets and blocks term activation while drawing');
   annotation.destroy();await settle();assert.equal(surface.textContent,text);assert.equal(surface.querySelectorAll('mark[data-benrishi-ink]').length,0);annotation=context.AnnotationLayer.mount({host,key:'qa:marks'});await settle();assert.equal(surface.textContent,text);assert.equal(surface.querySelectorAll('mark[data-benrishi-ink]').map(n=>n.textContent).join(''),text.slice(1,5));annotation.destroy();await settle();pass('real AnnotationLayer unwrap/re-render/remount preserves word links and exact marked characters');
+
+  const important=new Set(context.IMPORTANT_LEGAL_TERMS),studyTerms=new Set(context.STUDY_GLOSSARY.map(entry=>entry.term));
+  assert.equal(important.size,147);assert.equal(A.glossary.importantCount,147);assert(context.IMPORTANT_LEGAL_TERMS.every(term=>studyTerms.has(term)));
+  for(const term of ['特許請求の範囲','専用実施権','新規性','進歩性'])assert(important.has(term));
+  for(const term of ['要件','効果','規定','期間','期限','適用','認定','判断','保護','利用','原則','例外'])assert(!important.has(term));
+  assert(document.querySelector('#plain .glossary-term[data-term="特許請求の範囲"]').classList.contains('important-term'));
+  assert(!document.querySelector('#plain .glossary-term[data-term="登録"]').classList.contains('important-term'));
+  assert.equal(document.querySelectorAll('#main .is-important-hidden').length,0);pass('147 explicitly selected study terms are emphasized while general reading words remain ordinary');
+
+  const originalBlocks=[...document.querySelectorAll('#main p,#main h2,#main .choice')].filter(block=>!block.closest('[data-glossary-ui]')).map(block=>({block,text:block.textContent}));
+  const assertTextIntact=()=>{for(const original of originalBlocks)assert.equal(original.block.textContent,original.text);const range=document.createRange();range.selectNodeContents(surface);assert.equal(range.toString(),text)};
+  const accessibleText=node=>{if(node.nodeType===3)return node.data;if(node.getAttribute?.('aria-hidden')==='true')return '';if(node.hasAttribute?.('aria-label'))return node.getAttribute('aria-label');return node.childNodes.map(accessibleText).join('')};
+  const toggle=document.querySelector('[data-important-toggle]'),reset=document.querySelector('[data-important-reset]');
+  event('click',toggle);await settle();assert.equal(A.state.profile.importantTermsHidden,true);assert.equal(savedProfiles.at(-1).importantTermsHidden,true);assert.equal(reset.disabled,false);
+  const hiddenWord=document.querySelector('#plain .glossary-term[data-term="特許請求の範囲"]');
+  assert(hiddenWord.classList.contains('is-important-hidden'));assert.equal(hiddenWord.getAttribute('aria-label'),'隠された重要語句');assert.equal(hiddenWord.getAttribute('aria-haspopup'),null);assert.equal(hiddenWord.querySelector('.important-term-text').getAttribute('aria-hidden'),'true');
+  for(const name of ['aria-label','aria-description'])assert(!hiddenWord.getAttribute(name).includes(hiddenWord.dataset.term));assert(!hiddenWord.title.includes(hiddenWord.dataset.term));
+  const option=document.querySelector('.choice'),hiddenChoice=option.querySelector('.important-term');
+  assert.equal(hiddenChoice.getAttribute('role'),'img');assert.equal(hiddenChoice.hasAttribute('tabindex'),false);assert(!accessibleText(option).includes(hiddenChoice.dataset.term));assert(accessibleText(option).includes('隠された重要語句'));
+  assertTextIntact();pass('bulk hiding persists profile state and removes answers from titles and accessible names without changing text or Range offsets');
+
+  const dialogsBeforeReveal=dialogCalls,answersBeforeReveal=answerClicks,stopsBeforeReveal=speechStops;
+  const reveal=event('click',hiddenChoice);await settle();assert(reveal.defaultPrevented&&reveal.stopped);assert.equal(dialogCalls,dialogsBeforeReveal);assert.equal(answerClicks,answersBeforeReveal);assert.equal(speechStops,stopsBeforeReveal);assert(!hiddenChoice.classList.contains('is-important-hidden'));assert(accessibleText(option).includes(hiddenChoice.dataset.term));
+  event('click',hiddenChoice);await settle();assert.equal(dialogCalls,dialogsBeforeReveal+1);assert.equal(answerClicks,answersBeforeReveal);assert.equal(document.querySelector('#glossary-search').value,hiddenChoice.dataset.term);assert.equal(A.state.profile.importantTermsHidden,true);
+  assert(document.querySelector('#app-dialog .important-term'));assert.equal(document.querySelectorAll('#app-dialog .is-important-hidden').length,0);document.querySelector('#app-dialog').close();
+  event('click',reset);await settle();assert(hiddenChoice.classList.contains('is-important-hidden'));assertTextIntact();pass('hidden choice tap reveals only the answer, a second tap opens the readable dictionary, and reset masks it again without selecting an answer');
+
+  const splitParts=document.querySelectorAll('#marked-static .glossary-term[data-term="特許請求の範囲"]');assert(splitParts.length>1);
+  const splitGroup=splitParts[0].dataset.glossaryGroup;assert(splitParts.every(part=>part.dataset.glossaryGroup===splitGroup&&part.classList.contains('is-important-hidden')));
+  assert.equal(splitParts.filter(part=>part.hasAttribute('aria-label')).length,1);assert(splitParts.slice(1).every(part=>part.getAttribute('aria-hidden')==='true'));
+  const beforeSplit=dialogCalls;event('click',splitParts[1]);await settle();assert(splitParts.every(part=>!part.classList.contains('is-important-hidden')));assert(hiddenWord.classList.contains('is-important-hidden'));assert.equal(dialogCalls,beforeSplit);assert.equal(existingMark.textContent,'許請');assertTextIntact();
+  event('click',reset);await settle();assert(splitParts.every(part=>part.classList.contains('is-important-hidden')));pass('one occurrence reveals all fragments across an existing mark while other occurrences stay hidden and screen-reader names are not repeated');
+
+  for(const key of ['Enter',' ']){event('click',reset);await settle();const before=dialogCalls;const pressed=event('keydown',hiddenWord,{key});await settle();assert(pressed.defaultPrevented&&pressed.stopped);assert(!hiddenWord.classList.contains('is-important-hidden'));assert.equal(dialogCalls,before)}
+  event('click',toggle);await settle();assert.equal(A.state.profile.importantTermsHidden,false);assert.equal(savedProfiles.at(-1).importantTermsHidden,false);assert.equal(document.querySelectorAll('#main .is-important-hidden').length,0);assertTextIntact();
+  event('click',toggle);await settle();assert.equal(A.state.profile.importantTermsHidden,true);assert(hiddenWord.classList.contains('is-important-hidden'));assertTextIntact();pass('Enter and Space reveal hidden words, and bulk show/hide restores every occurrence without altering paragraph text');
+
+  annotation=context.AnnotationLayer.mount({host,key:'qa:marks'});await settle();annotation.setMode('pen');const maskedDuringInk=surface.querySelector('.important-term'),dialogsDuringInk=dialogCalls;event('click',maskedDuringInk);await settle();assert(maskedDuringInk.classList.contains('is-important-hidden'));assert.equal(dialogCalls,dialogsDuringInk);
+  annotation.setMode('select');event('click',maskedDuringInk);await settle();assert(!maskedDuringInk.classList.contains('is-important-hidden'));assert.equal(dialogCalls,dialogsDuringInk);event('click',reset);await settle();
+  assert.equal(annotation.getState().marks[0].start,1);assert.equal(annotation.getState().marks[0].end,5);assert.equal(surface.querySelectorAll('mark[data-benrishi-ink]').map(n=>n.textContent).join(''),text.slice(1,5));assertTextIntact();annotation.destroy();await settle();pass('drawing mode blocks hidden-answer activation and real saved annotation offsets survive hide, reveal, reset and teardown');
+
+  event('click',hiddenWord);await settle();assert(!hiddenWord.classList.contains('is-important-hidden'));
+  A.route='laws/334AC0000000121/36';A.glossary.decorate();await settle();assert(hiddenWord.classList.contains('is-important-hidden'));assert.equal(A.state.profile.importantTermsHidden,true);
+  const followed=new Element('p');followed.textContent='新規性と進歩性を確認する。';document.querySelector('#main').appendChild(followed);await settle();assert(followed.querySelectorAll('.important-term').every(word=>word.classList.contains('is-important-hidden')));assert.equal(followed.textContent,'新規性と進歩性を確認する。');
+  event('click',followed.querySelector('.important-term'));await settle();assert(!followed.querySelector('.important-term').classList.contains('is-important-hidden'));
+  A.state=JSON.parse(localStorage.getItem('benrishi-lab-v1'));A.glossary.syncStudyMode();await settle();assert.equal(A.state.profile.importantTermsHidden,true);assert(followed.querySelector('.important-term').classList.contains('is-important-hidden'));
+  A.state={profile:{importantTermsHidden:false}};A.glossary.syncStudyMode();await settle();assert.equal(document.querySelectorAll('#main .is-important-hidden').length,0);assertTextIntact();pass('route changes and asynchronous text rendering honor the saved mode, while profile replacement/import resynchronizes without stale references');
+
+  const importantCss=fs.readFileSync(path.join(dist,'important-terms.css'),'utf8');
+  const termRules=[...importantCss.matchAll(/([^{}]+)\{([^{}]*)\}/g)].filter(match=>match[1].includes('.important-term')&&!match[1].includes('.important-study'));
+  assert(termRules.length>0);for(const rule of termRules)assert(!/(?:^|;)\s*(?:font-weight|font-size|font-family|line-height|letter-spacing|word-spacing|display|padding|width|height|margin|transform)\s*:/.test(rule[2]),rule[1]);
+  assert(importantCss.includes('color:transparent!important'));assert(importantCss.includes('forced-color-adjust:none'));assert(importantCss.includes('-webkit-text-stroke'));assert(!/transition\s*:/.test(importantCss));pass('term CSS changes only paint properties, preserves glyph metrics, keeps forced-color masks opaque, and introduces no motion');
   const result={passed:true,kind:'DOM/unit harness (browser layout not simulated)',dist,checks:checks.length,terms:A.glossary.size,tests:checks};if(REPORT){fs.mkdirSync(path.dirname(REPORT),{recursive:true});fs.writeFileSync(REPORT,JSON.stringify(result,null,2)+'\n')}console.log(JSON.stringify({...result,tests:undefined,report:REPORT||undefined}));
 })().catch(error=>{console.error(error.stack);process.exitCode=1});

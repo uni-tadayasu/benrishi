@@ -1,0 +1,186 @@
+/* Motion is decorative: no layout offsets, delayed actions, or animated text reflow. */
+html[data-motion-mode] {
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+  --motion-fast: 120ms;
+  --motion-base: 200ms;
+  --motion-long: 360ms;
+}
+html[data-motion-effective="subtle"] {
+  --motion-fast: 70ms;
+  --motion-base: 100ms;
+  --motion-long: 140ms;
+}
+html[data-motion-effective="off"] {
+  --motion-fast: 0ms;
+  --motion-base: 0ms;
+  --motion-long: 0ms;
+}
+
+/* Buttons keep their hit boxes in place, including during a press. */
+html[data-motion-mode] :is(.btn, .icon-button, .text-button, .nav-item,
+  .reading-tabs button, .law-toc-tabs button, .filter-tabs button,
+  .speech-dock button, .choice, .law-bottom-nav button, .glossary-suggestions button) {
+  transition-property: background-color, border-color, color, box-shadow, opacity;
+  transition-duration: var(--motion-fast);
+  transition-timing-function: var(--motion-ease);
+}
+html[data-motion-mode] .btn:active,
+html[data-motion-mode] .subject-card:hover { transform: none; }
+html[data-motion-mode] :is(.btn, .icon-button, .text-button):focus-visible {
+  outline-offset: 4px;
+}
+html[data-motion-mode] :is(.subject-card, .law-book, .record-card, .essential-card,
+  .essay-card, .stat-card, .goal-card, .task-row, .law-search-result) {
+  transition: border-color var(--motion-base) var(--motion-ease),
+    background-color var(--motion-base) var(--motion-ease),
+    box-shadow var(--motion-base) var(--motion-ease);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html[data-motion-effective="standard"] :is(.subject-card, .law-book, .law-search-result):hover {
+    box-shadow: 0 10px 28px #12343712, 0 0 0 1px #7caa961a;
+  }
+  html[data-motion-effective="standard"] :is(.record-card, .essential-card, .essay-card):hover {
+    border-color: #bdd2c5;
+    box-shadow: 0 6px 20px #12343709;
+  }
+  /* Only non-interactive illustrations move, never their card or canvas ancestor. */
+  html[data-motion-effective="standard"] :is(.subject-picture, .law-book-picture) > .site-art {
+    transition: transform 360ms var(--motion-ease);
+  }
+  html[data-motion-effective="standard"] .subject-card:hover .subject-picture > .site-art,
+  html[data-motion-effective="standard"] .law-book:hover .law-book-picture > .site-art {
+    transform: scale(1.035);
+  }
+}
+
+/* Selection remains fully visible in every mode. These rules change timing only. */
+html[data-motion-mode] :is(.reading-tabs, .law-toc-tabs, .filter-tabs) button.active,
+html[data-motion-mode] [data-motion-mode][aria-pressed="true"] {
+  transition: background-color var(--motion-fast) var(--motion-ease),
+    box-shadow var(--motion-fast) var(--motion-ease), color var(--motion-fast) var(--motion-ease);
+}
+html[data-motion-effective="standard"] .nav-item.active > .icon {
+  animation: sm-icon-arrive 230ms var(--motion-ease) 1;
+}
+html[data-motion-mode] .sidebar {
+  transition-duration: var(--motion-base);
+  transition-timing-function: var(--motion-ease);
+}
+html[data-motion-effective="standard"] .sidebar-shade:not([hidden]) {
+  animation: sm-shade-arrive 170ms ease-out 1;
+}
+html[data-motion-mode] .progress > i,
+html[data-motion-mode] #offline-progress {
+  transition: width var(--motion-long) var(--motion-ease), background-color var(--motion-base) ease;
+}
+
+/* Dialogs and the fixed audio dock retain their existing position transforms. */
+html[data-motion-effective="standard"] #app-dialog[open] {
+  animation: sm-surface-arrive 190ms var(--motion-ease) 1;
+}
+html[data-motion-effective="standard"] #app-dialog[open]::backdrop {
+  animation: sm-shade-arrive 160ms ease-out 1;
+}
+html[data-motion-effective="subtle"] #app-dialog[open] {
+  animation: sm-subtle-arrive 90ms ease-out 1;
+}
+html[data-motion-effective="standard"] #speech-dock:not([hidden]) {
+  animation: sm-player-arrive 180ms var(--motion-ease) 1;
+}
+html[data-motion-mode] #speech-dock :is(select, input[type="range"]) {
+  /* Never animate value, geometry, or opacity while a slider is being dragged. */
+  transition-property: border-color, background-color;
+  transition-duration: var(--motion-fast);
+}
+html[data-motion-mode] .toast {
+  transition-duration: var(--motion-fast);
+  transition-timing-function: ease-out;
+}
+html[data-motion-effective="standard"] .choice.correct .choice-num {
+  animation: sm-answer-arrive 240ms var(--motion-ease) 1;
+}
+html[data-motion-effective="standard"] .choice.incorrect .choice-num {
+  animation: sm-subtle-arrive 150ms ease-out 1;
+}
+html[data-motion-mode] details > summary {
+  transition: color var(--motion-fast) ease, background-color var(--motion-fast) ease;
+}
+html[data-motion-mode] :is(input:not([type="range"]), textarea, select) {
+  transition-property: border-color, box-shadow, background-color;
+  transition-duration: var(--motion-fast);
+  transition-timing-function: ease-out;
+}
+html[data-motion-mode] .glossary-term {
+  transition: background-color var(--motion-fast) ease, text-decoration-color var(--motion-fast) ease;
+}
+
+/* Settings remain comfortable at narrow mobile widths and when motion is off. */
+.motion-mode-controls {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 16px 0 10px;
+}
+.motion-mode-controls .btn {
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  padding: 10px 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: normal;
+  text-align: center;
+}
+.motion-mode-controls .btn[aria-pressed="true"] {
+  border-color: #86b29d;
+  box-shadow: inset 0 0 0 1px #86b29d;
+}
+#motion-setting-status { line-height: 1.8; margin-bottom: 0; }
+
+@keyframes sm-icon-arrive {
+  from { opacity: .55; }
+  to { opacity: 1; }
+}
+@keyframes sm-shade-arrive {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes sm-surface-arrive {
+  from { opacity: .88; }
+  to { opacity: 1; }
+}
+@keyframes sm-subtle-arrive {
+  from { opacity: .95; }
+  to { opacity: 1; }
+}
+@keyframes sm-player-arrive {
+  from { opacity: .86; }
+  to { opacity: 1; }
+}
+@keyframes sm-answer-arrive {
+  0% { box-shadow: 0 0 0 0 #77b99500; }
+  45% { box-shadow: 0 0 0 5px #77b99526; }
+  100% { box-shadow: 0 0 0 0 #77b99500; }
+}
+
+/* Off and OS reduced motion take precedence without changing selected states. */
+html[data-motion-effective="off"] *,
+html[data-motion-effective="off"] *::before,
+html[data-motion-effective="off"] *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  html[data-motion-mode] *,
+  html[data-motion-mode] *::before,
+  html[data-motion-mode] *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  html[data-motion-mode] :is(.subject-picture, .law-book-picture) > .site-art {
+    transform: none !important;
+  }
+}
